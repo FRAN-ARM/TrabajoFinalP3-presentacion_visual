@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "E1PuedVNzs/84YQakDWf+BIfX5ic6R3MgQZZrMYhM3vD2gytxQvExdMLDMV5GHex/CQn6z0IlwOXYca3nLvKag==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\LENOVO GOLD\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Universidad\\Programación III\\Proyecto Final\\GestorBiblioteca\\SGBL\\SGBL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
