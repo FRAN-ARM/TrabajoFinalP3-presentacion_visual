@@ -1,0 +1,14 @@
+C:\Proyecto Final\Accesodatos\bin\Debug\net6.0\Accesodatos.deps.json
+C:\Proyecto Final\Accesodatos\bin\Debug\net6.0\Accesodatos.runtimeconfig.json
+C:\Proyecto Final\Accesodatos\bin\Debug\net6.0\Accesodatos.dll
+C:\Proyecto Final\Accesodatos\bin\Debug\net6.0\Accesodatos.pdb
+C:\Proyecto Final\Accesodatos\obj\Debug\net6.0\Accesodatos.csproj.AssemblyReference.cache
+C:\Proyecto Final\Accesodatos\obj\Debug\net6.0\Accesodatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyecto Final\Accesodatos\obj\Debug\net6.0\Accesodatos.AssemblyInfoInputs.cache
+C:\Proyecto Final\Accesodatos\obj\Debug\net6.0\Accesodatos.AssemblyInfo.cs
+C:\Proyecto Final\Accesodatos\obj\Debug\net6.0\Accesodatos.csproj.CoreCompileInputs.cache
+C:\Proyecto Final\Accesodatos\obj\Debug\net6.0\Accesodatos.dll
+C:\Proyecto Final\Accesodatos\obj\Debug\net6.0\refint\Accesodatos.dll
+C:\Proyecto Final\Accesodatos\obj\Debug\net6.0\Accesodatos.pdb
+C:\Proyecto Final\Accesodatos\obj\Debug\net6.0\Accesodatos.genruntimeconfig.cache
+C:\Proyecto Final\Accesodatos\obj\Debug\net6.0\ref\Accesodatos.dll
