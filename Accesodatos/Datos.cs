@@ -11,7 +11,7 @@ namespace Accesodatos
     public class Datos
     {
         public static string Conexion = "Data source=DESKTOP-B63DB53; Initial Catalog = DB_LIBRERIA; Integrated Security=true";
-        public static SqlConnection conectar = new SqlConnection(Conexion);
+       // public static SqlConnection conectar = new SqlConnection(Conexion);
 
     }
 }
