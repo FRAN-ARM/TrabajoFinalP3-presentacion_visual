@@ -214,11 +214,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LENOVO GOLD\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Universidad\\Programación III\\Proyecto Final\\GestorBiblioteca\\SGBL\\SGBL.csproj",
+      "projectUniqueName": "C:\\Proyecto final\\SGBL\\SGBL.csproj",
       "projectName": "SGBL",
-      "projectPath": "C:\\Users\\LENOVO GOLD\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Universidad\\Programación III\\Proyecto Final\\GestorBiblioteca\\SGBL\\SGBL.csproj",
+      "projectPath": "C:\\Proyecto final\\SGBL\\SGBL.csproj",
       "packagesPath": "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LENOVO GOLD\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Universidad\\Programación III\\Proyecto Final\\GestorBiblioteca\\SGBL\\obj\\",
+      "outputPath": "C:\\Proyecto final\\SGBL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LENOVO GOLD\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Universidad\\Programación III\\Proyecto Final\\GestorBiblioteca\\Aplicación\\Aplicación.csproj": {}
+    "C:\\Proyecto Final\\Aplicación\\Aplicación.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LENOVO GOLD\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Universidad\\Programación III\\Proyecto Final\\GestorBiblioteca\\Aplicación\\Aplicación.csproj": {
+    "C:\\Proyecto Final\\Aplicación\\Aplicación.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO GOLD\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Universidad\\Programación III\\Proyecto Final\\GestorBiblioteca\\Aplicación\\Aplicación.csproj",
+        "projectUniqueName": "C:\\Proyecto Final\\Aplicación\\Aplicación.csproj",
         "projectName": "Aplicación",
-        "projectPath": "C:\\Users\\LENOVO GOLD\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Universidad\\Programación III\\Proyecto Final\\GestorBiblioteca\\Aplicación\\Aplicación.csproj",
+        "projectPath": "C:\\Proyecto Final\\Aplicación\\Aplicación.csproj",
         "packagesPath": "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO GOLD\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Universidad\\Programación III\\Proyecto Final\\GestorBiblioteca\\Aplicación\\obj\\",
+        "outputPath": "C:\\Proyecto final\\Aplicación\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

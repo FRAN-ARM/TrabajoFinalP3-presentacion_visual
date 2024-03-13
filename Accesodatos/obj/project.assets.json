@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LENOVO GOLD\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Universidad\\Programación III\\Proyecto Final\\GestorBiblioteca\\Accesodatos\\Accesodatos.csproj",
+      "projectUniqueName": "C:\\Proyecto final\\Accesodatos\\Accesodatos.csproj",
       "projectName": "Accesodatos",
-      "projectPath": "C:\\Users\\LENOVO GOLD\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Universidad\\Programación III\\Proyecto Final\\GestorBiblioteca\\Accesodatos\\Accesodatos.csproj",
+      "projectPath": "C:\\Proyecto final\\Accesodatos\\Accesodatos.csproj",
       "packagesPath": "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LENOVO GOLD\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Universidad\\Programación III\\Proyecto Final\\GestorBiblioteca\\Accesodatos\\obj\\",
+      "outputPath": "C:\\Proyecto final\\Accesodatos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
