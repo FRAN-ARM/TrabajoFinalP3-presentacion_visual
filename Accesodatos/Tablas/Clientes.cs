@@ -13,7 +13,7 @@ namespace Accesodatos.Tablas
         public string apellido { get; set; }
         public string correo { get; set; }
         public int matricula { get; set; }
-        public string foto_perfil { get; set; }
+        public string? foto_perfil { get; set; }
 
     }
 }

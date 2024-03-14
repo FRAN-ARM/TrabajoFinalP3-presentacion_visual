@@ -152,7 +152,6 @@ namespace Accesodatos.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("foto_perfil")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("matricula")

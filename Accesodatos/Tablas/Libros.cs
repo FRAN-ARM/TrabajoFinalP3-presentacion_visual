@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace Accesodatos.Tablas
 {
     public class Libros
     {
+        
         public Guid id { get; set; }
         public string nombre { get; set; }
         public int paginas { get; set; }

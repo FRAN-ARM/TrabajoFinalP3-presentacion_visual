@@ -1,5 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using Accesodatos.Context;
+using Aplicación.Logica.Categoria;
+using MediatR;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using FluentValidation.AspNetCore;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +21,8 @@ builder.Services.AddDbContext<ProyectoContext>(options =>
 {
     options.UseSqlServer("name=DefaultConnection");
 });
+builder.Services.AddMediatR(typeof(Consulta.Manejador).Assembly);
+builder.Services.AddControllers().AddFluentValidation(cfg => cfg.RegisterValidatorsFromAssemblyContaining<Insertar>());
 
 var app = builder.Build();
 
