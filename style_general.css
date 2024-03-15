@@ -1,0 +1,44 @@
+
+/* RECURSOS GENERALES */
+/* Necesarios para los otros archivos css especificos */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Esto solo se importara ya integrado al SBGL solucion */
+@import url("~/lib/bootstrap/dist/css/bootstrap.min.css");
+@import url("~/css/site.css");
+@import url("~/SBGL.styles.css");
+@import url("style_login.css");
+/*@import url('https://cdn.lineicons.com/4.0/lineicons.css');*/
+
+:root
+{
+    --color-fondo-login: #353E54;
+    --color-fondo-principal: #E2E2E2;
+    --color-bar: #353E54;
+    --color-bar-hover: #293041;
+
+    /*--color-fondo-navegacion: */
+
+    --color-verde: #689D6D;
+    --color-verde-o: #558259;
+    --color-amarillo: #C5BF3B;
+    --color-amarillo-o: #B6B136;
+    --color-rojo: #9D6868;
+    --color-rojo-o: #825555;
+    --color-azul: #6586AD;
+    --color-azul-o: #486C8D;
+    --color-texto: #FEFEFE;
+    --color-texto-panel: #464646;
+    --font-roboto : 'Roboto', sans-serif;
+    --transition-smooth: all 100ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+
+    --menu-radius-px : 8px;
+    --submenu-radius-rem : 2rem;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-roboto);
+}

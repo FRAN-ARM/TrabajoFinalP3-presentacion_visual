@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SBGL</title>
+    <link rel="stylesheet" href="style_login.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="form-container-user-icon">
+            <img class="icon_user" src="LoginForm_UsuarioCirculo.svg" alt="IconoUsuarioCirculo">
+            <img class="icon_user" src="Login_UsuarioIcono.svg" alt="IconoUsuario">
+        </div>
+        <h1 style="margin-top: 1.5rem;">Ingreso</h1>
+        <div class="input-container">
+            <div class="icon">
+                <img src="LoginForm_UsuarioIcono.svg" alt="IconoUsuarioMatricula">
+            </div>
+            <input type="text" placeholder="Matricula...">
+        </div>
+        <div class="input-container">
+            <div class="icon">
+                <img src="LoginForm_ClaveIcono.svg" alt="IconoUsuarioContraseña">
+            </div>
+            <input type="password" placeholder="Contraseña...">
+        </div>
+        <p class="error">
+            placeholder de mensaje de error. Ejemplo (contraseña incorrecta).
+        </p>
+        <button class="btn_ingresar" type="button">Ingresar</button>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
