@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - SBGL</title>
     <link rel="stylesheet" href="style_login.css" asp-append-version="true" />
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -18,18 +19,18 @@
             <div class="icon">
                 <img src="LoginForm_UsuarioIcono.svg" alt="IconoUsuarioMatricula">
             </div>
-            <input type="text" placeholder="Matricula...">
+            <input id="Matricula" type="text" placeholder="Matricula...">
         </div>
         <div class="input-container">
             <div class="icon">
                 <img src="LoginForm_ClaveIcono.svg" alt="IconoUsuarioContraseña">
             </div>
-            <input type="password" placeholder="Contraseña...">
+            <input id="Clave" type="password" placeholder="Contraseña...">
         </div>
         <p class="error">
             placeholder de mensaje de error. Ejemplo (contraseña incorrecta).
         </p>
-        <button class="btn_ingresar" type="button">Ingresar</button>
+        <button onclick="Loguear()" class="btn_ingresar" type="button">Ingresar</button>
     </div>
 </body>
 
@@ -38,3 +39,4 @@
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
+</html>

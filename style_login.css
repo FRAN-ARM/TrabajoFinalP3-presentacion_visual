@@ -88,6 +88,7 @@ input[type=text], input[type=password] {
 
 .error
 {
+    visibility: hidden;/*Para que no se vea el mensage*/
     color: rgb(217, 55, 55);
     margin: 1rem 0rem 1rem 0rem;
 }
