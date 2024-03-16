@@ -50,10 +50,10 @@ namespace Aplicación.Logica.Libro
                    Paginas = l.paginas,
                    Descripcion = l.descripcion,
                    Edicion = l.edicion,
-                                        FechaPublicacion = l.fecha_publicacion,
-                                        Autor = l.Autor.nombre + " " + l.Autor.apellido,
-                                        Categoria = l.categoria.nombre,
-                                        Editorial = l.editorial.nombre
+                   FechaPublicacion = l.fecha_publicacion,
+                   Autor = l.Autor.nombre + " " + l.Autor.apellido,
+                   Categoria = l.categoria.nombre,
+                   Editorial = l.editorial.nombre
                  }) .ToListAsync();
 
 

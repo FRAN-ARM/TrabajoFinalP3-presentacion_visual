@@ -22,5 +22,11 @@ namespace SGBL.Controllers
             return await Mediator.Send(new Consulta.ListaCliente());
         }
 
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<Unit>> Eliminar(Guid id)
+        {
+            return await Mediator.Send(new Eliminar.EliminarCliente{ Id = id });
+        }
+
     }
 }
