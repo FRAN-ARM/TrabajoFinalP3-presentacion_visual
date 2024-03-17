@@ -28,5 +28,12 @@ namespace SGBL.Controllers
         {
             return await Mediator.Send(new Eliminar.EliminarLibro { Id = id });
         }
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult<Unit>> Editar(Guid id, Editar.EditarLibro data)
+        {
+            data.id = id;
+            return await Mediator.Send(data);
+        }
     }
 }
