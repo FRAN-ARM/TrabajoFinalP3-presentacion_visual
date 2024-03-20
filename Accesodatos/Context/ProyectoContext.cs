@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Accesodatos.Context
 {
-    public class ProyectoContext : IdentityDbContext<Administrador>
+    public class ProyectoContext : IdentityDbContext<Usuario>
     {
         public ProyectoContext(DbContextOptions options) : base(options)
         {

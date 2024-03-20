@@ -119,7 +119,7 @@ namespace Accesodatos.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("Autores");
+                    b.ToTable("Autores", (string)null);
                 });
 
             modelBuilder.Entity("Accesodatos.Tablas.Categorias", b =>
@@ -134,7 +134,7 @@ namespace Accesodatos.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("Categorias");
+                    b.ToTable("Categorias", (string)null);
                 });
 
             modelBuilder.Entity("Accesodatos.Tablas.Clientes", b =>
@@ -163,7 +163,7 @@ namespace Accesodatos.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("Clientes");
+                    b.ToTable("Clientes", (string)null);
                 });
 
             modelBuilder.Entity("Accesodatos.Tablas.Editorial", b =>
@@ -178,7 +178,7 @@ namespace Accesodatos.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("Editorial");
+                    b.ToTable("Editorial", (string)null);
                 });
 
             modelBuilder.Entity("Accesodatos.Tablas.Libros", b =>
@@ -221,7 +221,7 @@ namespace Accesodatos.Migrations
 
                     b.HasIndex("editorial_id");
 
-                    b.ToTable("Libros");
+                    b.ToTable("Libros", (string)null);
                 });
 
             modelBuilder.Entity("Accesodatos.Tablas.Prestamos", b =>
@@ -252,7 +252,7 @@ namespace Accesodatos.Migrations
 
                     b.HasIndex("libro_id");
 
-                    b.ToTable("Prestamos");
+                    b.ToTable("Prestamos", (string)null);
                 });
 
             modelBuilder.Entity("Accesodatos.Tablas.Reportes", b =>
@@ -271,7 +271,7 @@ namespace Accesodatos.Migrations
 
                     b.HasIndex("cliente_id");
 
-                    b.ToTable("Reportes");
+                    b.ToTable("Reportes", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

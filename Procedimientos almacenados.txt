@@ -1,0 +1,60 @@
+Crear Autor
+
+Create PROCEDURE [dbo].[spAutorCrear]
+@nombre varchar(64),
+@apellido varchar(64),
+@pais varchar(64),
+@descripcion varchar(64)
+As
+Begin
+	Insert into Autores(id,nombre,apellido,pais,descripcion) values(NEWID(),@nombre,@apellido,@pais,@descripcion);
+End;
+
+Crear Categoria
+
+ALTER PROCEDURE [dbo].[spCategoriaCrear]
+    @nombre VARCHAR(64)
+AS
+BEGIN
+    INSERT INTO Categorias (id,nombre) VALUES (NewId(),@nombre);
+END;
+
+Crear cliente
+
+ALTER procedure [dbo].[spClienteCrear]
+ @nombre VARCHAR(64),
+ @apellido VARCHAR(64),
+ @correo VARCHAR(64),
+ @matricula int
+ As
+Begin
+	Insert Into Clientes(id,nombre,apellido,correo,matricula) values(NEWID(),@nombre,@apellido,@correo,@matricula);
+END;
+
+Crear editora
+
+ALTER procedure [dbo].[spEditoraCrear]
+ @nombre VARCHAR(64)
+ As
+Begin
+	Insert Into Editorial(id,nombre) values(NEWID(),@nombre);
+END;
+
+Crear libro
+
+ALTER procedure [dbo].[spLibroCrear]
+ @nombre VARCHAR(64),
+ @paginas int,
+ @descripcion VARCHAR(64),
+ @edicion int,
+ @fecha_publicacion datetime,
+ @autor_id uniqueidentifier,
+ @categoria_id uniqueidentifier,
+ @editorial_id uniqueidentifier
+ As
+Begin
+	Insert into Libros(id,nombre,paginas,descripcion,edicion,fecha_publicacion,autor_id,categoria_id,editorial_id)
+	values(NEWID(),@nombre,@paginas,@descripcion,@edicion,@fecha_publicacion,@autor_id,@categoria_id,@editorial_id)
+	
+END;
+
