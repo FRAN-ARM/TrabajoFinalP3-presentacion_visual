@@ -97,3 +97,5 @@ C:\Proyecto Final\SGBL\obj\Debug\net6.0\refint\SGBL.dll
 C:\Proyecto Final\SGBL\obj\Debug\net6.0\SGBL.pdb
 C:\Proyecto Final\SGBL\obj\Debug\net6.0\SGBL.genruntimeconfig.cache
 C:\Proyecto Final\SGBL\obj\Debug\net6.0\ref\SGBL.dll
+C:\Proyecto Final\SGBL\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Proyecto Final\SGBL\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll

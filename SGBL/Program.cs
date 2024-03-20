@@ -12,6 +12,10 @@ using Aplicación.Seguridad;
 using System;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.AspNetCore.Authentication;
+using Aplicación.Seguridad.Token;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,6 +38,19 @@ builder.Services.TryAddSingleton<ISystemClock, SystemClock>();
 
 identityBuilder.AddEntityFrameworkStores<ProyectoContext>();
 identityBuilder.AddSignInManager<SignInManager<Usuario>>();
+
+// Add authentication with JWT bearer tokens
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("palabra secreta")),
+            ValidateIssuer = false,
+            ValidateAudience = false,
+        };
+    });
 
 var app = builder.Build();
 
