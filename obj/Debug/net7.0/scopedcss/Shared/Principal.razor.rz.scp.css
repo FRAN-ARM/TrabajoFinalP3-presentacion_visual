@@ -1,0 +1,63 @@
+#sidebar[b-5ku7pleqoh]
+{
+    width: 124px;
+    min-width: 124px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bar);
+}
+
+.toggle-btn[b-5ku7pleqoh]
+{
+    width: 100%;
+    height: 15%;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    cursor: pointer;
+    border: 0;
+    display: inline;
+    background-color: transparent;
+    text-align: center;
+}
+.toggle-btn:hover[b-5ku7pleqoh]
+{
+    background-color: var(--color-bar-hover);
+    transition: var(--transition-smooth);
+}
+.toggle-btn p[b-5ku7pleqoh] {
+    text-align: center;
+    color: var(--color-texto);
+    opacity: 50%;
+    transition: var(--transition-smooth);
+}
+.toggle-btn:hover p[b-5ku7pleqoh] {
+    text-align: center;
+    color: var(--color-texto);
+    opacity: 100%;
+    transition: var(--transition-smooth);
+}
+.toggle-btn i[b-5ku7pleqoh] {
+    font-size: 42px;
+    color: var(--color-texto);
+}
+.toggle-btn img[b-5ku7pleqoh] {
+    width: 64px;
+    height: 64px;
+    opacity: 50%;
+    transition: var(--transition-smooth);
+}
+.toggle-btn:hover img[b-5ku7pleqoh] {
+    width: 64px;
+    height: 64px;
+    opacity: 100%;
+    transition: var(--transition-smooth);
+}
+
+.sidebar-nav[b-5ku7pleqoh] {
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
+
+.sidebar-item[b-5ku7pleqoh] {
+    position: relative;
+}

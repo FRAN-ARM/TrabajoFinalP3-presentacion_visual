@@ -1,0 +1,210 @@
+
+/*#region Importar Recursos */
+@import url("/css/style_general.css");
+/*#endregion */
+
+/*#region Menu Desplegable */
+
+/*
+.propiedad 
+{ 
+    Aqui se describe el orden en el que se ponen ciertas cosas.
+    Ejemplo:
+    1. Propiedades de posicion x y z (como z-index)
+    2. Propiedades de altura y anchura (width, height, etc)
+    3. Propiedades especiales (display, flex, etc)
+    4. Propiedades de visualizacion (background-color, color, etc)
+}
+*/
+
+.wrapper 
+{
+    display: flex;
+    width: 100%;
+}
+.main 
+{
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--color-fondo-principal);
+}
+
+#sidebar
+{
+    z-index: 1000;
+    width: 124px;
+    min-width: 124px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bar);
+}
+
+.toggle-btn
+{
+    width: 100%;
+    height: 15%;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    cursor: pointer;
+    border: 0;
+    display: inline;
+    background-color: transparent;
+    text-align: center;
+}
+.toggle-btn:hover
+{
+    background-color: var(--color-bar-hover);
+    transition: var(--transition-smooth);
+}
+.toggle-btn p {
+    text-align: center;
+    color: var(--color-texto);
+    opacity: 50%;
+    transition: var(--transition-smooth);
+}
+.toggle-btn:hover p {
+    text-align: center;
+    color: var(--color-texto);
+    opacity: 100%;
+    transition: var(--transition-smooth);
+}
+.toggle-btn i {
+    font-size: 42px;
+    color: var(--color-texto);
+}
+.toggle-btn img {
+    width: 64px;
+    height: 64px;
+    opacity: 50%;
+    transition: var(--transition-smooth);
+}
+.toggle-btn:hover img {
+    width: 64px;
+    height: 64px;
+    opacity: 100%;
+    transition: var(--transition-smooth);
+}
+
+.sidebar-nav {
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
+
+.sidebar-item {
+    position: relative;
+}
+
+/*
+Consideren esto para implementar mas facil lo de que el menu se despliegue, puede serles de ayuda.
+Cabe resaltar que esta parte del codigo no es precisamente mia.
+#sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    background-color: #0e2238;
+    padding: 0;
+    min-width: 15rem;
+    display: none;
+}
+#sidebar:not(.expand) .sidebar-item:hover .has-dropdown + .sidebar-dropdown {
+    display: block;
+    max-height: 15em;
+    width: 100%;
+    opacity: 1;
+}
+#sidebar.expand .sidebar-link[data-bs-toggle="collapse"]::after {
+    border: solid;
+    border-width: 0 .075rem .075rem 0;
+    content: "";
+    display: inline-block;
+    padding: 2px;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.4rem;
+    transform: rotate(-135deg);
+    transition: all .2s ease-out;
+}
+#sidebar.expand .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+    transform: rotate(45deg);
+    transition: all .2s ease-out;
+}*/
+
+
+/*#endregion */
+
+/*#region Navbar */
+
+.navbar
+{
+    width: 100%;
+    /*position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0rem;
+    z-index: 100;*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: var(--transition-smooth);
+    background-color: var(--color-bar);
+}
+.navbar ul
+{
+    list-style: none;
+}
+.navbar li
+{
+    display: inline-block;
+}
+
+/* Boton para desplegar el menu... Desplazable */
+.navbar-collapse-btn
+{
+    width: 82px;
+    height: 52px;
+    cursor: pointer;
+    border: 0;
+    display: flex;
+    background-color: transparent;
+    text-align: center;
+}
+.navbar-collapse-btn:hover
+{
+    background-color: var(--color-bar-hover);
+    transition: var(--transition-smooth);
+}
+.navbar-collapse-btn p {
+    text-align: center;
+    color: var(--color-texto);
+    opacity: 50%;
+}
+.navbar-collapse-btn:hover p {
+    text-align: center;
+    color: var(--color-texto);
+    opacity: 100%;
+}
+.navbar-collapse-btn i {
+    font-size: 42px;
+    color: var(--color-texto);
+}
+.navbar-collapse-btn img {
+    width: 48px;
+    height: 48px;
+    opacity: 50%;
+}
+.navbar-collapse-btn:hover img {
+    width: 38px;
+    height: 38px;
+    opacity: 100%;
+    transition: var(--transition-smooth);
+}
+
+.notification-icon
+{
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+/*#endregion */
