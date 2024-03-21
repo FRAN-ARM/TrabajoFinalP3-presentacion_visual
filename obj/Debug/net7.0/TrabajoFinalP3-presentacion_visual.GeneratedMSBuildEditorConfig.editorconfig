@@ -9,45 +9,49 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = TrabajoFinalP3-presentacion_visual
 build_property.RootNamespace = TrabajoFinalP3-presentacion_visual
-build_property.ProjectDir = C:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual\
+build_property.ProjectDir = c:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual
+build_property.MSBuildProjectDirectory = c:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Francisco/Desktop/ITLA/Cuatri 8/TrabajoFinalP3-presentacion_visual/App.razor]
+[c:/Users/Francisco/Desktop/ITLA/Cuatri 8/TrabajoFinalP3-presentacion_visual/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Francisco/Desktop/ITLA/Cuatri 8/TrabajoFinalP3-presentacion_visual/Pages/Counter.razor]
+[c:/Users/Francisco/Desktop/ITLA/Cuatri 8/TrabajoFinalP3-presentacion_visual/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Francisco/Desktop/ITLA/Cuatri 8/TrabajoFinalP3-presentacion_visual/Pages/FetchData.razor]
+[c:/Users/Francisco/Desktop/ITLA/Cuatri 8/TrabajoFinalP3-presentacion_visual/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Francisco/Desktop/ITLA/Cuatri 8/TrabajoFinalP3-presentacion_visual/Pages/Index.razor]
+[c:/Users/Francisco/Desktop/ITLA/Cuatri 8/TrabajoFinalP3-presentacion_visual/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Francisco/Desktop/ITLA/Cuatri 8/TrabajoFinalP3-presentacion_visual/Shared/SurveyPrompt.razor]
+[c:/Users/Francisco/Desktop/ITLA/Cuatri 8/TrabajoFinalP3-presentacion_visual/Shared/MainLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5Mb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Francisco/Desktop/ITLA/Cuatri 8/TrabajoFinalP3-presentacion_visual/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Francisco/Desktop/ITLA/Cuatri 8/TrabajoFinalP3-presentacion_visual/_Imports.razor]
+[c:/Users/Francisco/Desktop/ITLA/Cuatri 8/TrabajoFinalP3-presentacion_visual/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Francisco/Desktop/ITLA/Cuatri 8/TrabajoFinalP3-presentacion_visual/Shared/MainLayout.razor]
+[c:/Users/Francisco/Desktop/ITLA/Cuatri 8/TrabajoFinalP3-presentacion_visual/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-0dgxlc1mnb
 
-[C:/Users/Francisco/Desktop/ITLA/Cuatri 8/TrabajoFinalP3-presentacion_visual/Shared/NavMenu.razor]
+[c:/Users/Francisco/Desktop/ITLA/Cuatri 8/TrabajoFinalP3-presentacion_visual/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-jukd5odakj
 
-[C:/Users/Francisco/Desktop/ITLA/Cuatri 8/TrabajoFinalP3-presentacion_visual/Shared/Principal.razor]
+[c:/Users/Francisco/Desktop/ITLA/Cuatri 8/TrabajoFinalP3-presentacion_visual/Shared/Principal.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFByaW5jaXBhbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-5ku7pleqoh

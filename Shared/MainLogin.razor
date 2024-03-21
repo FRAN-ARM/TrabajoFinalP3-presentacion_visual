@@ -1,0 +1,36 @@
+@inherits LayoutComponentBase
+
+<link rel="stylesheet" href="/css/style_login.css">
+
+<body>
+    <div class="form-container">
+        <div class="form-container-user-icon">
+            <img class="icon_user" src="/images/LoginForm_UsuarioCirculo.svg" alt="IconoUsuarioCirculo">
+            <img class="icon_user" src="/images/Login_UsuarioIcono.svg" alt="IconoUsuario">
+        </div>
+        <h1 style="margin-top: 1.5rem;">Ingreso</h1>
+        <div class="input-container">
+            <div class="icon">
+                <img src="/images/LoginForm_UsuarioIcono.svg" alt="IconoUsuarioMatricula">
+            </div>
+            <input type="text" placeholder="Matricula...">
+        </div>
+        <div class="input-container">
+            <div class="icon">
+                <img src="/images/LoginForm_ClaveIcono.svg" alt="IconoUsuarioContraseña">
+            </div>
+            <input type="password" placeholder="Contraseña...">
+        </div>
+        @{
+            // AÑADIR CONDICIONAL
+            <p class="error">
+                placeholder de mensaje de error. Ejemplo (contraseña incorrecta).
+            </p>
+        }
+        <button class="btn_ingresar" type="button">Ingresar</button>
+    </div>
+</body>
+
+@code {
+
+}
