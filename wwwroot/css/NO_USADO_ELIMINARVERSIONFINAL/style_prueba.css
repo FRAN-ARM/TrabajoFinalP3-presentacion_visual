@@ -1,0 +1,14 @@
+
+/*#region Importar*/
+@import url("/css/style_general.css");
+/*#endregion*/
+
+.tablas
+{
+    background-color: var(--color-verde);
+    width: 32rem;
+    height: 32rem;
+    padding: 32rem;
+    margin: 3rem;
+    border: 2rem;
+}

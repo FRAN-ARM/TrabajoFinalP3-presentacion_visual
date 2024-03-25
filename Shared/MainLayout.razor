@@ -1,17 +1,62 @@
 ﻿@inherits LayoutComponentBase
-
+        
 <div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
+    @{
+        switch(mainArea) 
+        {
+            case "Login":
+                <MainLogin />
+                break;
+            case "Nav":
+                <MainNavegacion />
+                <main>
+                    <div class="top-row">
+                        <div class="top-row-div">
+                            <img src="/images/Userbar_SidebarIcono.svg" alt="cs">
+                        </div>
+                        <div class="top-row-div" style="justify-content: flex-end;">
+                            <button type="button p-0" class="btn btn-transparent position-relative">
+                                <div class="text-center row justify-content-center p-0" style="width: auto; min-width: 34px; height: auto;">
+                                    <img src="/images/icon_TopRow_Notification.svg" alt="icon_notification" class="img-fluid" style="width: 100%; height: 100%;">
+                                    @{
+                                        if (Notifications != 0)
+                                        {
+                                            var _notifications_string = (Notifications > 99) ? $"+99" : $"{Notifications}";
+                                            <span class="position-absolute badge rounded-pill badge-notification bg-danger" style="width: 1.8rem;height: 1rem;transform: translate(60%, 100%);font-size: 0.65rem;">
+                                                @_notifications_string
+                                            </span>
+                                        }
+                                    }
+                                </div>
+                            </button>
+                            <button type="button p-0" class="btn btn-transparent position-relative">
+                                <img src="/images/UsuarioIcono.svg" class="image-fluid" alt="icon_user">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="top-row top-row-title">
+                        <strong>@topRowNombre</strong>
+                    </div>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>
-
-        <!--article class="content px-4">
-            @Body
-        </article-->
-    </main>
+                    <article class="container-fluid row justify-content-center">
+                        <div class="col-10">
+                            @Body
+                        </div>
+                    </article>
+                </main>
+                break;
+            default:
+                <p>ERROR</p>
+                break;
+        }
+    }
 </div>
+
+@code {
+    // TIP: crear una variable de validacion, que solo pueda tornar como true al ser la validacion valida y permitida, para luego cambiar el string de "mainArea",
+    // eso lo haria un poco mas seguro, para que no sea facilmente modificado en consola la variable. 
+    public static string mainArea = "Login";
+    public static string sidebarSelectedArea = "Principal";
+    public static string topRowNombre = "Panel de Administración General";
+    private int Notifications = 32; // Definir la cantidad mediante la base de datos.
+}

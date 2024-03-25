@@ -1,4 +1,7 @@
-@inherits LayoutComponentBase
+@inherits MainLayout
+@inject NavigationManager ___navigation
+
+<PageTitle>SBGL - Login</PageTitle>
 
 <link rel="stylesheet" href="/css/style_login.css">
 
@@ -23,14 +26,27 @@
         </div>
         @{
             // AÑADIR CONDICIONAL
-            <p class="error">
-                placeholder de mensaje de error. Ejemplo (contraseña incorrecta).
-            </p>
+            if (Error == true /*@Model.ErrorMessage != null*/)
+            {
+                //@Model.ErrorMessage
+                <div class="alert alert-danger mt-3">
+                        placeholder de mensaje de error. Ejemplo (contraseña incorrecta).
+                </div>
+            }
         }
-        <button class="btn_ingresar" type="button">Ingresar</button>
+        <button class="btn_ingresar" type="button" @onclick="mthIngresar">Ingresar</button>
     </div>
 </body>
 
 @code {
+    private bool Error = false;
 
+    // Metodo de prueba. Remplazar por lo que corresponde.
+    private void mthIngresar()
+    {
+        ___navigation.NavigateTo("Principal", false);
+        MainLayout.mainArea = "Nav";
+        MainLayout.sidebarSelectedArea = "Principal";
+    }
+    
 }

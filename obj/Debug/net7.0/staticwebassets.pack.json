@@ -17,6 +17,26 @@
       "PackagePath": "staticwebassets\\biblioteca.png"
     },
     {
+      "Id": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_principal copy.css",
+      "PackagePath": "staticwebassets\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_principal copy.css"
+    },
+    {
+      "Id": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_principal.css",
+      "PackagePath": "staticwebassets\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_principal.css"
+    },
+    {
+      "Id": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_prueba.css",
+      "PackagePath": "staticwebassets\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_prueba.css"
+    },
+    {
+      "Id": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_sidebar.css",
+      "PackagePath": "staticwebassets\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_sidebar.css"
+    },
+    {
+      "Id": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_table.css",
+      "PackagePath": "staticwebassets\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_table.css"
+    },
+    {
       "Id": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
@@ -65,6 +85,10 @@
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
+      "Id": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\style_buscador_a.css",
+      "PackagePath": "staticwebassets\\css\\style_buscador_a.css"
+    },
+    {
       "Id": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\style_general.css",
       "PackagePath": "staticwebassets\\css\\style_general.css"
     },
@@ -73,20 +97,12 @@
       "PackagePath": "staticwebassets\\css\\style_login.css"
     },
     {
-      "Id": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\style_principal.css",
-      "PackagePath": "staticwebassets\\css\\style_principal.css"
-    },
-    {
       "Id": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
       "Id": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
-    },
-    {
-      "Id": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\Books.svg",
-      "PackagePath": "staticwebassets\\images\\Books.svg"
     },
     {
       "Id": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\ClaveIcono.svg",
@@ -151,6 +167,18 @@
     {
       "Id": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\UsuarioIcono_B.svg",
       "PackagePath": "staticwebassets\\images\\UsuarioIcono_B.svg"
+    },
+    {
+      "Id": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\icon_Content_Book.svg",
+      "PackagePath": "staticwebassets\\images\\icon_Content_Book.svg"
+    },
+    {
+      "Id": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\icon_Search.svg",
+      "PackagePath": "staticwebassets\\images\\icon_Search.svg"
+    },
+    {
+      "Id": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\icon_TopRow_Notification.svg",
+      "PackagePath": "staticwebassets\\images\\icon_TopRow_Notification.svg"
     },
     {
       "Id": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\wwwroot\\index.html",

@@ -1,0 +1,8 @@
+
+.my-table {
+    background-color: white;
+}
+  
+.my-table tr:first-child {
+    background-color: red;
+}

@@ -817,8 +817,6 @@ C:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual\obj\
 C:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual\obj\Debug\net7.0\staticwebassets.pack.json
 C:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual\obj\Debug\net7.0\staticwebassets.development.json
-C:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
-C:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 C:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual\obj\Debug\net7.0\scopedcss\bundle\TrabajoFinalP3-presentacion_visual.styles.css
 C:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual\obj\Debug\net7.0\scopedcss\projectbundle\TrabajoFinalP3-presentacion_visual.bundle.scp.css
 C:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual\obj\Debug\net7.0\TrabajoFinalP3-presentacion_visual.csproj.CopyComplete
@@ -826,4 +824,8 @@ C:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual\obj\
 C:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual\obj\Debug\net7.0\refint\TrabajoFinalP3-presentacion_visual.dll
 C:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual\obj\Debug\net7.0\TrabajoFinalP3-presentacion_visual.pdb
 C:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual\obj\Debug\net7.0\ref\TrabajoFinalP3-presentacion_visual.dll
-C:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual\obj\Debug\net7.0\scopedcss\Shared\Principal.razor.rz.scp.css
+C:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual\obj\Debug\net7.0\scopedcss\Shared\MainNavegacion.razor.rz.scp.css
+C:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual\obj\Debug\net7.0\scopedcss\Shared\NO_USADOS_ELIMINAR_VERSIONFINAL\MainLayoutNO.razor.rz.scp.css
+C:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual\obj\Debug\net7.0\scopedcss\Shared\NO_USADOS_ELIMINAR_VERSIONFINAL\NavMenu.razor.rz.scp.css
+C:\Users\Francisco\Desktop\ITLA\Cuatri 8\TrabajoFinalP3-presentacion_visual\obj\Debug\net7.0\scopedcss\Shared\NO_USADOS_ELIMINAR_VERSIONFINAL\Principal.razor.rz.scp.css

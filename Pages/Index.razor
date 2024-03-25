@@ -1,19 +1,49 @@
-﻿@page "/"
+﻿@page "/Principal"
 
-<PageTitle>Index</PageTitle>
+<link rel="stylesheet" href="css/style_general.css">
 
-<h1>Hello, we!</h1>
+<h2>Resumen</h2>
 
-Welcome to your new app.
+<div class="alert alert-secondary mt-4">
+    <div class="container bg-transparent d-flex justify-content-center text-white text-center m-0 p-0" style="width: 100%;">
+        @{
+            var Items = new[]
+            {
+                new {Titulo = "Prestamos", Imagen = "/images/icon_Content_Book.svg", Amount = "12", ColorLight="--color-verde", ColorDark="--color-verde-o"},
+                new {Titulo = "Caducar", Imagen = "/images/icon_Content_Book.svg", Amount = "3", ColorLight="--color-amarillo", ColorDark="--color-amarillo-o"},
+                new {Titulo = "Vencidos", Imagen = "/images/icon_Content_Book.svg", Amount = "6", ColorLight="--color-rojo", ColorDark="--color-rojo-o"}
+            };
+            /*var numbOfItems = Items.Count() - 1;
+            int _i = 0;*/
+            @foreach (var Item in Items)
+            {
+                //var _margin = _i != numbOfItems ? "margin: 4rem 4rem 4rem 4rem;" : "margin: 4rem 0rem 4rem 0rem;";
+                <div class="container m-3 p-0" style=@("width: 100%; border-radius: 1rem 1rem 1rem 1rem; background-color: var(" + @Item.ColorLight + ");")>
+                    <div class="container-fluid h4 p-2" style=@("border-radius: 1rem 1rem 0 0; width: 100% height: 25%; background-color: var(" + @Item.ColorDark + ");")>
+                        @Item.Titulo
+                    </div>
+                    <div class="container-fluid bg-transparent p-2 text-center h5" style="width: 75%;">
+                        <img src=@Item.Imagen alt=@Item.Titulo.ToLower() class="m-1 p-0 text-center" style="width: 30%; height: 30%;">
+                        <p>@Item.Amount</p>
+                    </div>
+                </div>
+                //_i++;
+            }
+        }
+    </div>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+    <div class="container bg-transparent d-flex justify-content-center text-white text-center m-0 p-0" style="width: 100%;">
+        <div class="container m-4 p-0" style="border-radius: 1rem 1rem 1rem 1rem; background-color: #6586AD; width: 30%;">
+            <div class="container-fluid h4 p-2" style="border-radius: 1rem 1rem 0 0; width: 100% height: 25%; background-color: #355675;">
+                Usuarios
+            </div>
+            <div class="container-fluid bg-transparent p-2 text-center h5" style="width: 75%;">
+                <img src="/images/UsuarioIcono_B.svg" alt="usuarios" class="m-1 p-0 text-center" style="width: 30%; height: 30%;">
+                <p>3</p>
+            </div>
+        </div>
+    </div>
+</div>
 
-<img src="\images\Sidebar_GestionarIcono.svg" alt="IconoGestionar">
-<img src="favicon.png" alt="e">
-
-<Principal/>
 @{
-    // Buscar la imagen de esta forma es mas rapida.
-    //private string icon_gestionar = Url.Content("~/wwwroot/images/Sidebar_GestionarIcono.svg");
-    // IsPost
 }

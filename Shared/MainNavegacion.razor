@@ -1,0 +1,58 @@
+@inherits MainLayout
+@inject NavigationManager ___navigation
+
+<PageTitle>Navegacion - @MainLayout.sidebarSelectedArea</PageTitle>
+
+<div class="page">
+
+    <!--#region SideBar  -->
+    <div class="sidebar">
+        <div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+            <nav class="sidebar-specific flex-column">
+                @{
+                    var ElementosSidebar = new[]
+                    {
+                        new {Nombre = "Principal", Imagen = "/images/Sidebar_HomeIcono.svg", TopRowName = "Panel de Administración General"},
+                        new {Nombre = "Gestionar", Imagen = "/images/Sidebar_GestionarIcono.svg", TopRowName = "Gestión de Registros"},
+                        new {Nombre = "Préstamos", Imagen = "/images/Sidebar_PrestamosIcono.svg", TopRowName = "Panel de Préstamos"},
+                        new {Nombre = "Usuarios", Imagen = "/images/Sidebar_UsuarioIcono.svg", TopRowName = "Panel de Usuarios"},
+                        new {Nombre = "Libros", Imagen = "/images/Sidebar_LibrosIcono.svg", TopRowName = "Panel de Libros"},
+                        new {Nombre = "Reportes", Imagen = "/images/Sidebar_ReportesIcono.svg", TopRowName = "Panel de Reportes"}
+                    };
+                    @foreach (var Elemento in ElementosSidebar)
+                    {
+                        var _name = @Elemento.Nombre;
+                        var _class = _name == MainLayout.sidebarSelectedArea ? "btn_sidebar_selected btn btn-transparent text-center d-flex flex-column align-items-center text-center" : "btn_sidebar btn btn-transparent text-center d-flex flex-column align-items-center";
+                        <button class=@_class @onclick="@(()=> CompTo(@_name, @Elemento.TopRowName))">
+                            <img src=@Elemento.Imagen alt=@_name.ToLower() class="m-0 p-0 text-center">
+                            <p class="m-0 p-0 text-center">@_name</p>
+                        </button>
+                    }
+                }
+            </nav>
+        </div>
+    </div>
+    <!--#endregion -->
+</div>
+
+@code
+{
+    //public string sidebarSelectedArea = "Principal";
+    private bool collapseNavMenu = true;
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+    // CompTo
+    /* Mediante el nombre, se obtiene la direccion para el .razor correspondiente a renderizar dentro del contenido. */
+    private void CompTo(string buttonName, string trName)
+    {
+        //var _dir = "_" + buttonName.ToLower();
+        //Console.WriteLine(_dir);
+        ___navigation.NavigateTo(buttonName, false);
+        MainLayout.sidebarSelectedArea = buttonName;
+        MainLayout.topRowNombre = trName;
+    }
+
+}

@@ -1,0 +1,67 @@
+
+/*#region Importar*/
+@import url("/css/style_general.css");
+/*#endregion*/
+
+.form{
+
+    position: relative;
+}
+
+.form .fa-search{
+
+    position: absolute;
+    top:20px;
+    left: 20px;
+    color: #9ca3af;
+
+}
+
+.form span{
+
+        position: absolute;
+    right: 17px;
+    top: 13px;
+    padding: 2px;
+    border-left: 1px solid #d1d5db;
+
+}
+
+.left-pan{
+    padding-left: 7px;
+}
+
+.left-pan i{
+   
+   padding-left: 10px;
+}
+
+.form-input
+{
+    height: 3rem;
+    border-radius: 1rem;
+}
+
+.form-input:focus
+{
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
+
+.form-search {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}

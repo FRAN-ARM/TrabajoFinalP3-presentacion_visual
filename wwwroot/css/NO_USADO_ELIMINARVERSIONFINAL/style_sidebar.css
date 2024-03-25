@@ -1,79 +1,17 @@
 
-.page {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    flex: 1;
-}
-
-.content-custom
-{
-    padding-left: 8rem;
-    padding-right: 8rem;
-    padding-top: 1rem;
-    background-color: red;
-}
-
-.sidebar {
-    background-color: #353E54;
-}
-
-.top-row {
-    background-color: #353E54;
-    height: 4rem;
-    display: flex;
-    align-items: center;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-.top-row-title
-{
-    padding: 1rem;
-    height: 4rem;
-    color: #293041;
-    background-color: whitesmoke;
-    border-bottom: 2px solid #d6d5d5;
-    box-shadow: -1px 5px 28px -6px rgba(33,44,66,0.76);
-    -webkit-box-shadow: -1px 5px 28px -6px rgba(33,44,66,0.76);
-    -moz-box-shadow: -1px 5px 28px -6px rgba(33,44,66,0.76);
-    font-size: 1.4rem;
-    margin-bottom: 4rem;
-}
-
-.top-row-div
-{
-    width: 50%;
-    height: auto;
-    display: flex;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-}
-
-@media (max-width: 640.98px) {
-    .top-row:not(.auth) {
-        display: none;
-    }
-
-    .top-row.auth {
-        justify-content: space-between;
-    }
-
-    .top-row ::deep a, .top-row ::deep .btn-link {
-        margin-left: 0;
-    }
-}
-
 /*:root
 {
     --transition-smooth: all 100ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }*/
+@import url("/css/style_general.css");
 
 .navbar-toggler {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
 }
 
 .navbar-brand {
@@ -157,34 +95,6 @@ main {
 }
 
 @media (min-width: 641px) {
-    .page {
-        flex-direction: row;
-    }
-
-    .sidebar {
-        width: auto;
-        height: 100vh;
-        position: sticky;
-        top: 0;
-    }
-
-    .top-row {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-    .top-row.auth ::deep a:first-child {
-        flex: 1;
-        text-align: right;
-        width: 0;
-    }
-
-    .top-row, article {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
-    }
-
     .navbar-toggler {
         display: none;
     }
