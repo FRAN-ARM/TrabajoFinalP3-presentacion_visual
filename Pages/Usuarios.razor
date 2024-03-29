@@ -1,0 +1,67 @@
+﻿@page "/Usuarios"
+@inject HttpClient Http
+
+<!--link rel="stylesheet" href="css/style_table.css"-->
+
+<h1>Tabla de Prueba</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+@if (forecasts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="container bg-danger m-0 p-3" style="border-radius: 1rem;">
+        <h3 class="text-center text-light">
+            <strong>TITULO</strong>
+        </h3>
+        <div style="border-radius: 0.5rem;" class="container bg-light m-0 p-0">
+            <table class="table">
+                <thead class="thead" style="background-color: transparent;">
+                    <!--th scope="col">#</th-->
+                    <tr>
+                        <th>Placeholder</th>
+                        <th>Date</th>
+                        <th>Temp. (C)</th>
+                        <th>Temp. (F)</th>
+                        <th>Summary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var forecast in forecasts)
+                    {
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>@forecast.Date.ToShortDateString()</td>
+                            <td>@forecast.TemperatureC</td>
+                            <td>@forecast.TemperatureF</td>
+                            <td>@forecast.Summary</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+
+@code {
+    private WeatherForecast[]? forecasts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+    }
+
+    public class WeatherForecast
+    {
+        public DateOnly Date { get; set; }
+
+        public int TemperatureC { get; set; }
+
+        public string? Summary { get; set; }
+
+        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    }
+}

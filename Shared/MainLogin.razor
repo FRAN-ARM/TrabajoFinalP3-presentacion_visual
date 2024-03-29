@@ -1,0 +1,52 @@
+@inherits MainLayout
+@inject NavigationManager ___navigation
+
+<PageTitle>SBGL - Login</PageTitle>
+
+<link rel="stylesheet" href="/css/style_login.css">
+
+<body>
+    <div class="form-container">
+        <div class="form-container-user-icon">
+            <img class="icon_user" src="/images/LoginForm_UsuarioCirculo.svg" alt="IconoUsuarioCirculo">
+            <img class="icon_user" src="/images/Login_UsuarioIcono.svg" alt="IconoUsuario">
+        </div>
+        <h1 style="margin-top: 1.5rem;">Ingreso</h1>
+        <div class="input-container">
+            <div class="icon">
+                <img src="/images/LoginForm_UsuarioIcono.svg" alt="IconoUsuarioMatricula">
+            </div>
+            <input type="text" placeholder="Matricula...">
+        </div>
+        <div class="input-container">
+            <div class="icon">
+                <img src="/images/LoginForm_ClaveIcono.svg" alt="IconoUsuarioContraseña">
+            </div>
+            <input type="password" placeholder="Contraseña...">
+        </div>
+        @{
+            // AÑADIR CONDICIONAL
+            if (Error == true /*@Model.ErrorMessage != null*/)
+            {
+                //@Model.ErrorMessage
+                <div class="alert alert-danger mt-3">
+                        placeholder de mensaje de error. Ejemplo (contraseña incorrecta).
+                </div>
+            }
+        }
+        <button class="btn_ingresar" type="button" @onclick="mthIngresar">Ingresar</button>
+    </div>
+</body>
+
+@code {
+    private bool Error = false;
+
+    // Metodo de prueba. Remplazar por lo que corresponde.
+    private void mthIngresar()
+    {
+        ___navigation.NavigateTo("Principal", false);
+        MainLayout.mainArea = "Nav";
+        MainLayout.sidebarSelectedArea = "Principal";
+    }
+    
+}

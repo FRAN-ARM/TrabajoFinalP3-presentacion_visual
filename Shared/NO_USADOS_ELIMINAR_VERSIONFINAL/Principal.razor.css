@@ -1,0 +1,63 @@
+#sidebar
+{
+    width: 124px;
+    min-width: 124px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bar);
+}
+
+.toggle-btn
+{
+    width: 100%;
+    height: 15%;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    cursor: pointer;
+    border: 0;
+    display: inline;
+    background-color: transparent;
+    text-align: center;
+}
+.toggle-btn:hover
+{
+    background-color: var(--color-bar-hover);
+    transition: var(--transition-smooth);
+}
+.toggle-btn p {
+    text-align: center;
+    color: var(--color-texto);
+    opacity: 50%;
+    transition: var(--transition-smooth);
+}
+.toggle-btn:hover p {
+    text-align: center;
+    color: var(--color-texto);
+    opacity: 100%;
+    transition: var(--transition-smooth);
+}
+.toggle-btn i {
+    font-size: 42px;
+    color: var(--color-texto);
+}
+.toggle-btn img {
+    width: 64px;
+    height: 64px;
+    opacity: 50%;
+    transition: var(--transition-smooth);
+}
+.toggle-btn:hover img {
+    width: 64px;
+    height: 64px;
+    opacity: 100%;
+    transition: var(--transition-smooth);
+}
+
+.sidebar-nav {
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
+
+.sidebar-item {
+    position: relative;
+}

@@ -1,0 +1,61 @@
+﻿@inherits LayoutComponentBase
+        
+<div class="page">
+
+    <div class="sidebar">
+        <div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+            <nav class="sidebar-specific flex-column">
+                @{
+                    var ElementosSidebar = new[]
+                    {
+                        new {Nombre = "Principal", Imagen = "/images/Sidebar_HomeIcono.svg"},
+                        new {Nombre = "Gestionar", Imagen = "/images/Sidebar_GestionarIcono.svg"},
+                        new {Nombre = "Prestamos", Imagen = "/images/Sidebar_PrestamosIcono.svg"},
+                        new {Nombre = "Usuarios", Imagen = "/images/Sidebar_UsuarioIcono.svg"},
+                        new {Nombre = "Libros", Imagen = "/images/Sidebar_LibrosIcono.svg"},
+                        new {Nombre = "Reportes", Imagen = "/images/Sidebar_ReportesIcono.svg"}
+                    };
+                    @foreach (var Elemento in ElementosSidebar)
+                    {
+                        var _name = @Elemento.Nombre;
+                        var _class = _name == sidebarSelectedArea ? "btn_sidebar_selected btn btn-transparent text-center d-flex flex-column align-items-center text-center" : "btn_sidebar btn btn-transparent text-center d-flex flex-column align-items-center";
+                        <button class=@_class @onclick="@(()=> CompTo(@_name))">
+                            <img src=@Elemento.Imagen alt=@_name.ToLower() class="m-0 p-0 text-center">
+                            <p class="m-0 p-0 text-center">@_name</p>
+                        </button>
+                    }
+                }
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <div class="top-row px-4">
+            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+        </div>
+        <article class="content px-4">
+            xddd
+        </article>
+    </main>
+</div>
+
+@code
+{
+    public string sidebarSelectedArea = "Principal";
+    private bool collapseNavMenu = true;
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+    // CompTo
+    /* Mediante el nombre, se obtiene la direccion para el .razor correspondiente a renderizar dentro del contenido. */
+    private void CompTo(string buttonName)
+    {
+        /*var _dir = "_" + buttonName.ToLower();
+        _navigation.NavigateTo(_dir + $"={sidebarSelectedArea}", false);*/
+        sidebarSelectedArea = buttonName;
+        //Console.WriteLine(_dir);
+    }
+
+}
