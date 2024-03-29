@@ -1,0 +1,42 @@
+﻿[
+  {
+    "Nombre": "El Quijote",
+    "Paginas": "800",
+    "Descripcion": "Obra maestra de la literatura española",
+    "Edicion": "10",
+    "Publicacion": "1605-01-16",
+    "Autor": "Miguel de Cervantes",
+    "Categoria": "Novela",
+    "Editorial": "Penguin Random House"
+  },
+  {
+    "Nombre": "Cien años de soledad",
+    "Paginas": "368",
+    "Descripcion": "Realismo mágico colombiano",
+    "Edicion": "25",
+    "Publicacion": "1967-05-30",
+    "Autor": "Gabriel García Márquez",
+    "Categoria": "Novela",
+    "Editorial": "Sudamericana"
+  },
+  {
+    "Nombre": "Harry Potter y la piedra filosofal",
+    "Paginas": "223",
+    "Descripcion": "Fantasía y aventura",
+    "Edicion": "20",
+    "Publicacion": "1997-06-26",
+    "Autor": "J.K. Rowling",
+    "Categoria": "Fantasía",
+    "Editorial": "Salamandra"
+  },
+  {
+    "Nombre": "El juego de Ender",
+    "Paginas": "384",
+    "Descripcion": "Ciencia ficción",
+    "Edicion": "15",
+    "Publicacion": "1985-01-01",
+    "Autor": "Orson Scott Card",
+    "Categoria": "Ciencia ficción",
+    "Editorial": "Ediciones Minotauro"
+  }  
+]

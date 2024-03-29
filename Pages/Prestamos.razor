@@ -1,12 +1,88 @@
 @page "/Préstamos"
+@inject HttpClient Http
 
-<div class="contenedor">
-    <h2>Prestamos</h2>
-    <img src="/images/Sidebar_HomeIcono.svg" alt="">
-    <p>@contadorPrestamos</p>
-
+<link rel="stylesheet" href="css/style_buscador_a.css">
+<h3>Buscar Fecha</h3>
+<div class=" ml-4 mt-1 mb-3">
+    <button type="button" class="btn btn-info btn-sm">Libro</button>
+    <button type="button" class="btn btn-info btn-sm">Cliente</button>
+    <button type="button" class="btn btn-info btn-sm">Autor</button>
+    <button type="button" class="btn btn-info btn-sm">Fecha</button>
+</div>
+<div class="container m-0 p-0">
+    <div class="form d-flex justify-content-start">
+        <button type="button" class="btn btn-primary d-flex justify-content-center align-items-center" style="width: 4rem;border-top-right-radius: 0; border-bottom-right-radius: 0;">
+            <img src="/images/icon_Search.svg" class="image-fluid" alt="">
+        </button>
+        <input type="text" class="form-search form-input" placeholder="Buscar..." style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
+    </div>
 </div>
 
+@if (FsP == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="container m-0 p-3 mt-5" style="background-color: #825550; border-radius: 0.5rem;">
+        <h3 class="text-center text-light">
+            <strong>Fecha Prestamos</strong><!--El titulo del filtro por el cual se esta buscando-->
+        </h3>
+        <div style="border-radius: 0.3rem;" class="container bg-light m-0 p-0">
+            <table class="table">
+                <thead class="thead" style="background-color: transparent;">
+                    <!--th scope="col">#</th-->
+                    <tr>
+                        <th>Fecha de Préstamo</th>
+                        <th>Fecha de Entrega</th>
+                        <th>Estado</th>
+                        <th>Cliente</th>
+                        <th>Libro</th>
+                        <th> </th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var forecast in FsP)
+                    {
+                        <tr>
+                            <td>@forecast.FechaPresta</td>
+                            <td>@forecast.FechaEntrega</td>
+                            <td>@forecast.Estado</td>
+                            <td>@forecast.Cliente</td>
+                            <td>@forecast.Libro</td>
+                            <td>
+                                <!-- Botones de CRUD -->
+                                <button type="button" class="btn btn-info btn-sm">Editar</button>
+                                <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+
 @code {
-    private int contadorPrestamos = 64;
+    private WeatherForecast[]? FsP;
+
+    protected override async Task OnInitializedAsync()
+    {
+        FsP = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/DataPrestamos.json");
+    }
+
+    public class WeatherForecast
+    {
+        public DateOnly FechaPresta { get; set; }
+
+        public DateOnly FechaEntrega { get; set; }
+
+        public string? Estado { get; set; }
+
+        public string? Cliente { get; set; }
+
+        public string? Libro { get; set; }
+        
+    }
 }

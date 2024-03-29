@@ -1,0 +1,32 @@
+﻿[
+  {
+    "Nombre": "Juan",
+    "Apellido": "Perez",
+    "Correo": "juanperez@ejemplo.com",
+    "Matricula": 12345
+  },
+  {
+    "Nombre": "María",
+    "Apellido": "Gonzalez",
+    "Correo": "mariagonzalez@ejemplo.com",
+    "Matricula": 54321
+  },
+  {
+    "Nombre": "Pedro",
+    "Apellido": "Hernandez",
+    "Correo": "pedrohernandez@ejemplo.com",
+    "Matricula": 67890
+  },
+  {
+    "Nombre": "Ana",
+    "Apellido": "Rodriguez",
+    "Correo": "anarodriguez@ejemplo.com",
+    "Matricula": 24680
+  },
+  {
+    "Nombre": "Luis",
+    "Apellido": "Diaz",
+    "Correo": "luisdiaz@ejemplo.com",
+    "Matricula": 85210
+  }
+]

@@ -1,0 +1,37 @@
+﻿[
+  {
+    "FechaPresta": "2024-01-06",
+    "FechaEntrega": "2024-02-06",
+    "Estado": "Pendiente",
+    "Cliente": "Enmanuel",
+    "Libro": "Juanchi"
+  },
+  {
+    "FechaPresta": "2024-05-12",
+    "FechaEntrega": "2024-06-12",
+    "Estado": "Entregado",
+    "Cliente": "Juan",
+    "Libro": "El Herrero"
+  },
+  {
+    "FechaPresta": "2024-01-12",
+    "FechaEntrega": "2024-02-12",
+    "Estado": "Reportado",
+    "Cliente": "Camilo",
+    "Libro": "Caballo"
+  },
+  {
+    "FechaPresta": "2024-03-16",
+    "FechaEntrega": "2024-06-06",
+    "Estado": "Pendiente",
+    "Cliente": "Tomas",
+    "Libro": "Faran Jutini"
+  },
+  {
+    "FechaPresta": "2024-05-26",
+    "FechaEntrega": "2024-07-06",
+    "Estado": "Pendiente",
+    "Cliente": "Julia",
+    "Libro": "Lucas"
+  }
+]
