@@ -3,104 +3,111 @@
 
 <link rel="stylesheet" href="css/style_buscador_a.css">
 
-<div class=" ml-4 mt-1 mb-3">
-    <button type="button" class="btn btn-info btn-sm">Libro</button>
-    <button type="button" class="btn btn-info btn-sm">Cliente</button>
-    <button type="button" class="btn btn-info btn-sm">Autor</button>
-    <button type="button" class="btn btn-info btn-sm">Prestamo</button>
-    <button type="button" class="btn btn-info btn-sm">Categoria</button>
-    <button type="button" class="btn btn-info btn-sm">Editorial</button>
+<div class="ml-4 mt-1 mb-3">
+  <button type="button" class="btn btn-info btn-sm" @onclick="@(() => CambiarTitulo(1))">Libro</button>
+  <button type="button" class="btn btn-info btn-sm" @onclick="@(() => CambiarTitulo(2))">Cliente</button>
+  <button type="button" class="btn btn-info btn-sm" @onclick="@(() => CambiarTitulo(3))">Autor</button>
+  <button type="button" class="btn btn-info btn-sm" @onclick="@(() => CambiarTitulo(4))">Préstamo</button>
+  <button type="button" class="btn btn-info btn-sm" @onclick="@(() => CambiarTitulo(5))">Categoría</button>
+  <button type="button" class="btn btn-info btn-sm" @onclick="@(() => CambiarTitulo(6))">Editorial</button>
 </div>
 <div class="container m-0 p-0">
-    <div class="form d-flex justify-content-start">
-        <button type="button" class="btn btn-primary d-flex justify-content-center align-items-center" style="width: 4rem;border-top-right-radius: 0; border-bottom-right-radius: 0;">
-            <img src="/images/icon_Search.svg" class="image-fluid" alt="">
-        </button>
-        <input type="text" class="form-search form-input" placeholder="Buscar..." style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
-    </div>
+  <div class="form d-flex justify-content-start">
+    <button type="button" class="btn btn-primary d-flex justify-content-center align-items-center" style="width: 4rem;border-top-right-radius: 0; border-bottom-right-radius: 0;">
+      <img src="/images/icon_Search.svg" class="image-fluid" alt="">
+    </button>
+    <input type="text" class="form-search form-input" placeholder="Buscar..." style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
+  </div>
 </div>
 
 @if (Fs == null)
 {
-    <p><em>Loading...</em></p>
+  <p><em>Cargando...</em></p>
 }
 else
 {
-    <div class="container m-0 p-3 mt-5" style="background-color: #825550; border-radius: 0.5rem;">
-        <h3 class="text-center text-light">
-            <strong>Fecha Prestamos</strong><!--El titulo del filtro por el cual se esta buscando-->
-        </h3>
-        <div style="border-radius: 0.3rem;" class="container bg-light m-0 p-0">
-            <table class="table">
-                <thead class="thead" style="background-color: transparent;">
-                    <!--th scope="col">#</th-->
-                    <tr>
-                        <th>Libro</th>
-                        <th>Pag.</th>
-                        <th>Descripcion</th>
-                        <th>Edicion</th>
-                        <th>Publicacion</th>
-                        <th>Autro</th>
-                        <th>Categoria</th>
-                        <th>Editorial</th>
-                        <th> </th>
-                        <th> </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var forecast in Fs)
-                    {
-                        <tr>
-                            
-                            <td>@forecast.Nombre</td>
-                            <td>@forecast.Paginas</td>
-                            <td>@forecast.Descripcion</td>
-                            <td>@forecast.Edicion</td>
-                            <td>@forecast.Publicacion</td>
-                            <td>@forecast.Autor</td>
-                            <td>@forecast.Categoria</td>
-                            <td>@forecast.Editorial</td>
-                            <td>
-                                <!-- Botones de CRUD -->
-                                <button type="button" class="btn btn-info btn-sm">Editar</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
-                            </td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
-        </div>
+  <div class="container m-0 p-3 mt-5" style="background-color: #6586ad; border-radius: 0.5rem;">
+    <h3 class="text-center text-light">
+      <strong>@Titulo</strong> </h3>
+    <div style="border-radius: 0.3rem; height: 500px; overflow-y: scroll;" class="container bg-light m-0 p-0">
+      <table class="table">
+        <thead class="thead" style="background-color: transparent;">
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Libro Nombre</th>
+            <th>Estado</th>
+            <th>Matricula</th>
+            <th>Fecha Préstamo</th> <th>Fecha Entrega</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          @foreach (var forecast in Fs)
+          {
+            <tr>
+              <td>@forecast.Nombre</td>
+              <td>@forecast.Apellido</td>
+              <td>@forecast.LibroNombre</td>
+              <td>@forecast.Estado</td>
+              <td>@forecast.Matricula</td>
+              <td>@forecast.FrechaPrestamo.ToString("dd/MM/yyyy")</td>  <td>@forecast.FechaEntrega.ToString("dd/MM/yyyy")</td>  <td>
+                <button type="button" class="btn btn-info btn-sm">Editar</button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
     </div>
+  </div>
 }
 
 @code {
-    private WeatherForecast[]? Fs;
+  private WeatherForecast[]? Fs;
+  private string Titulo = "Nombre libro"; // Título inicial
 
-    protected override async Task OnInitializedAsync()
+  protected override async Task OnInitializedAsync()
+  {
+    Fs = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/DataGestionar.json");
+  }
+
+  public class WeatherForecast
+  {
+    public string? Nombre { get; set; }
+    public string? Apellido { get; set; }
+    public string? LibroNombre { get; set; }
+    public string? Estado { get; set; }
+    public int Matricula { get; set; }
+    public DateOnly FrechaPrestamo { get; set; }
+    public DateOnly FechaEntrega { get; set; }
+  }
+
+  private void CambiarTitulo(int NumeroTitulo)
+  {
+    switch (NumeroTitulo)
     {
-        Fs = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/Datalibros.json");
+      case 1:
+        Titulo = "Nombre libro";
+        break;
+      case 2:
+        Titulo = "Nombre Cliente";
+        break;
+      case 3:
+        Titulo = "Nombre Autor";
+        break;
+      case 4:
+        Titulo = "Nombre Prestamo (ID)";
+        break;
+      case 5:
+        Titulo = "Nombre Categoria";
+        break;
+      case 6:
+        Titulo = "Nombre Editorial";
+        break;
     }
-
-    public class WeatherForecast
-    {
-
-        public string? Nombre { get; set; }
-
-        public string? Paginas { get; set; }
-
-        public string? Descripcion { get; set; }
-
-        public string? Edicion { get; set; }
-
-        public DateOnly Publicacion { get; set; }
-
-        public string? Autor { get; set; }
-
-        public string? Categoria { get; set; }
-
-        public string? Editorial { get; set; }
-    }
-
+  }
 }

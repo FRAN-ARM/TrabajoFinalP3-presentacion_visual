@@ -1,0 +1,75 @@
+[
+    {
+      "Nombre": "Ana Pérez",
+      "Libro": "El Principito",
+      "FechaPrestamo": "2023-11-14",
+      "FechaEntrega": "2023-11-21"
+    },
+    {
+      "Nombre": "Juan García",
+      "Libro": "Cien años de soledad",
+      "FechaPrestamo": "2023-11-15",
+      "FechaEntrega": "2023-11-22"
+    },
+    {
+      "Nombre": "María López",
+      "Libro": "Harry Potter y la piedra filosofal",
+      "FechaPrestamo": "2023-11-16",
+      "FechaEntrega": "2023-11-23"
+    },
+    {
+      "Nombre": "Pedro Hernández",
+      "Libro": "El señor de los anillos: La comunidad del anillo",
+      "FechaPrestamo": "2023-11-17",
+      "FechaEntrega": "2023-11-24"
+    },
+    {
+      "Nombre": "Sandra Morales",
+      "Libro": "Orgullo y prejuicio",
+      "FechaPrestamo": "2023-11-18",
+      "FechaEntrega": "2023-11-25"
+    },
+    {
+      "Nombre": "David Ruiz",
+      "Libro": "Crimen y castigo",
+      "FechaPrestamo": "2023-11-19",
+      "FechaEntrega": "2023-11-26"
+    },
+    {
+      "Nombre": "Isabel Fernández",
+      "Libro": "Matar un ruiseñor",
+      "FechaPrestamo": "2023-11-20",
+      "FechaEntrega": "2023-11-27"
+    },
+    {
+      "Nombre": "Carlos Sánchez",
+      "Libro": "El juego de Ender",
+      "FechaPrestamo": "2023-11-21",
+      "FechaEntrega": "2023-11-28"
+    },
+    {
+      "Nombre": "Beatriz González",
+      "Libro": "1984",
+      "FechaPrestamo": "2023-11-22",
+      "FechaEntrega": "2023-11-29"
+    },
+    {
+      "Nombre": "Alejandro Gutiérrez",
+      "Libro": "El nombre de la rosa",
+      "FechaPrestamo": "2023-11-23",
+      "FechaEntrega": "2023-11-30"
+    },
+    {
+      "Nombre": "Laura Jiménez",
+      "Libro": "Los juegos del hambre",
+      "FechaPrestamo": "2023-11-24",
+      "FechaEntrega": "2023-12-01"
+    },
+    {
+      "Nombre": "Miguel Martínez",
+      "Libro": "El Quijote",
+      "FechaPrestamo": "2023-11-25",
+      "FechaEntrega": "2023-12-02"
+    }
+  ]
+  

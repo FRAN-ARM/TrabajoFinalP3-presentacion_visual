@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Pages"
   ],
-  "SelectedNode": "\\C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3",
+  "SelectedNode": "\\Pages\\Principal.razor",
   "PreviewInSolutionExplorer": false
 }

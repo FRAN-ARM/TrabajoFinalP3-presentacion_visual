@@ -2,87 +2,104 @@
 @inject HttpClient Http
 
 <link rel="stylesheet" href="css/style_buscador_a.css">
+
 <h3>Buscar Fecha</h3>
-<div class=" ml-4 mt-1 mb-3">
-    <button type="button" class="btn btn-info btn-sm">Libro</button>
-    <button type="button" class="btn btn-info btn-sm">Cliente</button>
-    <button type="button" class="btn btn-info btn-sm">Autor</button>
-    <button type="button" class="btn btn-info btn-sm">Fecha</button>
+<div class="ml-4 mt-1 mb-3">
+  <button type="button" class="btn btn-info btn-sm" @onclick="@(() => CambiarTitulo(1))">Libro</button>
+  <button type="button" class="btn btn-info btn-sm" @onclick="@(() => CambiarTitulo(2))">Cliente</button>
+  <button type="button" class="btn btn-info btn-sm" @onclick="@(() => CambiarTitulo(3))">Autor</button>
+  <button type="button" class="btn btn-info btn-sm" @onclick="@(() => CambiarTitulo(4))">Fecha</button>
 </div>
 <div class="container m-0 p-0">
-    <div class="form d-flex justify-content-start">
-        <button type="button" class="btn btn-primary d-flex justify-content-center align-items-center" style="width: 4rem;border-top-right-radius: 0; border-bottom-right-radius: 0;">
-            <img src="/images/icon_Search.svg" class="image-fluid" alt="">
-        </button>
-        <input type="text" class="form-search form-input" placeholder="Buscar..." style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
-    </div>
+  <div class="form d-flex justify-content-start">
+    <button type="button" class="btn btn-primary d-flex justify-content-center align-items-center" style="width: 4rem;border-top-right-radius: 0; border-bottom-right-radius: 0;">
+      <img src="/images/icon_Search.svg" class="image-fluid" alt="">
+    </button>
+    <input type="text" class="form-search form-input" placeholder="Buscar..." style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
+  </div>
 </div>
 
 @if (FsP == null)
 {
-    <p><em>Loading...</em></p>
+  <p><em>Cargando...</em></p>
 }
 else
 {
-    <div class="container m-0 p-3 mt-5" style="background-color: #825550; border-radius: 0.5rem;">
-        <h3 class="text-center text-light">
-            <strong>Fecha Prestamos</strong><!--El titulo del filtro por el cual se esta buscando-->
-        </h3>
-        <div style="border-radius: 0.3rem;" class="container bg-light m-0 p-0">
-            <table class="table">
-                <thead class="thead" style="background-color: transparent;">
-                    <!--th scope="col">#</th-->
-                    <tr>
-                        <th>Fecha de Préstamo</th>
-                        <th>Fecha de Entrega</th>
-                        <th>Estado</th>
-                        <th>Cliente</th>
-                        <th>Libro</th>
-                        <th> </th>
-                        <th> </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var forecast in FsP)
-                    {
-                        <tr>
-                            <td>@forecast.FechaPresta</td>
-                            <td>@forecast.FechaEntrega</td>
-                            <td>@forecast.Estado</td>
-                            <td>@forecast.Cliente</td>
-                            <td>@forecast.Libro</td>
-                            <td>
-                                <!-- Botones de CRUD -->
-                                <button type="button" class="btn btn-info btn-sm">Editar</button>
-                                <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
-                            </td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
-        </div>
+  <div class="container m-0 p-3 mt-5" style="background-color: #689d6d; border-radius: 0.5rem;">
+    <h3 class="text-center text-light">
+      <strong>@Titulo</strong>  
+    </h3>
+    <div style="border-radius: 0.3rem; height: 500px; overflow-y: scroll;" class="container bg-light m-0 p-0">
+      <table class="table">
+        <thead class="thead" style="background-color: transparent;">
+          <tr>
+            <th>Fecha de Préstamo</th>
+            <th>Fecha de Entrega</th>
+            <th>Estado</th>
+            <th>Cliente</th>
+            <th>Libro</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          @foreach (var forecast in FsP)
+          {
+            <tr>
+              <td>@forecast.FechaPrestamo</td>
+              <td>@forecast.FechaEntrega</td>
+              <td>@forecast.Estado</td>
+              <td>@forecast.Cliente</td>
+              <td>@forecast.Libro</td>
+              <td>
+                <button type="button" class="btn btn-info btn-sm">Editar</button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
     </div>
+  </div>
 }
 
 @code {
-    private WeatherForecast[]? FsP;
+  private WeatherForecast[]? FsP;
+  private string Titulo = "Fecha Prestamos";
+  protected override async Task OnInitializedAsync()
+  {
+    FsP = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/DataPrestamos.json");
+  }
 
-    protected override async Task OnInitializedAsync()
+  public class WeatherForecast
+  {
+    public DateOnly FechaPrestamo { get; set; }
+    public DateOnly FechaEntrega { get; set; }
+    public string? Estado { get; set; }
+    public string? Cliente { get; set; }
+    public string? Libro { get; set; }
+  
+  }
+
+  private void CambiarTitulo(int NumeroTitulo)
+  {
+    switch (NumeroTitulo)
     {
-        FsP = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/DataPrestamos.json");
+      case 1:
+        Titulo = "Nombre libro";
+        break;
+      case 2:
+        Titulo = "Nombre Cliente";
+        break;
+      case 3:
+        Titulo = "Nombre Autor";
+        break;
+      case 4:
+        Titulo = "Nombre fecha Prestamo";
+        break;
     }
+  }
 
-    public class WeatherForecast
-    {
-        public DateOnly FechaPresta { get; set; }
-
-        public DateOnly FechaEntrega { get; set; }
-
-        public string? Estado { get; set; }
-
-        public string? Cliente { get; set; }
-
-        public string? Libro { get; set; }
-        
-    }
 }

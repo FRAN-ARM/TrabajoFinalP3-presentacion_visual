@@ -38,5 +38,55 @@
     "Autor": "Orson Scott Card",
     "Categoria": "Ciencia ficción",
     "Editorial": "Ediciones Minotauro"
-  }  
+  },
+  {
+    "Nombre": "1984",
+    "Paginas": "328",
+    "Descripcion": "Distopía política",
+    "Edicion": "30",
+    "Publicacion": "1949-06-08",
+    "Autor": "George Orwell",
+    "Categoria": "Novela",
+    "Editorial": "Penguin Books"
+  },
+  {
+    "Nombre": "Crimen y castigo",
+    "Paginas": "672",
+    "Descripcion": "Novela psicológica",
+    "Edicion": "45",
+    "Publicacion": "1866-02",
+    "Autor": "Fiódor Dostoievski",
+    "Categoria": "Novela",
+    "Editorial": "Alianza Editorial"
+  },
+  {
+    "Nombre": "El señor de los anillos: La comunidad del anillo",
+    "Paginas": "480",
+    "Descripcion": "Fantasía épica",
+    "Edicion": "40",
+    "Publicacion": "1954-07-29",
+    "Autor": "J.R.R. Tolkien",
+    "Categoria": "Fantasía",
+    "Editorial": "Minotauro"
+  },
+  {
+    "Nombre": "El nombre de la rosa",
+    "Paginas": "504",
+    "Descripcion": "Novela histórica",
+    "Edicion": "35",
+    "Publicacion": "1980-04",
+    "Autor": "Umberto Eco",
+    "Categoria": "Novela",
+    "Editorial": "Lumen"
+  },
+  {
+    "Nombre": "Los juegos del hambre",
+    "Paginas": "374",
+    "Descripcion": "Ciencia ficción distópica",
+    "Edicion": "25",
+    "Publicacion": "2008-09-14",
+    "Autor": "Suzanne Collins",
+    "Categoria": "Ciencia ficción",
+    "Editorial": "Scholastic Press"
+  }
 ]

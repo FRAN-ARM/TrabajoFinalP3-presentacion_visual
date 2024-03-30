@@ -28,5 +28,70 @@
     "Apellido": "Diaz",
     "Correo": "luisdiaz@ejemplo.com",
     "Matricula": 85210
+  },
+  {
+    "Nombre": "Maria",
+    "Apellido": "Perez",
+    "Correo": "REDACTED",
+    "Matricula": 85211,
+    "Libro": "El señor de los anillos",
+    "FechaPrestamo": "2023-11-10",
+    "FechaEntrega": "2023-11-25",
+    "Estado": "Prestado"
+  },
+  {
+    "Nombre": "Maria",
+    "Apellido": "Perez",
+    "Correo": "REDACTED",
+    "Matricula": 85211,
+    "Libro": "Juego de Tronos",
+    "FechaPrestamo": "2023-10-20",
+    "FechaEntrega": "2023-11-05",
+    "Estado": "Devuelto"
+  },
+  {
+    "Nombre": "Juan",
+    "Apellido": "Gutierrez",
+    "Correo": "REDACTED",
+    "Matricula": 85212,
+    "Libro": "Dune",
+    "FechaPrestamo": "2023-11-01",
+    "FechaEntrega": "2023-11-15",
+    "Estado": "Prestado"
+  },
+  {
+    "Nombre": "Ana",
+    "Apellido": "Lopez",
+    "Correo": "REDACTED",
+    "Matricula": 85213,
+    "Libro": "El diario de Ana Frank",
+    "FechaPrestamo": "2023-10-25",
+    "FechaEntrega": "2023-11-10",
+    "Estado": "Devuelto"
+  },
+  {
+    "Nombre": "Pedro",
+    "Apellido": "Martinez",
+    "Correo": "REDACTED",
+    "Matricula": 85214,
+    "Libro": "2001: Odisea del espacio",
+    "FechaPrestamo": "2023-11-15",
+    "FechaEntrega": "2023-12-02",
+    "Estado": "Prestado"
+  },
+  {
+    "Nombre": "Sofia",
+    "Apellido": "Rodriguez",
+    "Correo": "REDACTED",
+    "Matricula": 85215,
+    "Libro": "Orgullo y prejuicio",
+    "FechaPrestamo": "2023-11-05",
+    "FechaEntrega": "2023-11-19",
+    "Estado": "Prestado"
+  },
+  {
+    "Nombre": "Diego",
+    "Apellido": "Garcia",
+    "Correo": "diegogarcia@ejemplo.com"
   }
 ]

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dbQt2+mT0MncTIVN9QVdVtavZnsoj2C5MmC2+4PVkroeEbIhpOUrlKB+gsXE1jWtBshc3rshYqoMLP3qWuz1TA==",
+  "dgSpecHash": "lpnhgAHRJdYlUEkWXYMNXQMs4Os2LxZlXb2JCKizKEtu+iL2+O3zJVdc08iVrZdVgJMzqWHW+ZZpfwVRW+2NKQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\TrabajoFinalP3-presentacion_visual.csproj",
+  "projectFilePath": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\TrabajoFinalP3-presentacion_visual.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Enmanuel\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.11\\microsoft.aspnetcore.authorization.7.0.11.nupkg.sha512",
     "C:\\Users\\Enmanuel\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.11\\microsoft.aspnetcore.components.7.0.11.nupkg.sha512",

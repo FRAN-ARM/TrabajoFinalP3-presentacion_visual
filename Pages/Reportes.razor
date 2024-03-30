@@ -1,0 +1,52 @@
+@page "/Reportes"
+@inject HttpClient Http
+
+<h2>Reporte de Préstamos de Biblioteca</h2>
+
+<p>Fecha: @DateTime.Now.ToShortDateString()</p>
+
+<h3>Préstamos Pendientes</h3>
+@if (FsR == null)
+{
+  <p><em>Cargando...</em></p>
+}else{
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Usuario</th>
+            <th>Libro</th>
+            <th>Fecha Préstamo</th>
+            <th>Fecha Devolución</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var forecast in FsR)
+        {
+            <tr>
+                <td>@forecast.Nombre</td>
+                <td>@forecast.Libro</td>
+                <td>@forecast.FechaPrestamo</td>
+                <td>@forecast.FechaEntrega</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<button class="btn btn-primary">Imprimir</button>
+}
+@code {
+    private WeatherForecast[]? FsR;
+
+    protected override async Task OnInitializedAsync()
+    {
+        FsR = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/DataReprotes.json");
+    }
+
+    public class WeatherForecast
+    {
+        public string? Nombre { get; set; }
+        public string? Libro { get; set; }
+        public DateOnly FechaPrestamo { get; set; }
+        public DateOnly FechaEntrega { get; set; }
+    }
+
+}
