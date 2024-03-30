@@ -185,8 +185,16 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\wwwroot\\sample-data\\DataGestionar.json",
+      "PackagePath": "staticwebassets\\sample-data\\DataGestionar.json"
+    },
+    {
       "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\wwwroot\\sample-data\\DataPrestamos.json",
       "PackagePath": "staticwebassets\\sample-data\\DataPrestamos.json"
+    },
+    {
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\wwwroot\\sample-data\\DataSinStock.json",
+      "PackagePath": "staticwebassets\\sample-data\\DataSinStock.json"
     },
     {
       "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\wwwroot\\sample-data\\DataUsuarios.json",

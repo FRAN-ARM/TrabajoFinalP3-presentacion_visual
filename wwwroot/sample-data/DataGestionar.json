@@ -1,0 +1,92 @@
+[
+    {
+        "Nombre": "Juan",
+        "Apellido": "Perez",
+        "LibroNombre": "El Señor de los Anillos",
+        "Estado": "Prestado",
+        "Matricula": 123456,
+        "FrechaPrestamo": "2024-03-25",
+        "FechaEntrega": "2024-04-08"
+    },
+    {
+        "Nombre": "María",
+        "Apellido": "Gómez",
+        "LibroNombre": "Cien años de soledad",
+        "Estado": "Devuelto",
+        "Matricula": 654321,
+        "FrechaPrestamo": "2024-03-15",
+        "FechaEntrega": "2024-03-22"
+    },
+    {
+        "Nombre": "Pedro",
+        "Apellido": "López",
+        "LibroNombre": "Harry Potter y la piedra filosofal",
+        "Estado": "Reservado",
+        "Matricula": 789012,
+        "FrechaPrestamo": "2024-04-01",
+        "FechaEntrega": "2024-04-15"
+    },
+    {
+        "Nombre": "Ana",
+        "Apellido": "Martínez",
+        "LibroNombre": "El Principito",
+        "Estado": "Prestado",
+        "Matricula": 321654,
+        "FrechaPrestamo": "2024-03-20",
+        "FechaEntrega": "2024-04-03"
+    },
+    {
+        "Nombre": "Luis",
+        "Apellido": "Fernández",
+        "LibroNombre": "1984",
+        "Estado": "Devuelto",
+        "Matricula": 456789,
+        "FrechaPrestamo": "2024-03-10",
+        "FechaEntrega": "2024-03-17"
+    },
+    {
+        "Nombre": "Rosa",
+        "Apellido": "Díaz",
+        "LibroNombre": "Los juegos del hambre",
+        "Estado": "Reservado",
+        "Matricula": 987654,
+        "FrechaPrestamo": "2024-04-05",
+        "FechaEntrega": "2024-04-19"
+    },
+    {
+        "Nombre": "David",
+        "Apellido": "García",
+        "LibroNombre": "El Hobbit",
+        "Estado": "Prestado",
+        "Matricula": 543210,
+        "FrechaPrestamo": "2024-03-28",
+        "FechaEntrega": "2024-04-11"
+    },
+    {
+        "Nombre": "Sofía",
+        "Apellido": "Pérez",
+        "LibroNombre": "Orgullo y prejuicio",
+        "Estado": "Devuelto",
+        "Matricula": 109876,
+        "FrechaPrestamo": "2024-03-05",
+        "FechaEntrega": "2024-03-12"
+    },
+    {
+        "Nombre": "Miguel",
+        "Apellido": "López",
+        "LibroNombre": "Dune",
+        "Estado": "Reservado",
+        "Matricula": 213456,
+        "FrechaPrestamo": "2024-04-02",
+        "FechaEntrega": "2024-04-16"
+    },
+    {
+        "Nombre": "Laura",
+        "Apellido": "Gómez",
+        "LibroNombre": "Fahrenheit 451",
+        "Estado": "Prestado",
+        "Matricula": 654321,
+        "FrechaPrestamo": "2024-03-22",
+        "FechaEntrega": "2024-04-05"
+    }
+]

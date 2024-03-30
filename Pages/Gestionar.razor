@@ -26,23 +26,22 @@
 }
 else
 {
-    <div class="container m-0 p-3 mt-5" style="background-color: #825550; border-radius: 0.5rem;">
+    <div class="container m-0 p-3 mt-5" style="background-color: #6586ad; border-radius: 0.5rem;">
         <h3 class="text-center text-light">
-            <strong>Fecha Prestamos</strong><!--El titulo del filtro por el cual se esta buscando-->
+            <strong>Nombre Cliente</strong><!--El titulo del filtro por el cual se esta buscando-->
         </h3>
         <div style="border-radius: 0.3rem;" class="container bg-light m-0 p-0">
             <table class="table">
                 <thead class="thead" style="background-color: transparent;">
                     <!--th scope="col">#</th-->
                     <tr>
-                        <th>Libro</th>
-                        <th>Pag.</th>
-                        <th>Descripcion</th>
-                        <th>Edicion</th>
-                        <th>Publicacion</th>
-                        <th>Autro</th>
-                        <th>Categoria</th>
-                        <th>Editorial</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>LibroNombre</th>
+                        <th>Estado</th>
+                        <th>Matricula</th>
+                        <th>FrechaPrestamo</th>
+                        <th>FechaEntrega</th>
                         <th> </th>
                         <th> </th>
                     </tr>
@@ -53,13 +52,12 @@ else
                         <tr>
                             
                             <td>@forecast.Nombre</td>
-                            <td>@forecast.Paginas</td>
-                            <td>@forecast.Descripcion</td>
-                            <td>@forecast.Edicion</td>
-                            <td>@forecast.Publicacion</td>
-                            <td>@forecast.Autor</td>
-                            <td>@forecast.Categoria</td>
-                            <td>@forecast.Editorial</td>
+                            <td>@forecast.Apellido</td>
+                            <td>@forecast.LibroNombre</td>
+                            <td>@forecast.Estado</td>
+                            <td>@forecast.Matricula</td>
+                            <td>@forecast.FrechaPrestamo</td>
+                            <td>@forecast.FechaEntrega</td>
                             <td>
                                 <!-- Botones de CRUD -->
                                 <button type="button" class="btn btn-info btn-sm">Editar</button>
@@ -80,27 +78,19 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        Fs = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/Datalibros.json");
+        Fs = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/DataGestionar.json");
     }
 
     public class WeatherForecast
     {
 
         public string? Nombre { get; set; }
-
-        public string? Paginas { get; set; }
-
-        public string? Descripcion { get; set; }
-
-        public string? Edicion { get; set; }
-
-        public DateOnly Publicacion { get; set; }
-
-        public string? Autor { get; set; }
-
-        public string? Categoria { get; set; }
-
-        public string? Editorial { get; set; }
+        public string? Apellido { get; set; }
+        public string? LibroNombre { get; set; }
+        public string? Estado { get; set; }
+        public int Matricula { get; set; }
+        public DateOnly FrechaPrestamo { get; set; }
+        public DateOnly FechaEntrega { get; set; }
     }
 
 }

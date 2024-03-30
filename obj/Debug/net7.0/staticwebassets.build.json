@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+snU8lZuWE5vvERNYkVZnITzrqOh8AkjJQFy1ncLYso=",
+  "Hash": "PuzhUdeWFChGB5YrT0nBycZ+V6FZF22cxO+V12Mxjzo=",
   "Source": "TrabajoFinalP3-presentacion_visual",
   "BasePath": "/",
   "Mode": "Root",
@@ -8510,6 +8510,25 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
+      "Identity": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\wwwroot\\sample-data\\DataGestionar.json",
+      "SourceId": "TrabajoFinalP3-presentacion_visual",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "sample-data/DataGestionar.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sample-data\\DataGestionar.json"
+    },
+    {
       "Identity": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\wwwroot\\sample-data\\Datalibros.json",
       "SourceId": "TrabajoFinalP3-presentacion_visual",
       "SourceType": "Discovered",
@@ -8546,6 +8565,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sample-data\\DataPrestamos.json"
+    },
+    {
+      "Identity": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\wwwroot\\sample-data\\DataSinStock.json",
+      "SourceId": "TrabajoFinalP3-presentacion_visual",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "sample-data/DataSinStock.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sample-data\\DataSinStock.json"
     },
     {
       "Identity": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\wwwroot\\sample-data\\DataUsuarios.json",
