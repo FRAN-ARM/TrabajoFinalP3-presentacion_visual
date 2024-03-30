@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TrabajoFinalP3-presentacion_visual")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7922dfa26910b3929a55cedd3b5128539bcdbd4e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b12ab0612ed6d39c088c89821aaa1cf8e78ea64")]
 [assembly: System.Reflection.AssemblyProductAttribute("TrabajoFinalP3-presentacion_visual")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TrabajoFinalP3-presentacion_visual")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -13,79 +13,79 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = TrabajoFinalP3-presentacion_visual
 build_property.RootNamespace = TrabajoFinalP3-presentacion_visual
-build_property.ProjectDir = C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\PruevaFrontEnd\BlazorApp3\BlazorApp3\
+build_property.ProjectDir = c:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\PruevaFrontEnd\BlazorApp3\BlazorApp3\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\PruevaFrontEnd\BlazorApp3\BlazorApp3
+build_property.MSBuildProjectDirectory = c:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\PruevaFrontEnd\BlazorApp3\BlazorApp3
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/App.razor]
+[c:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Pages/Gestionar.razor]
+[c:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Pages/Gestionar.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VzdGlvbmFyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Pages/Libros.razor]
+[c:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Pages/Libros.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlicm9zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Pages/Prestamos.razor]
+[c:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Pages/Prestamos.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc3RhbW9zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Pages/Principal.razor]
+[c:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Pages/Principal.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Pages/Reportes.razor]
+[c:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Pages/Reportes.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVwb3J0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Pages/Usuarios.razor]
+[c:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Pages/Usuarios.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb3MucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Shared/MainLogin.razor]
+[c:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Shared/MainLogin.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5Mb2dpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/MainLayout copy 2.razor]
+[c:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/MainLayout copy 2.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5PX1VTQURPU19FTElNSU5BUl9WRVJTSU9ORklOQUxcTWFpbkxheW91dCBjb3B5IDIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/MainLayoutx.razor]
+[c:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/MainLayoutx.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5PX1VTQURPU19FTElNSU5BUl9WRVJTSU9ORklOQUxcTWFpbkxheW91dHgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/SurveyPrompt.razor]
+[c:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5PX1VTQURPU19FTElNSU5BUl9WRVJTSU9ORklOQUxcU3VydmV5UHJvbXB0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/_Imports.razor]
+[c:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Shared/MainLayout.razor]
+[c:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-0dgxlc1mnb
 
-[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Shared/MainNavegacion.razor]
+[c:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Shared/MainNavegacion.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5OYXZlZ2FjaW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-ny753x4o0j
 
-[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/MainLayoutNO.razor]
+[c:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/MainLayoutNO.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5PX1VTQURPU19FTElNSU5BUl9WRVJTSU9ORklOQUxcTWFpbkxheW91dE5PLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-n7n0q1kv2z
 
-[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/NavMenu.razor]
+[c:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5PX1VTQURPU19FTElNSU5BUl9WRVJTSU9ORklOQUxcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-fmj3uve0oh
 
-[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/Principal.razor]
+[c:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/PruevaFrontEnd/BlazorApp3/BlazorApp3/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/Principal.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5PX1VTQURPU19FTElNSU5BUl9WRVJTSU9ORklOQUxcUHJpbmNpcGFsLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-p8emhfztwo
