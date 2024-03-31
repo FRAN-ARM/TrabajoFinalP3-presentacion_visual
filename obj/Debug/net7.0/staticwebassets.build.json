@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "B8bsfBSXJoYkXRQyXty7PVdS2pI0b5Cy2TW4WBAZDqI=",
+  "Hash": "hlNirzD0Q3rnLpNPi7MpbRwKju3WIIHS/FVjiQx27xU=",
   "Source": "TrabajoFinalP3-presentacion_visual",
   "BasePath": "/",
   "Mode": "Root",
@@ -8584,6 +8584,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sample-data\\DataReprotes.json"
+    },
+    {
+      "Identity": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\sample-data\\DataSinStock.json",
+      "SourceId": "TrabajoFinalP3-presentacion_visual",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "sample-data/DataSinStock.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sample-data\\DataSinStock.json"
     },
     {
       "Identity": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\sample-data\\DataUsuarios.json",

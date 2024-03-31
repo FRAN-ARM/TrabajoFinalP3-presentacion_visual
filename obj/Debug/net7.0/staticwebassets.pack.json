@@ -197,6 +197,10 @@
       "PackagePath": "staticwebassets\\sample-data\\DataReprotes.json"
     },
     {
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\sample-data\\DataSinStock.json",
+      "PackagePath": "staticwebassets\\sample-data\\DataSinStock.json"
+    },
+    {
       "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\sample-data\\DataUsuarios.json",
       "PackagePath": "staticwebassets\\sample-data\\DataUsuarios.json"
     },
