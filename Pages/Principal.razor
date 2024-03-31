@@ -1,4 +1,5 @@
 ﻿@page "/Principal"
+@inject HttpClient Http
 
 <link rel="stylesheet" href="css/style_general.css">
 
@@ -34,6 +35,13 @@
 
         }
     </div>
+
+@if (FsS == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
         <div class="container bg-transparent d-flex justify-content-center text-white text-center m-0 p-0" style="width: 100%;">
             <div class="container m-4 p-0" style="border-radius: 1rem; background-color: #6586AD; width: 30%;">
                 <div class="container-fluid h4 p-2" style="border-radius: 1rem 1rem 0 0; background-color: #355675;">
@@ -47,7 +55,7 @@
 
             <div class="container m-4 p-0" style="border-radius: 1rem; background-color:#9d6868; width: 60%;">
                 <div class="container-fluid h4 p-2" style="border-radius: 1rem 1rem 0 0; background-color:#825555;">
-                    Libros en Stock
+                    Libros sin Stock
                 </div>
                 <div class="container-fluid bg-white p-2 text-center br-5" style="border: 1px solid black;">
                     <table class="table table-striped">
@@ -55,28 +63,41 @@
                             <tr>
                                 <th>Título</th>
                                 <th>Autor</th>
-                                <th>Cantidad</th>
+                                <th>Cantidad en stock</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Libro 1</td>
-                                <td>Autor 1</td>
-                                <td>10</td>
-                            </tr>
-                            <tr>
-                                <td>Libro 2</td>
-                                <td>Autor 2</td>
-                                <td>15</td>
-                            </tr>
-                            <!-- Agrega más filas según sea necesario -->
+                        @foreach (var forecast in FsS)
+                        {
+                        <tr>
+                            
+                            <td>@forecast.Titulo</td>
+                            <td>@forecast.Autor</td>
+                            <td>@forecast.Cantidad</td>
+                        </tr>
+                    }
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
+}
 </div>
 
-@{
+@code {
+    private WeatherForecast[]? FsS;
+
+    protected override async Task OnInitializedAsync()
+    {
+        FsS = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/DataSinStock.json");
+    }
+
+    public class WeatherForecast
+    {
+
+        public string? Titulo { get; set; }
+        public string? Autor { get; set; }
+        public int Cantidad { get; set; }
+    }
 
 }
