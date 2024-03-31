@@ -3,8 +3,6 @@
 
 <link rel="stylesheet" href="css/style_general.css">
 
-<h2>Resumen</h2>
-
 <div class="alert alert-secondary mt-3 bg-transparent border-0">
     <div class="container bg-transparent d-flex justify-content-center text-white text-center m-0 p-0" style="width: 100%;">
        @{
@@ -30,9 +28,6 @@
                 </div>
                 //_i++;
             }
-            
-            
-
         }
     </div>
 
@@ -42,7 +37,7 @@
 }
 else
 {
-        <div class="container bg-transparent d-flex justify-content-center text-white text-center m-0 p-0" style="width: 100%;">
+        <div class="container bg-transparent d-flex justify-content-center text-white text-center m-0 p-0 col-4" style="width: 100%;">
             <div class="container m-4 p-0" style="border-radius: 1rem; background-color: #6586AD; width: 30%;">
                 <div class="container-fluid h4 p-2" style="border-radius: 1rem 1rem 0 0; background-color: #355675;">
                     Usuarios
@@ -53,7 +48,7 @@ else
                 </div>
             </div>
 
-            <div class="container m-4 p-0" style="border-radius: 1rem; background-color:#9d6868; width: 60%;">
+            <div class="container m-4 p-0 col-8" style="border-radius: 1rem; background-color:#9d6868; width: 60%;">
                 <div class="container-fluid h4 p-2" style="border-radius: 1rem 1rem 0 0; background-color:#825555;">
                     Libros sin Stock
                 </div>
@@ -83,7 +78,7 @@ else
         </div>
 }
 </div>
-
+<Buscar/>
 @code {
     private WeatherForecast[]? FsS;
 

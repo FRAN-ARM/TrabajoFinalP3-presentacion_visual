@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lpnhgAHRJdYlUEkWXYMNXQMs4Os2LxZlXb2JCKizKEtu+iL2+O3zJVdc08iVrZdVgJMzqWHW+ZZpfwVRW+2NKQ==",
+  "dgSpecHash": "3rz9XwnEH2pWXX8DrFX4zOyHpodVUGpOfGeeQAtXagC/Qhf2Pp+zc97ppnkgMaGLWH0PTtnHSQXteox26dE0PQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\TrabajoFinalP3-presentacion_visual.csproj",
   "expectedPackageFiles": [
@@ -34,10 +34,7 @@
     "C:\\Users\\Enmanuel\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
     "C:\\Users\\Enmanuel\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\Enmanuel\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
-    "C:\\Users\\Enmanuel\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
-    "C:\\Users\\Enmanuel\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.17\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.17.nupkg.sha512",
-    "C:\\Users\\Enmanuel\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
-    "C:\\Users\\Enmanuel\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512"
+    "C:\\Users\\Enmanuel\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.17\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.17.nupkg.sha512"
   ],
   "logs": []
 }
