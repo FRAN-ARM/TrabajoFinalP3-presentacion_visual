@@ -4,6 +4,10 @@
 
 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group me-2" role="group" aria-label="First group">
+    @if(MenuTop == 1)
+    {
+
+    }
     <button type="button" class="btn btn-primary" @onclick="@(() => CambiarTitulo(1))">Libro</button>
     <button type="button" class="btn btn-primary" @onclick="@(() => CambiarTitulo(2))">Autor</button>
     <button type="button" class="btn btn-primary" @onclick="@(() => CambiarTitulo(3))">Publicación</button>
@@ -65,6 +69,7 @@
     }
 
 @code {
+  int MenuTop, Menudwn;
   private WeatherForecast[]? Datos;
   private string TituloN = "Nombre libro"; // Título inicial
 

@@ -1,10 +1,7 @@
 ﻿@page "/Libros"
 @inject HttpClient Http
-
 <link rel="stylesheet" href="css/style_buscador_a.css">
-
-<h3>Buscar Libro</h3>
-<div class=" ml-4 mt-1 mb-3">
+<div class=" ml-4 mt-1 mb-3"style="visibility: hidden;">
   <button type="button" class="btn btn-info btn-sm" @onclick="@(() => CambiarTitulo(1))">Libro</button>
   <button type="button" class="btn btn-info btn-sm" @onclick="@(() => CambiarTitulo(2))">Autor</button>
   <button type="button" class="btn btn-info btn-sm" @onclick="@(() => CambiarTitulo(3))">Edición</button>
@@ -13,7 +10,7 @@
   <button type="button" class="btn btn-info btn-sm" @onclick="@(() => CambiarTitulo(6))">Nombre Editorial</button>
 </div>
 
-<div class="container m-0 p-0">
+<div class="container m-0 p-0" style="visibility: hidden;">
   <div class="form d-flex justify-content-start">
     <button type="button" class="btn btn-primary d-flex justify-content-center align-items-center" style="width: 4rem;border-top-right-radius: 0; border-bottom-right-radius: 0;">
       <img src="/images/icon_Search.svg" class="image-fluid" alt="">
@@ -21,7 +18,6 @@
     <input type="text" class="form-search form-input" placeholder="Buscar..." style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
   </div>
 </div>
-
 @if (FsLb == null)
 {
   <p><em>Loading...</em></p>
