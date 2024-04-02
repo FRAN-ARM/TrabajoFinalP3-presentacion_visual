@@ -1,0 +1,32 @@
+﻿[
+  {
+    "fecha": "20/03/2024",
+    "fecha_vencer": "21/03/2024",
+    "estado": "Pendiente"
+  },
+  {
+    "fecha": "22/03/2024",
+    "fecha_vencer": "21/03/2024",
+    "estado": "Vencido"
+  },
+  {
+    "fecha": "23/03/2024",
+    "fecha_vencer": "29/03/2024",
+    "estado": "Pendiente"
+  },
+  {
+    "fecha": "23/03/2024",
+    "fecha_vencer": "26/03/2024",
+    "estado": "Vencido"
+  },
+  {
+    "fecha": "28/03/2024",
+    "fecha_vencer": "29/03/2024",
+    "estado": "Pendiente"
+  },
+  {
+    "fecha": "28/03/2024",
+    "fecha_vencer": "30/03/2024",
+    "estado": "Pendiente"
+  }
+]

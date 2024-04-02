@@ -185,6 +185,10 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
+      "Id": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\wwwroot\\sample-data\\prestamos.json",
+      "PackagePath": "staticwebassets\\sample-data\\prestamos.json"
+    },
+    {
       "Id": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },

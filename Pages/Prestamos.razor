@@ -1,12 +1,82 @@
-@page "/Préstamos"
+﻿@page "/Préstamos"
+@inject HttpClient Http
 
-<div class="contenedor">
-    <h2>Prestamos</h2>
-    <img src="/images/Sidebar_HomeIcono.svg" alt="">
-    <p>@contadorPrestamos</p>
+<link rel="stylesheet" href="css/style_buscador_a.css">
 
+<h2>Prueba: Buscador</h2>
+
+<div class="container m-0 p-0" style="margin-top: 2rem;">
+    <div class="form d-flex justify-content-start">
+        <button type="button" class="btn btn-primary d-flex justify-content-center align-items-center" style="width: 4rem;border-top-right-radius: 0; border-bottom-right-radius: 0;">
+            <img src="/images/icon_Search.svg" class="image-fluid" alt="">
+        </button>
+        <input type="text" class="form-search form-input" placeholder="Buscar..." style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
+    </div>
 </div>
 
+<select class="form-select" aria-label="Default select example">
+  <option selected>Ver Todos</option>
+  <option value="1">Filtrar por pendientes</option>
+  <option value="2">Filtrar por vencidos</option>
+</select>
+
+@if (prestamos == null)
+{
+    <p><em>Cargando...</em></p>
+}
+else
+{
+    <div class="container bg-danger m-0 p-3" style="border-radius: 1rem;">
+        <h3 class="text-center text-light">
+            <strong>TITULO</strong>
+        </h3>
+        <div style="border-radius: 0.5rem;" class="container bg-light m-0 p-0">
+            <table class="table">
+                <thead class="thead" style="background-color: transparent;">
+                    <!--th scope="col">#</th-->
+                    <tr>
+                        <th>Fecha de Creacion</th>
+                        <th>Fecha a Vencer</th>
+                        <th>Estado</th>
+                        <th>Operaciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var prestamo in prestamos)
+                    {
+                        var _estado = @prestamo.Estado;
+                        <tr>
+                            <td>@prestamo.Fecha</td>
+                            <td>@prestamo.Fecha_Vencer</td>
+                            <td>@prestamo.Estado</td>
+                            <td>
+                                <button class="btn bg-secondary p-0 m-0" style="width: auto; height: 1.7rem;"><p class="text-center text-light">Info</p></button>
+                                <button class="btn bg-danger p-0 m-0" style="width: auto; height: 1.7rem;"><p class="text-center text-light">Eliminar</p></button>
+                                <button class="btn bg-success p-0 m-0" style="width: auto; height: 1.7rem;"><p class="text-center text-light">Modificar</p></button>
+                                <button class="btn bg-primary p-0 m-0" style="width: auto; height: 1.7rem;"><p class="text-center text-light">Crear</p></button>
+                            </td>
+                            <!--td><button class="btn bg-success p-0 m-0" style="width: 4rem; height: 1rem;">Modificar</button></td>
+                            <td><button class="btn bg-primary p-0 m-0" style="width: 4rem; height: 1rem;">Crear</button></td-->
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+
 @code {
-    private int contadorPrestamos = 64;
+    private cPrestamos[]? prestamos;
+
+    protected override async Task OnInitializedAsync()
+    {
+        prestamos = await Http.GetFromJsonAsync<cPrestamos[]>("sample-data/prestamos.json");
+    }
+
+    public class cPrestamos
+    {
+        public string Fecha { get; set; }
+        public string Fecha_Vencer { get; set; }
+        public string Estado { get; set; }
+    }
 }

@@ -29,6 +29,9 @@
                                     }
                                 </div>
                             </button>
+                            <div style="display: flex;align-items: center;height: 100%;">
+                                <strong>@usuarioNombre</strong>
+                            </div>
                             <button type="button p-0" class="btn btn-transparent position-relative">
                                 <img src="/images/UsuarioIcono.svg" class="image-fluid" alt="icon_user">
                             </button>
@@ -55,6 +58,10 @@
 @code {
     // TIP: crear una variable de validacion, que solo pueda tornar como true al ser la validacion valida y permitida, para luego cambiar el string de "mainArea",
     // eso lo haria un poco mas seguro, para que no sea facilmente modificado en consola la variable. 
+    
+    public static string usuarioMatricula = "";
+    public static string usuarioNombre = "Francisco Ramirez";
+
     public static string mainArea = "Login";
     public static string sidebarSelectedArea = "Principal";
     public static string topRowNombre = "Panel de Administración General";
