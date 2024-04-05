@@ -99,3 +99,8 @@ C:\Proyecto Final\SGBL\obj\Debug\net6.0\SGBL.genruntimeconfig.cache
 C:\Proyecto Final\SGBL\obj\Debug\net6.0\ref\SGBL.dll
 C:\Proyecto Final\SGBL\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Proyecto Final\SGBL\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Proyecto Final\SGBL\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Proyecto Final\SGBL\bin\Debug\net6.0\xunit.abstractions.dll
+C:\Proyecto Final\SGBL\bin\Debug\net6.0\xunit.assert.dll
+C:\Proyecto Final\SGBL\bin\Debug\net6.0\xunit.core.dll
+C:\Proyecto Final\SGBL\bin\Debug\net6.0\xunit.execution.dotnet.dll

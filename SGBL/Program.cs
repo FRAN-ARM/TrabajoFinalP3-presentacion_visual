@@ -38,6 +38,9 @@ builder.Services.TryAddSingleton<ISystemClock, SystemClock>();
 
 identityBuilder.AddEntityFrameworkStores<ProyectoContext>();
 identityBuilder.AddSignInManager<SignInManager<Usuario>>();
+builder.Services.AddCors(o => o.AddPolicy("corsApp", builder => {
+    builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+}));
 
 // Add authentication with JWT bearer tokens
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -67,6 +70,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+app.UseCors("corsApp");
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;

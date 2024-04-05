@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ipluwsw0yj0gZUfcKgBLYWmSdwVjpG7+rXcfHP3hIS1idh4stzU+arW2lQeCm2OICujm9tw5o7iOUelD1Kujlw==",
+  "dgSpecHash": "G1eQdrgwMfHw/YgO+T2hrL1M+CVY3AcusmC2lz7BsHekr88/Ahx9ZCX3MhYmAaLbJEVjuhNtcZzufZJqaVE/LQ==",
   "success": true,
-  "projectFilePath": "C:\\Proyecto Final\\Accesodatos\\Accesodatos.csproj",
+  "projectFilePath": "C:\\Proyecto final\\Accesodatos\\Accesodatos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.0\\microsoft.aspnetcore.cryptography.internal.6.0.0.nupkg.sha512",

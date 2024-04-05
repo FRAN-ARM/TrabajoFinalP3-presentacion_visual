@@ -13,3 +13,5 @@ C:\Proyecto Final\Aplicación\obj\Debug\net6.0\Aplicación.dll
 C:\Proyecto Final\Aplicación\obj\Debug\net6.0\refint\Aplicación.dll
 C:\Proyecto Final\Aplicación\obj\Debug\net6.0\Aplicación.pdb
 C:\Proyecto Final\Aplicación\obj\Debug\net6.0\ref\Aplicación.dll
+C:\Proyecto Final\Aplicación\bin\Debug\net6.0\Aplicación.runtimeconfig.json
+C:\Proyecto Final\Aplicación\obj\Debug\net6.0\Aplicación.genruntimeconfig.cache

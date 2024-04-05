@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mHzDSqm8gwKBYDJhcuRx528JUAYpH2Lk+SlkSJamsKgp+hMmA8tN5veRwNdk1WT1neVABzXpgUKdXEzItSYGOg==",
+  "dgSpecHash": "ljoWWzQFbnc6zTK3vcv2L1AHWWZSjxXDt/I7mE/KsGR4qbtRW3rPrnDlnr5Dd1+jFyrfBZuMw2mYUV/mt0rO5A==",
   "success": true,
-  "projectFilePath": "C:\\Proyecto Final\\Aplicación\\Aplicación.csproj",
+  "projectFilePath": "C:\\Proyecto final\\Aplicación\\Aplicación.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\fluentvalidation\\11.2.0\\fluentvalidation.11.2.0.nupkg.sha512",
     "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.0\\fluentvalidation.aspnetcore.11.2.0.nupkg.sha512",
@@ -18,6 +18,7 @@
     "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.0\\microsoft.entityframeworkcore.6.0.0.nupkg.sha512",
     "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.0\\microsoft.entityframeworkcore.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.0\\microsoft.entityframeworkcore.analyzers.6.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\6.0.0\\microsoft.entityframeworkcore.inmemory.6.0.0.nupkg.sha512",
     "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.0\\microsoft.entityframeworkcore.relational.6.0.0.nupkg.sha512",
     "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.0\\microsoft.entityframeworkcore.sqlserver.6.0.0.nupkg.sha512",
     "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
@@ -53,7 +54,14 @@
     "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
     "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
-    "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+    "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
+    "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\xunit\\2.4.0\\xunit.2.4.0.nupkg.sha512",
+    "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\xunit.abstractions\\2.0.2\\xunit.abstractions.2.0.2.nupkg.sha512",
+    "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\xunit.analyzers\\0.10.0\\xunit.analyzers.0.10.0.nupkg.sha512",
+    "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\xunit.assert\\2.4.0\\xunit.assert.2.4.0.nupkg.sha512",
+    "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\xunit.core\\2.4.0\\xunit.core.2.4.0.nupkg.sha512",
+    "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\xunit.extensibility.core\\2.4.0\\xunit.extensibility.core.2.4.0.nupkg.sha512",
+    "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\xunit.extensibility.execution\\2.4.0\\xunit.extensibility.execution.2.4.0.nupkg.sha512"
   ],
   "logs": []
 }

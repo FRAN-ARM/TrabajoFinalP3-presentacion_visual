@@ -13,4 +13,10 @@
     <SourceRoot Include="C:\Users\LENOVO GOLD\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)xunit.core\2.4.0\build\xunit.core.props" Condition="Exists('$(NuGetPackageRoot)xunit.core\2.4.0\build\xunit.core.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\LENOVO GOLD\.nuget\packages\xunit.analyzers\0.10.0</Pkgxunit_analyzers>
+  </PropertyGroup>
 </Project>
