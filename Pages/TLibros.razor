@@ -1,0 +1,95 @@
+@inject HttpClient Http
+@if (FsLb == null)
+{
+  <p><em>Loading...</em></p>
+}else{
+  <div class="container m-0 p-3 mt-5" style="background-color: #825550; border-radius: 0.5rem;">
+    <h3 class="text-center text-light">
+      <strong></strong></h3>
+    <div style="border-radius: 0.3rem; height: 500px; overflow-y: scroll;" class="container bg-light m-0 p-0">
+      <table class="table">
+        <thead class="thead" style="background-color: transparent;">
+          <tr>
+            <th>Libro</th>
+            <th>Pag.</th>
+            <th>Descripción</th>
+            <th>Edición</th>
+            <th>Fecha Publicación</th>
+            <th>Autor</th>
+            <th>Categoría</th>
+            <th>Editorial</th>
+            </tr>
+        </thead>
+        <tbody>
+         @foreach (var forecast in FsLb)
+          {
+            <tr>
+              <td>@forecast.Nombre</td>
+              <td>@forecast.Paginas</td>
+              <td>@forecast.Descripcion</td>
+              <td>@forecast.Edicion</td>
+              <td>@forecast.Publicacion</td>
+              <td>@forecast.Categoria</td>
+              <td>@forecast.Autor</td>
+              <td>@forecast.Editorial</td>
+              <td>
+                <button type="button" class="btn btn-info btn-sm">Editar</button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+}
+
+@code {
+  private WeatherForecast[]? FsLb;
+  Gestionar GG = new Gestionar();
+  private string TituloL = "Nombre libro";
+
+  protected override async Task OnInitializedAsync()
+  {
+    FsLb = await Http.GetFromJsonAsync<WeatherForecast[]>("https://localhost:7268/api/Libro");
+  }
+
+  public class WeatherForecast
+  {
+    public string? Nombre { get; set; }
+    public int Paginas { get; set; }
+    public string? Descripcion { get; set; }
+    public int Edicion { get; set; }
+    public DateOnly Publicacion { get; set; }
+    public string? Autor { get; set; }
+    public string? Categoria { get; set; }
+    public string? Editorial { get; set; }
+  }
+
+  private void CambiarTitulo(int NumeroTitulo)
+  {
+    switch (NumeroTitulo)
+    {
+      case 1:
+        TituloL = "Nombre del libro";
+        break;
+      case 2:
+        TituloL = "Nombre Autor";
+        break;
+      case 3:
+        TituloL = "Edición";
+        break;
+      case 4:
+        TituloL = "Fecha de Publicación";
+        break;
+      case 5:
+        TituloL = "Nombre Categoría";
+        break;
+      case 6:
+        TituloL = "Nombre Editorial";
+        break;
+    }
+  }
+}

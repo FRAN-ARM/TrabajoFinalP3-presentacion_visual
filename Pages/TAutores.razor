@@ -1,0 +1,61 @@
+@inject HttpClient Http
+@if (FsLb == null)
+{
+  <p><em>Loading...</em></p>
+}else{
+  <div class="container m-0 p-3 mt-5" style="background-color: #825550; border-radius: 0.5rem;">
+    <h3 class="text-center text-light">
+      <strong></strong></h3>
+    <div style="border-radius: 0.3rem; height: 500px; overflow-y: scroll;" class="container bg-light m-0 p-0">
+      <table class="table">
+        <thead class="thead" style="background-color: transparent;">
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Pais</th>
+            <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+         @foreach (var forecast in FsLb)
+          {
+            <tr>
+              <td>@forecast.id</td>
+              <td>@forecast.nombre</td>
+              <td>@forecast.apellido</td>
+              <td>@forecast.pais</td>
+              <td>@forecast.descripcion</td>
+              <td>
+                <button type="button" class="btn btn-info btn-sm">Editar</button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+}
+
+@code {
+  private WeatherForecast[]? FsLb;
+  Gestionar GG = new Gestionar();
+  private string TituloL = "Nombre libro";
+
+  protected override async Task OnInitializedAsync()
+  {
+    FsLb = await Http.GetFromJsonAsync<WeatherForecast[]>("https://localhost:7268/api/Autores");
+  }
+
+  public class WeatherForecast
+  {
+    public string? id { get; set; }
+    public string? nombre { get; set; }
+    public string? apellido { get; set; }
+    public string? pais { get; set; }
+    public string? descripcion { get; set; }
+  }
+}

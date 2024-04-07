@@ -1,7 +1,7 @@
 {
   "entryAssembly": "TrabajoFinalP3-presentacion_visual",
   "resources": {
-    "hash": "sha256-TORAyzgUmgwHSyWf1gT7DAIsrZxSm+USckl3R7ibOrA=",
+    "hash": "sha256-lZPlhO17PQ0j2uGr91MnZ/QuiRpWqR8cHhB9oAQkEnU=",
     "runtime": {
       "dotnet.7.0.17.ldic0a8hjm.js": "sha256-E0n6hbqoR0T+sf5KQWRykPOVHyupoVmuMAlrNdZv/58=",
       "dotnet.timezones.blat": "sha256-GzDmKQksbAkzNe1GNrGcVtpc0naGXOFCpUzq3c/pV+c=",
@@ -202,10 +202,10 @@
       "mscorlib.dll": "sha256-badKdPe6iRs84RQLXBloHSqFKpRH9OadGJi0KTXhRFQ=",
       "netstandard.dll": "sha256-iBSnBFLxBMQ/rJFfJ8Hx43m9PgD1lkZjNx6fDse3/hA=",
       "System.Private.CoreLib.dll": "sha256-6enLVpQNF0y8yVpyDFGLqpY5QEQxGkE3u+QL6M6YcIc=",
-      "TrabajoFinalP3-presentacion_visual.dll": "sha256-AEMlUaNd31wRjpop8HPLs1OYU/V3E7eX5rayeaMZqIg="
+      "TrabajoFinalP3-presentacion_visual.dll": "sha256-2D6BAlh/2Y3fP0aMgspjgcJtku7FkllBmQ/OUUn3ZbM="
     },
     "pdb": {
-      "TrabajoFinalP3-presentacion_visual.pdb": "sha256-XOO4B3K1XEV2wWJ8oMeuiV6RHFO+F6LHfU5/qDQ/4iE="
+      "TrabajoFinalP3-presentacion_visual.pdb": "sha256-zYscyLTZHFrCEKrin2/kvtk2pmjDUG7P2cpHcNDLeng="
     },
     "runtimeAssets": {
       "dotnet.wasm": {

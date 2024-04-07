@@ -1,215 +1,215 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\obj\\Debug\\net7.0\\compressed\\kcjiaox8gt.gz",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\obj\\Debug\\net7.0\\compressed\\kcjiaox8gt.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\obj\\Debug\\net7.0\\scopedcss\\bundle\\TrabajoFinalP3-presentacion_visual.styles.css",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\obj\\Debug\\net7.0\\scopedcss\\bundle\\TrabajoFinalP3-presentacion_visual.styles.css",
       "PackagePath": "staticwebassets\\TrabajoFinalP3-presentacion_visual.styles.css"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\biblioteca.png",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\biblioteca.png",
       "PackagePath": "staticwebassets\\biblioteca.png"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_principal copy.css",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_principal copy.css",
       "PackagePath": "staticwebassets\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_principal copy.css"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_principal.css",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_principal.css",
       "PackagePath": "staticwebassets\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_principal.css"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_prueba.css",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_prueba.css",
       "PackagePath": "staticwebassets\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_prueba.css"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_sidebar.css",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_sidebar.css",
       "PackagePath": "staticwebassets\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_sidebar.css"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_table.css",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_table.css",
       "PackagePath": "staticwebassets\\css\\NO_USADO_ELIMINARVERSIONFINAL\\style_table.css"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\css\\open-iconic\\README.md",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\open-iconic\\README.md",
       "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\css\\style_buscador_a.css",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\style_buscador_a.css",
       "PackagePath": "staticwebassets\\css\\style_buscador_a.css"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\css\\style_general.css",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\style_general.css",
       "PackagePath": "staticwebassets\\css\\style_general.css"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\css\\style_login.css",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\css\\style_login.css",
       "PackagePath": "staticwebassets\\css\\style_login.css"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\icon-192.png",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\images\\ClaveIcono.svg",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\ClaveIcono.svg",
       "PackagePath": "staticwebassets\\images\\ClaveIcono.svg"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\images\\LoginForm_ClaveIcono.svg",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\LoginForm_ClaveIcono.svg",
       "PackagePath": "staticwebassets\\images\\LoginForm_ClaveIcono.svg"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\images\\LoginForm_UsuarioCirculo.svg",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\LoginForm_UsuarioCirculo.svg",
       "PackagePath": "staticwebassets\\images\\LoginForm_UsuarioCirculo.svg"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\images\\LoginForm_UsuarioIcono.svg",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\LoginForm_UsuarioIcono.svg",
       "PackagePath": "staticwebassets\\images\\LoginForm_UsuarioIcono.svg"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\images\\Login_UsuarioIcono.svg",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\Login_UsuarioIcono.svg",
       "PackagePath": "staticwebassets\\images\\Login_UsuarioIcono.svg"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\images\\Sidebar_GestionarIcono.svg",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\Sidebar_GestionarIcono.svg",
       "PackagePath": "staticwebassets\\images\\Sidebar_GestionarIcono.svg"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\images\\Sidebar_HomeIcono.svg",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\Sidebar_HomeIcono.svg",
       "PackagePath": "staticwebassets\\images\\Sidebar_HomeIcono.svg"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\images\\Sidebar_LibrosIcono.svg",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\Sidebar_LibrosIcono.svg",
       "PackagePath": "staticwebassets\\images\\Sidebar_LibrosIcono.svg"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\images\\Sidebar_PrestamosIcono.svg",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\Sidebar_PrestamosIcono.svg",
       "PackagePath": "staticwebassets\\images\\Sidebar_PrestamosIcono.svg"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\images\\Sidebar_ReportesIcono.svg",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\Sidebar_ReportesIcono.svg",
       "PackagePath": "staticwebassets\\images\\Sidebar_ReportesIcono.svg"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\images\\Sidebar_UsuarioIcono.svg",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\Sidebar_UsuarioIcono.svg",
       "PackagePath": "staticwebassets\\images\\Sidebar_UsuarioIcono.svg"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\images\\SubMenu_UsuarioIcono.svg",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\SubMenu_UsuarioIcono.svg",
       "PackagePath": "staticwebassets\\images\\SubMenu_UsuarioIcono.svg"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\images\\Submenu_Cuadro_UsuarioIcono.svg",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\Submenu_Cuadro_UsuarioIcono.svg",
       "PackagePath": "staticwebassets\\images\\Submenu_Cuadro_UsuarioIcono.svg"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\images\\Userbar_SidebarIcono.svg",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\Userbar_SidebarIcono.svg",
       "PackagePath": "staticwebassets\\images\\Userbar_SidebarIcono.svg"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\images\\UsuarioIcono.svg",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\UsuarioIcono.svg",
       "PackagePath": "staticwebassets\\images\\UsuarioIcono.svg"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\images\\UsuarioIcono_B.svg",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\UsuarioIcono_B.svg",
       "PackagePath": "staticwebassets\\images\\UsuarioIcono_B.svg"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\images\\icon_Content_Book.svg",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\icon_Content_Book.svg",
       "PackagePath": "staticwebassets\\images\\icon_Content_Book.svg"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\images\\icon_Search.svg",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\icon_Search.svg",
       "PackagePath": "staticwebassets\\images\\icon_Search.svg"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\images\\icon_TopRow_Notification.svg",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\icon_TopRow_Notification.svg",
       "PackagePath": "staticwebassets\\images\\icon_TopRow_Notification.svg"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\index.html",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\sample-data\\DataGestionar.json",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\sample-data\\DataGestionar.json",
       "PackagePath": "staticwebassets\\sample-data\\DataGestionar.json"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\sample-data\\DataPrestamos.json",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\sample-data\\DataPrestamos.json",
       "PackagePath": "staticwebassets\\sample-data\\DataPrestamos.json"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\sample-data\\DataReprotes.json",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\sample-data\\DataReprotes.json",
       "PackagePath": "staticwebassets\\sample-data\\DataReprotes.json"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\sample-data\\DataSinStock.json",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\sample-data\\DataSinStock.json",
       "PackagePath": "staticwebassets\\sample-data\\DataSinStock.json"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\sample-data\\DataUsuarios.json",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\sample-data\\DataUsuarios.json",
       "PackagePath": "staticwebassets\\sample-data\\DataUsuarios.json"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\sample-data\\Datalibros.json",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\sample-data\\Datalibros.json",
       "PackagePath": "staticwebassets\\sample-data\\Datalibros.json"
     },
     {
-      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\wwwroot\\sample-data\\weather.json",
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {

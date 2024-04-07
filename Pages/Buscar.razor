@@ -1,25 +1,57 @@
 @inject HttpClient Http
 
 <link rel="stylesheet" href="css/style_general.css">
-
-<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+@* Gestionar *@
+<div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group me-2" role="group" aria-label="First group">
-    @if(MenuTop == 1)
-    {
-
-    }
-    <button type="button" class="btn btn-primary" @onclick="@(() => CambiarTitulo(1))">Libro</button>
-    <button type="button" class="btn btn-primary" @onclick="@(() => CambiarTitulo(2))">Autor</button>
-    <button type="button" class="btn btn-primary" @onclick="@(() => CambiarTitulo(3))">Publicación</button>
-    <button type="button" class="btn btn-primary" @onclick="@(() => CambiarTitulo(4))">Categoría</button>
-    <button type="button" class="btn btn-primary" @onclick="@(() => CambiarTitulo(5))">Editorial</button>
+    <button type="button" class="btn btn-primary">Libro</button>
+    <button type="button" class="btn btn-primary">Cliente</button>
+    <button type="button" class="btn btn-primary">Autor</button>
+    <button type="button" class="btn btn-primary">Préstamo</button>
+    <button type="button" class="btn btn-primary">Categoría</button>
+    <button type="button" class="btn btn-primary">Editorial</button>
   </div>
 </div>
+
+
+@* Prestamos *@
+<div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group me-2" role="group" aria-label="First group">
+    <button type="button" class="btn btn-primary">Libro</button>
+    <button type="button" class="btn btn-primary">Cliente</button>
+    <button type="button" class="btn btn-primary">Autor</button>
+    <button type="button" class="btn btn-primary">Fecha</button>
+  </div>
+</div>
+
+
+@* Usuarios *@
+<div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group me-2" role="group" aria-label="First group">
+    <button type="button" class="btn btn-primary">Nombre</button>
+    <button type="button" class="btn btn-primary">Apellido</button>
+    <button type="button" class="btn btn-primary">Correo</button>
+    <button type="button" class="btn btn-primary">Matricula</button>
+  </div>
+</div>
+
+
+@* Libros *@
+<div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group me-2" role="group" aria-label="First group">
+    <button type="button" class="btn btn-primary" @onclick="Nombre">Libro</button>
+    <button type="button" class="btn btn-primary" @onclick="Nombre">Autor</button>
+    <button type="button" class="btn btn-primary" @onclick="Nombre">Publicación</button>
+    <button type="button" class="btn btn-primary" @onclick="Nombre">Categoría</button>
+    <button type="button" class="btn btn-primary" @onclick="Nombre">Editorial</button>
+  </div>
+</div>
+
 <div class="input-group mb-3 mt-3 input-group-lg ">
   <span class="input-group-text" id="basic-addon1">
     <img src="/images/icon_Search.svg" class="image-fluid" alt="">
   </span>
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  <input type="text" class="form-control" placeholder="@Username" aria-label="Username" aria-describedby="basic-addon1">
 </div>
 
   @if (Datos == null)
@@ -67,9 +99,17 @@
       </div>
     </div>
     }
-
+  <TGestionar></TGestionar>
+  <TPrestamos></TPrestamos>
+  <TUsuarios></TUsuarios>
+  <TLibros></TLibros>
 @code {
-  int MenuTop, Menudwn;
+
+  string nombre="Libor", Username="";
+
+    void Nombre(){
+      Username = nombre;
+    }
   private WeatherForecast[]? Datos;
   private string TituloN = "Nombre libro"; // Título inicial
 
@@ -87,30 +127,5 @@
     public int Matricula { get; set; }
     public DateOnly FrechaPrestamo { get; set; }
     public DateOnly FechaEntrega { get; set; }
-  }
-
-  private void CambiarTitulo(int NumeroTitulo)
-  {
-    switch (NumeroTitulo)
-    {
-      case 1:
-        TituloN = "Nombre libro";
-        break;
-      case 2:
-        TituloN = "Nombre Cliente";
-        break;
-      case 3:
-        TituloN = "Nombre Autor";
-        break;
-      case 4:
-        TituloN = "Nombre Prestamo (ID)";
-        break;
-      case 5:
-        TituloN = "Nombre Categoria";
-        break;
-      case 6:
-        TituloN = "Nombre Editorial";
-        break;
-    }
   }
 }
