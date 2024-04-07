@@ -76,8 +76,8 @@ using (var scope = app.Services.CreateScope())
     var services = scope.ServiceProvider;
     var context = services.GetRequiredService<ProyectoContext>();
     var userManager = services.GetRequiredService<UserManager<Usuario>>();
-    var dataPrueba = new DataPrueba();
-    await dataPrueba.InsertarUsuario(context, userManager);
+    /*var dataPrueba = new DataPrueba();
+    await dataPrueba.InsertarUsuario(context, userManager);*/
 }
 
 app.Run();

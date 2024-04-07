@@ -2570,9 +2570,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proyecto final\\SGBL\\SGBL.csproj",
+      "projectUniqueName": "C:\\Proyecto Final\\SGBL\\SGBL.csproj",
       "projectName": "SGBL",
-      "projectPath": "C:\\Proyecto final\\SGBL\\SGBL.csproj",
+      "projectPath": "C:\\Proyecto Final\\SGBL\\SGBL.csproj",
       "packagesPath": "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\",
       "outputPath": "C:\\Proyecto final\\SGBL\\obj\\",
       "projectStyle": "PackageReference",
@@ -2595,11 +2595,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Proyecto final\\Accesodatos\\Accesodatos.csproj": {
-              "projectPath": "C:\\Proyecto final\\Accesodatos\\Accesodatos.csproj"
+            "C:\\Proyecto Final\\Accesodatos\\Accesodatos.csproj": {
+              "projectPath": "C:\\Proyecto Final\\Accesodatos\\Accesodatos.csproj"
             },
-            "C:\\Proyecto final\\Aplicación\\Aplicación.csproj": {
-              "projectPath": "C:\\Proyecto final\\Aplicación\\Aplicación.csproj"
+            "C:\\Proyecto Final\\Aplicación\\Aplicación.csproj": {
+              "projectPath": "C:\\Proyecto Final\\Aplicación\\Aplicación.csproj"
             }
           }
         }

@@ -16,6 +16,7 @@ namespace Aplicación.Logica.Prestamo
     {
         public class PrestamoDto
         {
+            public Guid Id { get; set; }
             public DateTime fecha_prestamo { get; set; }
             public DateTime fecha_entrega { get; set; }
             public string estado { get; set; }
@@ -39,6 +40,7 @@ namespace Aplicación.Logica.Prestamo
                 .Include(p => p.Libro)
                 .Select(p => new PrestamoDto
                 {
+                    Id = p.id,
                     fecha_prestamo = p.fecha_prestamo,
                     fecha_entrega = p.fecha_entrega,
                     estado = p.estado,

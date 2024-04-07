@@ -16,6 +16,7 @@ namespace Aplicación.Logica.Reporte
     {
         public class ReporteDto
         {
+            public Guid Id { get; set; }
             public DateTime fecha_prestamo { get; set; }
             public string cliente { get; set; }
         }
@@ -35,6 +36,7 @@ namespace Aplicación.Logica.Reporte
                 .Include(r => r.Cliente)
                 .Select(r => new ReporteDto
                 {
+                    Id = r.id,
                     fecha_prestamo = r.fecha_prestamo,
                     cliente = r.Cliente.nombre
                 }).ToListAsync();

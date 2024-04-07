@@ -16,6 +16,7 @@ namespace Aplicación.Logica.Libro
     {
         public class LibroDto
         {
+            public Guid Id { get; set; }
             public string Nombre { get; set; }
             public int Paginas { get; set; }
             public string Descripcion { get; set; }
@@ -46,6 +47,7 @@ namespace Aplicación.Logica.Libro
                 .Include(l => l.editorial)
                 .Select(l => new LibroDto
                  {
+                   Id = l.id,
                    Nombre = l.nombre,
                    Paginas = l.paginas,
                    Descripcion = l.descripcion,
