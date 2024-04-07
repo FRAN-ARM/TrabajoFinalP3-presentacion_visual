@@ -26,11 +26,11 @@ else
           @foreach (var forecast in FsP)
           {
             <tr>
-              <td>@forecast.FechaPrestamo</td>
-              <td>@forecast.FechaEntrega</td>
-              <td>@forecast.Estado</td>
-              <td>@forecast.Cliente</td>
-              <td>@forecast.Libro</td>
+              <td>@forecast.fecha_prestamo</td>
+              <td>@forecast.fecha_entrega</td>
+              <td>@forecast.estado</td>
+              <td>@forecast.cliente_id</td>
+              <td>@forecast.libro_id</td>
               <td>
                 <button type="button" class="btn btn-info btn-sm">Editar</button>
               </td>
@@ -51,16 +51,16 @@ else
   private string Titulo = "Fecha Prestamos";
   protected override async Task OnInitializedAsync()
   {
-    FsP = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/DataPrestamos.json");
+    FsP = await Http.GetFromJsonAsync<WeatherForecast[]>("https://localhost:7268/api/Prestamo");
   }
 
   public class WeatherForecast
   {
     public DateOnly fecha_prestamo { get; set; }
     public DateOnly fecha_entrega { get; set; }
-    public string? Estado { get; set; }
-    public string? Cliente { get; set; }
-    public string? Libro { get; set; }
+    public string? estado { get; set; }
+    public string? cliente_id { get; set; }
+    public string? libro_id { get; set; }
   
   }
 
