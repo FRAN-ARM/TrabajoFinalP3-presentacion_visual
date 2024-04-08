@@ -1,0 +1,12 @@
+@page "/Parent"
+
+<div style="5px solid grenn;">
+    <h3>Padre1</h3>
+
+    <Hijo1 Estilo="@EstiloObtenido"></Hijo1>
+</div>
+
+@code{
+    [Parameter]
+    public string EstiloObtenido {get; set;}
+}

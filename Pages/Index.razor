@@ -1,0 +1,26 @@
+@page "/Principal"
+<dir>
+    pasos de parametros entre contenedores: <br>
+    Hijo2 > padre2 > index > padre1 > hijo1
+</dir>
+
+<br>
+<br>
+<Padre2 EstiloMandadoFinal="obtenerEstiloFinal"></Padre2>
+
+<br>
+<br>
+
+<Padre1 EstiloObtenido="@Estilo"></Padre1>
+
+@code{
+
+
+    public string Estilo {get; set;}
+    public string EstiloCambio {get; set;}
+    
+    private void obtenerEstiloFinal(string value){
+        Estilo = EstiloCambio = value;
+    }
+
+}

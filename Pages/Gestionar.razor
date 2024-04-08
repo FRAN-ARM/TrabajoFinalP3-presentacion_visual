@@ -1,5 +1,6 @@
 @page "/Gestionar"
 @inject HttpClient Http
+
 <link rel="stylesheet" href="css/style_buscador_a.css">
 <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group me-2" role="group" aria-label="First group">
@@ -17,40 +18,77 @@
   </span>
   <input type="text" class="form-control" placeholder="@Username" aria-label="Username" aria-describedby="basic-addon1">
 </div>
-@if(Tabla == "Libro"){
-  <TLibros/>
-}else{
-  if(Tabla == "Cliente"){
-    //es la de los clientes
-    <TClientes/>
-  }else{
-
-    if(Tabla == "Autor"){
-      <TAutores/>
-    }else{
-
-    }if(Tabla == "Préstamo"){
-      <TPrestamos/>
-    }else{
+<div class="container text-center">
+  <div class="row">
+    <div class="col col-9 align-self-end">
+      @if(Visi)
+        {
+          switch (Tabla)
+          {
+            case "Libro":
+                <TLibros />
+                break;
+            case "Cliente":
+                <TClientes />
+                break;
+            case "Autor":
+                <TAutores />
+                break;
+            case "Préstamo":
+                <TPrestamos />
+                break;
+            case "Categoría":
+                <TCategorias />
+                break;
+            case "Editorial":
+                <TEditorial />
+                break;
+            default:
+                @* Renderizar un componente predeterminado si no se cumple ninguna de las condiciones anteriores *@
+                <img src="/images/Cargando.gif">
+                break;
+           }
+        }else{
+          <img src="/images/Cargando.gif">
+          
+        }
+    </div>
+    <div class=" col col-1 align-self-start">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col">
+          <a href="/Di">
+          a
+          </a>
+          <button @onclick="CambiarVisi" style="color: white; font-size: 30px; background-color: rgb(212, 170, 17); height:80px; width:80px; border-style: none; border-radius: 2px;">
+            +
+          </button>
+        </div>
+      </div>
       
-    }if(Tabla == "Categoría"){
-      <TCategorias></TCategorias>
-    }else{
-      
-    }if(Tabla == "Editorial"){
-      <TEditorial/>
-    }else{
-      @* Por defecto *@
-    }
-  }
-}
+    </div>
+  </div>
+</div>
 
 @code {
+  
+  public Boolean Visi = true;
   public string nombre="Libor", Username="", Tabla = "";
   string[] Nombres = {"Libro", "Cliente", "Autor", "Préstamo", "Categoría", "Editorial", "Fecha", "Nombre", "Apellido", "Correo", "Matricula", "Publicación" };
 
     void Nombre(int N){
       Username = Nombres[N];
       Tabla = Nombres[N];
+    }
+
+    void CambiarVisi(){
+      if(Visi == true){
+        Visi = false;
+      }else{
+        if(Visi == false){
+          Visi = true;
+        }
+      }
     }
 }

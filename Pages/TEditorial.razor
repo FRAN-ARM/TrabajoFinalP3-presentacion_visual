@@ -24,7 +24,7 @@
                 <button type="button" class="btn btn-info btn-sm">Editar</button>
               </td>
               <td>
-                <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+                <button type="button" class="btn btn-danger btn-sm" @onclick="@(() =>EliminarEditorial(forecast.id))">Eliminar</button>
               </td>
             </tr>
           }
@@ -35,16 +35,30 @@
 }
 
 @code {
-  private WeatherForecast[]? FsLb;
-  Gestionar GG = new Gestionar();
+  private modelo[]? FsLb;
   private string TituloL = "Nombre libro";
-
   protected override async Task OnInitializedAsync()
   {
-    FsLb = await Http.GetFromJsonAsync<WeatherForecast[]>("https://localhost:7268/api/Editorial");
+    FsLb = await Http.GetFromJsonAsync<modelo[]>("https://localhost:7268/api/Editorial");
   }
+  
+  public async Task EliminarEditorial(string id)
+{
+    try
+    {
+        HttpResponseMessage response = await Http.DeleteAsync($"https://localhost:7268/api/Editorial/{id}");
+        response.EnsureSuccessStatusCode();
 
-  public class WeatherForecast
+        // Eliminación exitosa, recargar la lista de editoriales
+        FsLb = await Http.GetFromJsonAsync<modelo[]>("https://localhost:7268/api/Editorial");
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine($"Error al eliminar el editorial: {e.Message}");
+    }
+}
+
+  public class modelo
   {
     public string? id { get; set; }
     public string? nombre { get; set; }

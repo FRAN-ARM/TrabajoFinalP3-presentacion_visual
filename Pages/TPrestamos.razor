@@ -29,8 +29,8 @@ else
               <td>@forecast.fecha_prestamo</td>
               <td>@forecast.fecha_entrega</td>
               <td>@forecast.estado</td>
-              <td>@forecast.cliente_id</td>
-              <td>@forecast.libro_id</td>
+              <td>@forecast.cliente</td>
+              <td>@forecast.libro</td>
               <td>
                 <button type="button" class="btn btn-info btn-sm">Editar</button>
               </td>
@@ -56,11 +56,11 @@ else
 
   public class WeatherForecast
   {
-    public DateOnly fecha_prestamo { get; set; }
-    public DateOnly fecha_entrega { get; set; }
+    public string? fecha_prestamo { get; set; }
+    public string? fecha_entrega { get; set; }
     public string? estado { get; set; }
-    public string? cliente_id { get; set; }
-    public string? libro_id { get; set; }
+    public string? cliente { get; set; }
+    public string? libro { get; set; }
   
   }
 

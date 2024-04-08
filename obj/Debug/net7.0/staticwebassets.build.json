@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JRD2tboxYSvHyq6tg4HeM6QtHgcn+bglMDBbrgx7hSU=",
+  "Hash": "oF388zpb0PY81K99Zs6yr5+nB4VVmF+Mzgd+StyBZu4=",
   "Source": "TrabajoFinalP3-presentacion_visual",
   "BasePath": "/",
   "Mode": "Root",
@@ -8128,6 +8128,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\icon-192.png"
+    },
+    {
+      "Identity": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\Cargando.gif",
+      "SourceId": "TrabajoFinalP3-presentacion_visual",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/Cargando.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Cargando.gif"
     },
     {
       "Identity": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\ClaveIcono.svg",
