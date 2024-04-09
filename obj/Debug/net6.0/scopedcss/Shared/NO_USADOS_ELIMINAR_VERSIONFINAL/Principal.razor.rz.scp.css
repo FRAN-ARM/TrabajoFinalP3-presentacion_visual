@@ -1,0 +1,63 @@
+#sidebar[b-p8emhfztwo]
+{
+    width: 124px;
+    min-width: 124px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bar);
+}
+
+.toggle-btn[b-p8emhfztwo]
+{
+    width: 100%;
+    height: 15%;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    cursor: pointer;
+    border: 0;
+    display: inline;
+    background-color: transparent;
+    text-align: center;
+}
+.toggle-btn:hover[b-p8emhfztwo]
+{
+    background-color: var(--color-bar-hover);
+    transition: var(--transition-smooth);
+}
+.toggle-btn p[b-p8emhfztwo] {
+    text-align: center;
+    color: var(--color-texto);
+    opacity: 50%;
+    transition: var(--transition-smooth);
+}
+.toggle-btn:hover p[b-p8emhfztwo] {
+    text-align: center;
+    color: var(--color-texto);
+    opacity: 100%;
+    transition: var(--transition-smooth);
+}
+.toggle-btn i[b-p8emhfztwo] {
+    font-size: 42px;
+    color: var(--color-texto);
+}
+.toggle-btn img[b-p8emhfztwo] {
+    width: 64px;
+    height: 64px;
+    opacity: 50%;
+    transition: var(--transition-smooth);
+}
+.toggle-btn:hover img[b-p8emhfztwo] {
+    width: 64px;
+    height: 64px;
+    opacity: 100%;
+    transition: var(--transition-smooth);
+}
+
+.sidebar-nav[b-p8emhfztwo] {
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
+
+.sidebar-item[b-p8emhfztwo] {
+    position: relative;
+}

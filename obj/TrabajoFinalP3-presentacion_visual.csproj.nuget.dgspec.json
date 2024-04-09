@@ -1,32 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\TrabajoFinalP3-presentacion_visual.csproj": {}
+    "C:\\Proyecto Final\\TrabajoFinalP3-presentacion_visual\\TrabajoFinalP3-presentacion_visual.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\TrabajoFinalP3-presentacion_visual.csproj": {
+    "C:\\Proyecto Final\\TrabajoFinalP3-presentacion_visual\\TrabajoFinalP3-presentacion_visual.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\TrabajoFinalP3-presentacion_visual.csproj",
+        "projectUniqueName": "C:\\Proyecto Final\\TrabajoFinalP3-presentacion_visual\\TrabajoFinalP3-presentacion_visual.csproj",
         "projectName": "TrabajoFinalP3-presentacion_visual",
-        "projectPath": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\TrabajoFinalP3-presentacion_visual.csproj",
-        "packagesPath": "C:\\Users\\Enmanuel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\obj\\",
+        "projectPath": "C:\\Proyecto Final\\TrabajoFinalP3-presentacion_visual\\TrabajoFinalP3-presentacion_visual.csproj",
+        "packagesPath": "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyecto Final\\TrabajoFinalP3-presentacion_visual\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Enmanuel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO GOLD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -34,43 +38,20 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
-              "version": "[7.0.11, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.11, )"
-            },
-            "Microsoft.NET.ILLink.Analyzers": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.100-1.23211.1, )",
-              "autoReferenced": true
-            },
-            "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.100-1.23211.1, )",
-              "autoReferenced": true
-            },
-            "Microsoft.NET.Sdk.WebAssembly.Pack": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.3, )",
-              "autoReferenced": true
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
@@ -79,15 +60,14 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[7.0.17, 7.0.17]"
+              "version": "[6.0.6, 6.0.6]"
             }
           ],
           "frameworkReferences": {
@@ -95,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
