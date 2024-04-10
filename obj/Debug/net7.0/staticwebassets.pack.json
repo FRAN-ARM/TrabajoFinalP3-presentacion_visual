@@ -105,6 +105,10 @@
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
+      "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\Cargando.gif",
+      "PackagePath": "staticwebassets\\images\\Cargando.gif"
+    },
+    {
       "Id": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BazorApp4\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\ClaveIcono.svg",
       "PackagePath": "staticwebassets\\images\\ClaveIcono.svg"
     },
