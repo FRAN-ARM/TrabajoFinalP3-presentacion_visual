@@ -1,0 +1,13 @@
+<div style="background-color: lightcoral;">
+    <p>Estilo aplicado al boton @Estilo</p>
+    <button type="button" style="@Estilo">Boton Hijo 1</button>
+</div>
+@code{
+    [Parameter]
+    public string Estilo {get; set;}
+
+    protected override Task OnInitializedAsync(){
+        Estilo = "background-color:red";
+        return base.OnInitializedAsync();
+    }
+}

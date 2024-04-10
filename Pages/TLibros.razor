@@ -10,14 +10,16 @@
       <table class="table">
         <thead class="thead" style="background-color: transparent;">
           <tr>
-            <th>Libro</th>
-            <th>Pag.</th>
-            <th>Descripción</th>
-            <th>Edición</th>
-            <th>Fecha Publicación</th>
+            <th>Nombre</th>
+            <th>Paginas</th>
+            <th>Descripcion</th>
+            <th>Edicion</th>
+            <th>Publicacion</th>
+            <th>Categoria</th>
             <th>Autor</th>
-            <th>Categoría</th>
             <th>Editorial</th>
+            <th></th>
+            <th></th>
             </tr>
         </thead>
         <tbody>
@@ -58,6 +60,7 @@
 
   public class WeatherForecast
   {
+    public string? id { get; set; }
     public string? Nombre { get; set; }
     public int Paginas { get; set; }
     public string? Descripcion { get; set; }

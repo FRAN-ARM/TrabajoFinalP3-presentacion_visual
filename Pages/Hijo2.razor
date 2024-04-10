@@ -1,0 +1,17 @@
+<div style="background-color: aquamarine;">
+    Componente hijo 2
+    <p>Elige el estilo de boton del hijo 1: <input type="text" @bind="@EstiloCambio" /></p>
+    <button @onclick="CambiarEstilo">Cambiar Estilo</button>
+</div>
+@code{
+
+    [Parameter]
+    public EventCallback<string> EstiloMandado { get; set; }
+
+    public string EstiloCambio {get; set;}
+
+    protected void CambiarEstilo(){
+        EstiloMandado.InvokeAsync(EstiloCambio);
+    }
+
+}

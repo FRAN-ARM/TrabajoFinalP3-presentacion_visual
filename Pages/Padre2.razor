@@ -1,0 +1,14 @@
+<div style="5px solid red;">
+    <h3>Padre2</h3>
+    <Hijo2 EstiloMandado="@obtenerEstilo"></Hijo2>
+</div>
+@code{
+
+    [Parameter]
+    public EventCallback<string> EstiloMandadoFinal {get; set;}
+    
+    private void obtenerEstilo(string vaule){
+        EstiloMandadoFinal.InvokeAsync(vaule);
+    }
+
+}

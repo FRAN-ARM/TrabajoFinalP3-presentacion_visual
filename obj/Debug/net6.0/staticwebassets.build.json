@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Qb2FVD8Yn2eybG1x1PgYuJ2ghgv4z664pc5DgM+/WsQ=",
+  "Hash": "2g4TtSygl9LwgOCoanLFSw1JHBVc/Nqdb/hklUv/qjs=",
   "Source": "TrabajoFinalP3-presentacion_visual",
   "BasePath": "/",
   "Mode": "Root",
@@ -7223,6 +7223,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\icon-192.png"
+    },
+    {
+      "Identity": "C:\\Proyecto final\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\Cargando.gif",
+      "SourceId": "TrabajoFinalP3-presentacion_visual",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Proyecto final\\TrabajoFinalP3-presentacion_visual\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/Cargando.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Cargando.gif"
     },
     {
       "Identity": "C:\\Proyecto final\\TrabajoFinalP3-presentacion_visual\\wwwroot\\images\\ClaveIcono.svg",
