@@ -10,6 +10,7 @@
       <table class="table">
         <thead class="thead" style="background-color: transparent;">
           <tr>
+            <th>ID</th>
             <th>Nombre</th>
             <th>Paginas</th>
             <th>Descripcion</th>
@@ -26,6 +27,7 @@
          @foreach (var forecast in FsLb)
           {
             <tr>
+              <th>@forecast.id</th>
               <td>@forecast.Nombre</td>
               <td>@forecast.Paginas</td>
               <td>@forecast.Descripcion</td>
