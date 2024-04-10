@@ -29,8 +29,8 @@ else
               <td>@forecast.fecha_prestamo</td>
               <td>@forecast.fecha_entrega</td>
               <td>@forecast.estado</td>
-              <td>@forecast.cliente_id</td>
-              <td>@forecast.libro_id</td>
+              <td>@forecast.cliente</td>
+              <td>@forecast.libro</td>
               <td>
                 <button type="button" class="btn btn-info btn-sm">Editar</button>
               </td>
@@ -49,6 +49,7 @@ else
 @code {
   private WeatherForecast[]? FsP;
   private string Titulo = "Fecha Prestamos";
+  Gestionar GG = new Gestionar();
   protected override async Task OnInitializedAsync()
   {
     FsP = await Http.GetFromJsonAsync<WeatherForecast[]>("https://localhost:7268/api/Prestamo");
@@ -56,14 +57,14 @@ else
 
   public class WeatherForecast
   {
-    public DateOnly fecha_prestamo { get; set; }
-    public DateOnly fecha_entrega { get; set; }
+    public DateTime fecha_prestamo { get; set; }
+    public DateTime fecha_entrega { get; set; }
     public string? estado { get; set; }
-    public string? cliente_id { get; set; }
-    public string? libro_id { get; set; }
+    public string? cliente { get; set; }
+    public string? libro { get; set; }
   
   }
-
+  /*
   private void CambiarTitulo(int NumeroTitulo)
   {
     switch (NumeroTitulo)
@@ -81,6 +82,7 @@ else
         Titulo = "Nombre fecha Prestamo";
         break;
     }
+    */
   }
 
 }

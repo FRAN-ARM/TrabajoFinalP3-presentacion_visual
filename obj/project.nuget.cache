@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iBZXYHMMrnWVD93jvppr8PTsUqYW04DAgNzF2f+FPx+5nZSaJn2Khn7nRK9NyW37w6qtZGnQBmpIr2ANFod3jg==",
+  "dgSpecHash": "p2XiHAzhDjhW2sDAcLEwSLhNj71Wz0T/kt/Y5nivtVhM+cfnUvu6qvGQOGK7s/KRcUv3hoivWtF2LW59MGKr1A==",
   "success": true,
-  "projectFilePath": "C:\\Proyecto Final\\TrabajoFinalP3-presentacion_visual\\TrabajoFinalP3-presentacion_visual.csproj",
+  "projectFilePath": "C:\\Proyecto final\\TrabajoFinalP3-presentacion_visual\\TrabajoFinalP3-presentacion_visual.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.0\\microsoft.aspnetcore.authorization.6.0.0.nupkg.sha512",
     "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.0\\microsoft.aspnetcore.components.6.0.0.nupkg.sha512",
