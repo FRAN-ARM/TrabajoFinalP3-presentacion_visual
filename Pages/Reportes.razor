@@ -3,7 +3,7 @@
 
 <h2>Reporte de Préstamos de Biblioteca</h2>
 
-<p>Fecha: @DateTime.Now.ToShortDateString()</p>
+<p>Fecha: @DateTime.Now.ToShortDateString()</p> 
 
 <h3>Préstamos Pendientes</h3>
 @if (FsR == null)
@@ -46,8 +46,8 @@
     {
         public string? Nombre { get; set; }
         public string? Libro { get; set; }
-        public DateOnly FechaPrestamo { get; set; }
-        public DateOnly FechaEntrega { get; set; }
+        public DateTime FechaPrestamo { get; set; }
+        public DateTime FechaEntrega { get; set; }
     }
 
 }
