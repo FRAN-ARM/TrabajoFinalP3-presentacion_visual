@@ -3,26 +3,109 @@
 <link rel="stylesheet" href="css/style_buscador_a.css">
 <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group me-2" role="group" aria-label="First group">
-    <button type="button" class="btn btn-primary" @onclick="Nombre">Libro</button>
-    <button type="button" class="btn btn-primary" @onclick="Nombre">Autor</button>
-    <button type="button" class="btn btn-primary" @onclick="Nombre">Publicación</button>
-    <button type="button" class="btn btn-primary" @onclick="Nombre">Categoría</button>
-    <button type="button" class="btn btn-primary" @onclick="Nombre">Editorial</button>
+    <button type="button" class="btn btn-primary" @onclick="@(() =>Nombre(0))">Libro</button>
+    <button type="button" class="btn btn-primary" @onclick="@(() =>Nombre(1))">Autor</button>
+    <button type="button" class="btn btn-primary" @onclick="@(() =>Nombre(2))">Publicación</button>
+    <button type="button" class="btn btn-primary" @onclick="@(() =>Nombre(3))">Categoría</button>
+    <button type="button" class="btn btn-primary" @onclick="@(() =>Nombre(4))">Editorial</button>
   </div>
 </div>
 <div class="input-group mb-3 mt-3 input-group-lg ">
   <span class="input-group-text" id="basic-addon1">
-    <img src="/images/icon_Search.svg" class="image-fluid" alt="">
+    <img @onclick="busca" src="/images/icon_Search.svg" class="image-fluid" alt="">
   </span>
-  <input type="text" class="form-control" placeholder="@Username" aria-label="Username" aria-describedby="basic-addon1">
+  <input type="text" class="form-control" placeholder="@Username" aria-label="Username" aria-describedby="basic-addon1"@bind="Busqueda" >
+</div>
+<div class="container text-center">
+  <div class="row">
+  <div class="col col-9 align-self-end">
+    @if(EstadoBusqueda == true){
+    if(_Lb == null){
+    <p><em>Loading...</em></p>
+    }else{
+      foreach(var forecast in _Lb){
+        if(forecast.Nombre == Busqueda){
+          id_Buscar = forecast.id;
+          Console.WriteLine("Se puede buscar.");
+          <TLibros EstiloObtenido="@Estilo" ID_BUSCAR="@id_Buscar"></TLibros>
+        }
+        if(forecast.Autor == Busqueda){
+          id_Buscar = forecast.Autor;
+          Console.WriteLine("Se puede buscar.");
+          <TLibros EstiloObtenido="@Estilo" ID_BUSCAR="@id_Buscar"></TLibros>
+        }
+        if(forecast.Categoria == Busqueda){
+          id_Buscar = forecast.Categoria;
+          Console.WriteLine("Se puede buscar.");
+          <TLibros EstiloObtenido="@Estilo" ID_BUSCAR="@id_Buscar"></TLibros>
+        }
+        if(forecast.Editorial == Busqueda){
+          id_Buscar = forecast.Editorial;
+          Console.WriteLine("Se puede buscar.");
+          <TLibros EstiloObtenido="@Estilo" ID_BUSCAR="@id_Buscar"></TLibros>
+        }
+      }
+    }
+  }else{
+    <TLibros EstiloObtenido="@Estilo" ID_BUSCAR="@id_Buscar"></TLibros>
+  }
+  </div>
+  <div class=" col col-1 align-self-start">
+      <div class="row">
+        <div class="col">
+          <a href="/Di">
+          a
+          </a>
+          <button style="color: white; font-size: 30px; background-color: rgb(212, 170, 17); height:80px; width:80px; border-style: none; border-radius: 2px;">
+            +
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    
+
 </div>
 
-<TLibros></TLibros>
+@code{
+  public string Username="", Busqueda = "";
+  public string Estilo {get; set;}
+  public string id_Buscar { get; set; }
+  public bool EstadoBusqueda = false;
+  private LiBro[]? _Lb;
 
-@code {
-  string nombre="Libor", Username="";
+  string[] Nombres = {"Libro", "Autor", "Publicación", "Categoria", "Editorial"};
 
-    void Nombre(){
-      Username = nombre;
+  void Nombre(int N){
+    Username = Nombres[N];
+    Estilo = Nombres[N];
+  }
+
+  protected override async Task OnInitializedAsync()
+  {
+    _Lb = await Http.GetFromJsonAsync<LiBro[]>("https://localhost:7268/api/Libro");
+  }
+
+  public void busca(){
+    if(Busqueda != "" && Busqueda != null){
+      EstadoBusqueda = true;
+    }else{
+      @* Console.WriteLine("Pon algo en el formulario."); *@
     }
+  }
+
+  public class LiBro
+  {
+    public string? id { get; set; }
+    public string? Nombre { get; set; }
+    public int Paginas { get; set; }
+    public string? Descripcion { get; set; }
+    public int Edicion { get; set; }
+    public DateTime Publicacion { get; set; }
+    public string? Autor { get; set; }
+    public string? Categoria { get; set; }
+    public string? Editorial { get; set; }
+  }
+
 }

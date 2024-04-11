@@ -1,5 +1,5 @@
 @inject HttpClient Http
-@if (FsLb == null)
+@if (Lb == null)
 {
   <p><em>Loading...</em></p>
 }else{
@@ -7,26 +7,29 @@
     <h3 class="text-center text-light">
       <strong></strong></h3>
     <div style="border-radius: 0.3rem; height: 500px; overflow-y: scroll;" class="container bg-light m-0 p-0">
-      <table class="table">
-        <thead class="thead" style="background-color: transparent;">
-          <tr>
-            <th>ID</th>
-            <th>Nombre</th>
-            <th>Paginas</th>
-            <th>Descripcion</th>
-            <th>Edicion</th>
-            <th>Publicacion</th>
-            <th>Categoria</th>
-            <th>Autor</th>
-            <th>Editorial</th>
-            <th></th>
-            <th></th>
-            </tr>
-        </thead>
-        <tbody>
-         @foreach (var forecast in FsLb)
-          {
+      @switch(EstiloObtenido){
+        case "Libro": 
+        <table class="table">
+          <thead class="thead" style="background-color: transparent;">
             <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Paginas</th>
+              <th>Descripcion</th>
+              <th>Edicion</th>
+              <th>Publicacion</th>
+              <th>Categoria</th>
+              <th>Autor</th>
+              <th>Editorial</th>
+              <th></th>
+              <th></th>
+              </tr>
+          </thead>
+        <tbody>
+         @foreach (var forecast in Lb)
+          {
+           if(forecast.id == ID_BUSCAR){
+              <tr>
               <th>@forecast.id</th>
               <td>@forecast.Nombre</td>
               <td>@forecast.Paginas</td>
@@ -40,27 +43,261 @@
                 <button type="button" class="btn btn-info btn-sm">Editar</button>
               </td>
               <td>
-                <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+                <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
+              </td>
+            </tr>
+            }else{}
+          }
+        </tbody>
+      </table>; break;
+        case "Autor": 
+        <table class="table">
+          <thead class="thead" style="background-color: transparent;">
+            <tr>
+              <th>ID</th>
+              <th>Autor</th>
+              <th>Nombre</th>
+              <th>Paginas</th>
+              <th>Descripcion</th>
+              <th>Edicion</th>
+              <th>Publicacion</th>
+              <th>Categoria</th>
+              <th>Editorial</th>
+              <th></th>
+              <th></th>
+              </tr>
+          </thead>
+        <tbody>
+         @foreach (var forecast in Lb)
+          {
+            if(forecast.Autor == ID_BUSCAR){
+              <tr>
+                <th>@forecast.id</th>
+                <td>@forecast.Autor</td>
+                <td>@forecast.Nombre</td>
+                <td>@forecast.Paginas</td>
+                <td>@forecast.Descripcion</td>
+                <td>@forecast.Edicion</td>
+                <td>@forecast.Publicacion</td>
+                <td>@forecast.Categoria</td>
+                <td>@forecast.Editorial</td>
+                <td>
+                  <button type="button" class="btn btn-info btn-sm">Editar</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
+                </td>
+              </tr>
+            }else{}
+            
+          }
+        </tbody>
+      </table>; break;
+        case "Publicación": 
+        <table class="table">
+          <thead class="thead" style="background-color: transparent;">
+            <tr>
+              <th>ID</th>
+              <th>Publicacion</th>
+              <th>Autor</th>
+              <th>Nombre</th>
+              <th>Paginas</th>
+              <th>Descripcion</th>
+              <th>Edicion</th>
+              <th>Categoria</th>
+              <th>Editorial</th>
+              <th></th>
+              <th></th>
+              </tr>
+          </thead>
+        <tbody>
+         @foreach (var forecast in Lb)
+          {
+            if(forecast.id == ID_BUSCAR){
+              <tr>
+              <th>@forecast.id</th>
+              <td>@forecast.Publicacion</td>
+              <td>@forecast.Autor</td>
+              <td>@forecast.Nombre</td>
+              <td>@forecast.Paginas</td>
+              <td>@forecast.Descripcion</td>
+              <td>@forecast.Edicion</td>
+              <td>@forecast.Categoria</td>
+              <td>@forecast.Editorial</td>
+              <td>
+                <button type="button" class="btn btn-info btn-sm">Editar</button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
+              </td>
+            </tr>
+            }else{}
+            
+          }
+        </tbody>
+      </table>; break;
+        case "Categoria": 
+        <table class="table">
+          <thead class="thead" style="background-color: transparent;">
+            <tr>
+              <th>ID</th>
+              <th>Categoria</th>
+              <th>Publicacion</th>
+              <th>Autor</th>
+              <th>Nombre</th>
+              <th>Paginas</th>
+              <th>Descripcion</th>
+              <th>Edicion</th>
+              <th>Editorial</th>
+              <th></th>
+              <th></th>
+              </tr>
+          </thead>
+        <tbody>
+         @foreach (var forecast in Lb)
+          {
+            if(forecast.Categoria == ID_BUSCAR){
+              <tr>
+              <th>@forecast.id</th>
+              <td>@forecast.Categoria</td>
+              <td>@forecast.Publicacion</td>
+              <td>@forecast.Autor</td>
+              <td>@forecast.Nombre</td>
+              <td>@forecast.Paginas</td>
+              <td>@forecast.Descripcion</td>
+              <td>@forecast.Edicion</td>
+              <td>@forecast.Editorial</td>
+              <td>
+                <button type="button" class="btn btn-info btn-sm">Editar</button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
+              </td>
+            </tr>
+            }else{}
+            
+          }
+        </tbody>
+      </table>; break;
+        case "Editorial": 
+        <table class="table">
+          <thead class="thead" style="background-color: transparent;">
+            <tr>
+              <th>ID</th>
+              <th>Editorial</th>
+              <th>Categoria</th>
+              <th>Publicacion</th>
+              <th>Autor</th>
+              <th>Nombre</th>
+              <th>Paginas</th>
+              <th>Descripcion</th>
+              <th></th>
+              <th></th>
+              </tr>
+          </thead>
+        <tbody>
+         @foreach (var forecast in Lb)
+          {
+            if(forecast.Editorial == ID_BUSCAR){
+              <tr>
+              <th>@forecast.id</th>
+              <td>@forecast.Editorial</td>
+              <td>@forecast.Categoria</td>
+              <td>@forecast.Publicacion</td>
+              <td>@forecast.Autor</td>
+              <td>@forecast.Nombre</td>
+              <td>@forecast.Paginas</td>
+              <td>@forecast.Descripcion</td>
+              <td>@forecast.Edicion</td>
+              <td>
+                <button type="button" class="btn btn-info btn-sm">Editar</button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
+              </td>
+            </tr>
+            }else{}
+            
+          }
+        </tbody>
+      </table>; break;
+        default : 
+        <table class="table">
+          <thead class="thead" style="background-color: transparent;">
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Autor</th>
+              <th>Paginas</th>
+              <th>Descripcion</th>
+              <th>Editorial</th>
+              <th>Categoria</th>
+              <th>Publicacion</th>
+              <th></th>
+              <th></th>
+              </tr>
+          </thead>
+        <tbody>
+         @foreach (var forecast in Lb)
+          {
+            <tr>
+              <th>@forecast.id</th>
+              <td>@forecast.Nombre</td>
+              <td>@forecast.Autor</td>
+              <td>@forecast.Paginas</td>
+              <td>@forecast.Descripcion</td>
+              <td>@forecast.Editorial</td>
+              <td>@forecast.Categoria</td>
+              <td>@forecast.Publicacion</td>
+              <td>@forecast.Edicion</td>
+              <td>
+                <button type="button" class="btn btn-info btn-sm">Editar</button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
               </td>
             </tr>
           }
         </tbody>
-      </table>
+      </table>; break;
+      }
+      
     </div>
   </div>
 }
 
+<h1>@EstiloObtenido</h1>
+<h2>@ID_BUSCAR</h2>
+
 @code {
-  private WeatherForecast[]? FsLb;
-  Gestionar GG = new Gestionar();
-  private string TituloL = "Nombre libro";
+  [Parameter]
+  public string EstiloObtenido {get; set;} 
+  [Parameter]
+  public string ID_BUSCAR { get; set; }
+  private LiBro[]? Lb;
+
+  public async Task EliminarEditorial(string id)
+  {
+      try
+      {
+          HttpResponseMessage response = await Http.DeleteAsync($"https://localhost:7268/api/Libro/{id}");
+          response.EnsureSuccessStatusCode();
+
+          // Eliminación exitosa, recargar la lista de editoriales
+          Lb = await Http.GetFromJsonAsync<LiBro[]>("https://localhost:7268/api/Libro");
+      }
+      catch (Exception e)
+      {
+          Console.WriteLine($"Error al eliminar el editorial: {e.Message}");
+      }
+  }
 
   protected override async Task OnInitializedAsync()
   {
-    FsLb = await Http.GetFromJsonAsync<WeatherForecast[]>("https://localhost:7268/api/Libro");
+    Lb = await Http.GetFromJsonAsync<LiBro[]>("https://localhost:7268/api/Libro");
   }
 
-  public class WeatherForecast
+  public class LiBro
   {
     public string? id { get; set; }
     public string? Nombre { get; set; }
@@ -73,28 +310,5 @@
     public string? Editorial { get; set; }
   }
 
-  private void CambiarTitulo(int NumeroTitulo)
-  {
-    switch (NumeroTitulo)
-    {
-      case 1:
-        TituloL = "Nombre del libro";
-        break;
-      case 2:
-        TituloL = "Nombre Autor";
-        break;
-      case 3:
-        TituloL = "Edición";
-        break;
-      case 4:
-        TituloL = "Fecha de Publicación";
-        break;
-      case 5:
-        TituloL = "Nombre Categoría";
-        break;
-      case 6:
-        TituloL = "Nombre Editorial";
-        break;
-    }
-  }
+
 }

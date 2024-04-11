@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\TrabajoFinalP3-presentacion_visual.props" />
+</Project>
