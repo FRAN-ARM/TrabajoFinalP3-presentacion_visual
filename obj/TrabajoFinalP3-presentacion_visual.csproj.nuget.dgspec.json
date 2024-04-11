@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\TrabajoFinalP3-presentacion_visual.csproj": {}
+    "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\TrabajoFinalP3-presentacion_visual.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\TrabajoFinalP3-presentacion_visual.csproj": {
+    "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\TrabajoFinalP3-presentacion_visual.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\TrabajoFinalP3-presentacion_visual.csproj",
+        "projectUniqueName": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\TrabajoFinalP3-presentacion_visual.csproj",
         "projectName": "TrabajoFinalP3-presentacion_visual",
-        "projectPath": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\TrabajoFinalP3-presentacion_visual.csproj",
-        "packagesPath": "C:\\Users\\Enmanuel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\PruevaFrontEnd\\BlazorApp3\\BlazorApp3\\obj\\",
+        "projectPath": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\TrabajoFinalP3-presentacion_visual.csproj",
+        "packagesPath": "C:\\Users\\Francisco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Francisco\\Desktop\\ITLA\\Cuatri 8\\TrabajoFinalP3-presentacion_visual\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Enmanuel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Francisco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,11 +38,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -53,24 +52,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.11, )"
-            },
-            "Microsoft.NET.ILLink.Analyzers": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.100-1.23211.1, )",
-              "autoReferenced": true
-            },
-            "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.100-1.23211.1, )",
-              "autoReferenced": true
-            },
-            "Microsoft.NET.Sdk.WebAssembly.Pack": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.3, )",
-              "autoReferenced": true
             }
           },
           "imports": [
@@ -87,7 +68,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[7.0.17, 7.0.17]"
+              "version": "[7.0.11, 7.0.11]"
             }
           ],
           "frameworkReferences": {
@@ -95,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

@@ -1,6 +1,8 @@
 @page "/Gestionar"
 @inject HttpClient Http
 <link rel="stylesheet" href="css/style_buscador_a.css">
+<link rel="stylesheet" href="css/style_tablas.css">
+
 <div class="ml-4 mt-1 mb-3"style="visibility: hidden;">
   <button type="button" class="btn btn-info btn-sm" @onclick="@(() => CambiarTitulo(1))">Libro</button>
   <button type="button" class="btn btn-info btn-sm" @onclick="@(() => CambiarTitulo(2))">Cliente</button>
@@ -23,10 +25,10 @@
 }
 else
 {
-  <div class="container m-0 p-3 mt-5" style="background-color: #6586ad; border-radius: 0.5rem;">
-    <h3 class="text-center text-light">
-      <strong>@Titulo</strong> </h3>
-    <div style="border-radius: 0.3rem; height: 500px; overflow-y: scroll;" class="container bg-light m-0 p-0">
+  <div class="container m-0 p-3 mt-5" style="background-color: #6586ad; border-radius: 0.5rem; max-width: 100%;">
+    <h4 class="text-center text-light">
+      <strong>@Titulo</strong> </h4>
+    <div class="container bg-light m-0 p-0" style="border-radius: 0.3rem; max-width: 100%; height: auto; overflow-y: scroll;">
       <table class="table">
         <thead class="thead" style="background-color: transparent;">
           <tr>
@@ -41,26 +43,90 @@ else
           </tr>
         </thead>
         <tbody>
-          @foreach (var forecast in Fs)
+          @for (int i = 0 + PaginacionAreaMultiplicador; (i < PaginacionAreaMultiplicador + PaginacionBotonesPorPagina); i++)
           {
-            <tr>
-              <td>@forecast.Nombre</td>
-              <td>@forecast.Apellido</td>
-              <td>@forecast.LibroNombre</td>
-              <td>@forecast.Estado</td>
-              <td>@forecast.Matricula</td>
-              <td>@forecast.FrechaPrestamo.ToString("dd/MM/yyyy")</td>  
-              <td>@forecast.FechaEntrega.ToString("dd/MM/yyyy")</td>  
-              <td>
-                <button type="button" class="btn btn-info btn-sm">Editar</button>
-              </td>
-              <td>
-                <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
-              </td>
-            </tr>
+            try
+            {
+              var forecast = Fs[i];
+              var _estado_style = "font-size: .875rem; color: var(--color-texto); border-radius: 0.2rem; background-color: ";
+              switch (forecast.Estado)
+              {
+                  case "Reservado":
+                      _estado_style += "var(--color-amarillo-o);";
+                      break;
+                  case "Devuelto":
+                      _estado_style += "var(--color-verde-o);";
+                      break;
+                  case "Prestado":
+                      _estado_style += "var(--color-rojo);";
+                      break;
+              }
+              <tr>
+                <td>@forecast.Nombre</td>
+                <td>@forecast.Apellido</td>
+                <td>@forecast.LibroNombre</td>
+                <td>
+                  <div class="text-center" style=@_estado_style>@forecast.Estado</div>
+                </td>
+                <td>@forecast.Matricula</td>
+                <td>@forecast.FrechaPrestamo.ToString("dd/MM/yyyy")</td>  
+                <td>@forecast.FechaEntrega.ToString("dd/MM/yyyy")</td>  
+                <td>
+                  <button type="button" class="btn btn-info btn-sm m-0 p-0" style="width: 24px; height: 24px;"><img src="/images/tablas/icon_Modificar.svg" alt=""></button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-danger btn-sm m-0 p-0" style="width: 24px; height: 24px;"><img src="/images/tablas/icon_Eliminar.svg" alt=""></button>
+                </td>
+              </tr>
+            }
+            catch
+            {
+              <tr>
+                <td>-</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>  
+                <td></td>  
+                <td>
+                </td>
+                <td>
+                </td>
+              </tr>
+            }
           }
         </tbody>
       </table>
+      <nav aria-label="Page navigation example" style="padding-bottom: 1rem;">
+        <ul class="pagination justify-content-center">
+          @{
+            var _class_anterior = "page-item " + (PaginacionArea == 1 ? "disabled" : "");
+            var _class_siguiente = "page-item " + (PaginacionArea == PaginacionBotones ? "disabled" : "");
+            <li class=@_class_anterior>
+              <button class="page-link" @onclick="@(() => mthPaginacionCambiar(1))">Primero</button>
+            </li>
+            <li class=@_class_anterior>
+              <button class="page-link" @onclick="@(() => mthPaginacionCambiar(PaginacionArea - 1))">Anterior</button>
+            </li>
+            @for (int i = 0; (i < 5 && i != FsLenght); i++)
+            {
+              var _pags = PaginacionArea + 1 * i;
+              //if (_pags <= PaginacionBotones)
+              {
+                var _class_cambiar = (_pags == PaginacionArea || _pags > PaginacionBotones) ? "page-item disabled" : "page-item";
+                <li class=@_class_cambiar><button class="page-link" @onclick="@(() => mthPaginacionCambiar(_pags))">@_pags</button></li>
+              }
+            }
+            <li class=@_class_siguiente>
+              <button class="page-link" @onclick="@(() => mthPaginacionCambiar(PaginacionArea + 1))">Siguiente</button>
+            </li>
+            <li class=@_class_siguiente>
+              <button class="page-link" @onclick="@(() => mthPaginacionCambiar(PaginacionBotones))">Último</button>
+            </li>
+          }
+        </ul>
+      </nav>
     </div>
   </div>
 }
@@ -68,10 +134,25 @@ else
 @code {
   private WeatherForecast[]? Fs;
   private string Titulo = "Nombre libro"; // Título inicial
+  // Paginacion - EXPERIMENTAL
+  private int PaginacionArea = 1;
+  private int PaginacionAreaMultiplicador = 0;
+  private int PaginacionBotones = 0;
+  private int PaginacionBotonesPorPagina = 8;
+  private int FsLenght = 0;
 
   protected override async Task OnInitializedAsync()
   {
-    Fs = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/DataGestionar.json");
+    try
+    {
+      Fs = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/DataGestionar.json");
+    }
+    finally
+    {
+      mthFsSetLenght();
+      mthPaginacionBotonesActualizar();
+      mthPaginacionCambiar(1);
+    }
   }
 
   public class WeatherForecast
@@ -108,5 +189,18 @@ else
         Titulo = "Nombre Editorial";
         break;
     }
+  }
+
+  private void mthPaginacionCambiar(int _num) {
+    PaginacionArea = _num;
+    PaginacionAreaMultiplicador = PaginacionBotonesPorPagina * (PaginacionArea - 1);
+  }
+  private void mthPaginacionBotonesActualizar()
+  {
+    PaginacionBotones = (int) Math.Ceiling((double) Fs.Length / PaginacionBotonesPorPagina);
+  }
+  private void mthFsSetLenght()
+  {
+    FsLenght = Fs.Length;
   }
 }

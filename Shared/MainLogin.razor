@@ -19,10 +19,10 @@
             <input type="text" placeholder="Matricula...">
         </div>
         <div class="input-container">
-            <div class="icon">
-                <img src="/images/LoginForm_ClaveIcono.svg" alt="IconoUsuarioContraseña">
-            </div>
-            <input type="password" placeholder="Contraseña...">
+            <button class="icon icon-button" @onclick="@mthMostrarClave">
+                <img src=@PasswordUrlIcon alt="IconoUsuarioContraseña">
+            </button>
+            <input type="@PasswordType" placeholder="Contraseña...">
         </div>
         @{
             // AÑADIR CONDICIONAL
@@ -40,6 +40,8 @@
 
 @code {
     private bool Error = false;
+    private string PasswordType = "password";
+    private string PasswordUrlIcon = "/images/LoginForm_ClaveIcono.svg";
 
     // Metodo de prueba. Remplazar por lo que corresponde.
     private void mthIngresar()
@@ -47,6 +49,19 @@
         ___navigation.NavigateTo("Principal", false);
         MainLayout.mainArea = "Nav";
         MainLayout.sidebarSelectedArea = "Principal";
+    }
+    private void mthMostrarClave()
+    {
+        if (PasswordType == "password")
+        {
+            PasswordType = "text";
+            PasswordUrlIcon = "/images/LoginForm_ClaveDesbloqueadoIcono.svg";
+        }
+        else
+        {
+            PasswordType = "password";
+            PasswordUrlIcon = "/images/LoginForm_ClaveIcono.svg";
+        }
     }
     
 }

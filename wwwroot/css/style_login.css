@@ -63,6 +63,20 @@ h1 {
     border-bottom-left-radius: 4px;
 }
 
+.icon-button
+{
+    transition: var(--transition-smooth);
+    border-style: none;
+}
+.icon-button:hover
+{
+    background-color: var(--color-bar-hover);
+}
+.icon-button:active
+{
+  background-color: rgb(143, 153, 177);
+}
+
 input[type=text], input[type=password] {
     border: none;
     background-color: #f2f2f2;
