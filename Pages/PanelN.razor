@@ -1,4 +1,100 @@
 <h1>Panel Agregar</h1>
 
-
 @* Aqui nesecito que crees el panel de agergar con su fiuncion *@
+@page "/PanelAgregarLibro"
+@inject HttpClient Http
+
+<h3>Agregar Libro</h3>
+
+<div>
+    <label for="nombre">Nombre:</label>
+    <input id="nombre" type="text" @bind="nombre" />
+</div>
+<div>
+    <label for="paginas">Páginas:</label>
+    <input id="paginas" type="number" @bind="paginas" />
+</div>
+<div>
+    <label for="descripcion">Descripción:</label>
+    <textarea id="descripcion" @bind="descripcion"></textarea>
+</div>
+<div>
+    <label for="edicion">Edición:</label>
+    <input id="edicion" type="number" @bind="edicion" />
+</div>
+<div>
+    <label for="publicacion">Publicación:</label>
+    <input id="publicacion" type="date" @bind="publicacion" />
+</div>
+<div>
+    <label for="categoria">Categoría:</label>
+    <input id="categoria" type="text" @bind="categoria" />
+</div>
+<div>
+    <label for="autor">Autor:</label>
+    <input id="autor" type="text" @bind="autor" />
+</div>
+<div>
+    <label for="editorial">Editorial:</label>
+    <input id="editorial" type="text" @bind="editorial" />
+</div>
+<div>
+    <button @onclick="AgregarLibro">Agregar Libro</button>
+</div>
+
+@code {
+    private string nombre;
+    private int paginas;
+    private string descripcion;
+    private int edicion;
+    private DateTime publicacion;
+    private string categoria;
+    private string autor;
+    private string editorial;
+
+    private async Task AgregarLibro()
+    {
+        try
+        {
+            var libro = new Libro
+            {
+                nombre = nombre,
+                paginas = paginas,
+                descripcion = descripcion,
+                edicion = edicion,
+                fecha_publicacion = publicacion,
+                autor_id = autor,
+                categoria_id = categoria,
+                editorial_id = editorial
+            };
+
+            var response = await Http.PostAsJsonAsync("https://localhost:7268/api/Libro", libro);
+
+            if (response.IsSuccessStatusCode)
+            {
+
+            }
+            else
+            {
+                
+            }
+        }
+        catch (Exception ex)
+        {
+            
+        }
+    }
+
+    public class Libro
+    {
+        public string nombre { get; set; }
+        public int paginas { get; set; }
+        public string descripcion { get; set; }
+        public int edicion { get; set; }
+        public DateTime fecha_publicacion { get; set; }
+        public string autor_id { get; set; }
+        public string categoria_id { get; set; }
+        public string editorial_id { get; set; 
+    }
+}
+}
