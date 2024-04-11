@@ -30,23 +30,25 @@
           {
            if(forecast.id == ID_BUSCAR){
               <tr>
-              <th>@forecast.id</th>
-              <td>@forecast.Nombre</td>
-              <td>@forecast.Paginas</td>
-              <td>@forecast.Descripcion</td>
-              <td>@forecast.Edicion</td>
-              <td>@forecast.Publicacion</td>
-              <td>@forecast.Categoria</td>
-              <td>@forecast.Autor</td>
-              <td>@forecast.Editorial</td>
-              <td>
-                <button type="button" class="btn btn-info btn-sm">Editar</button>
-              </td>
-              <td>
-                <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
-              </td>
-            </tr>
-            }else{}
+                <th>@forecast.id</th>
+                <td>@forecast.Nombre</td>
+                <td>@forecast.Paginas</td>
+                <td>@forecast.Descripcion</td>
+                <td>@forecast.Edicion</td>
+                <td>@forecast.Publicacion</td>
+                <td>@forecast.Categoria</td>
+                <td>@forecast.Autor</td>
+                <td>@forecast.Editorial</td>
+                <td>
+                  <button type="button" class="btn btn-info btn-sm">Editar</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
+                </td>
+              </tr>
+            }else{
+              
+            }
           }
         </tbody>
       </table>; break;
@@ -88,7 +90,8 @@
                   <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
                 </td>
               </tr>
-            }else{}
+            }else{
+            }
             
           }
         </tbody>
@@ -115,23 +118,25 @@
           {
             if(forecast.id == ID_BUSCAR){
               <tr>
-              <th>@forecast.id</th>
-              <td>@forecast.Publicacion</td>
-              <td>@forecast.Autor</td>
-              <td>@forecast.Nombre</td>
-              <td>@forecast.Paginas</td>
-              <td>@forecast.Descripcion</td>
-              <td>@forecast.Edicion</td>
-              <td>@forecast.Categoria</td>
-              <td>@forecast.Editorial</td>
-              <td>
-                <button type="button" class="btn btn-info btn-sm">Editar</button>
-              </td>
-              <td>
-                <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
-              </td>
-            </tr>
-            }else{}
+                <th>@forecast.id</th>
+                <td>@forecast.Publicacion</td>
+                <td>@forecast.Autor</td>
+                <td>@forecast.Nombre</td>
+                <td>@forecast.Paginas</td>
+                <td>@forecast.Descripcion</td>
+                <td>@forecast.Edicion</td>
+                <td>@forecast.Categoria</td>
+                <td>@forecast.Editorial</td>
+                <td>
+                  <button type="button" class="btn btn-info btn-sm">Editar</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
+                </td>
+              </tr>
+            }else{
+              
+            }
             
           }
         </tbody>
@@ -158,23 +163,25 @@
           {
             if(forecast.Categoria == ID_BUSCAR){
               <tr>
-              <th>@forecast.id</th>
-              <td>@forecast.Categoria</td>
-              <td>@forecast.Publicacion</td>
-              <td>@forecast.Autor</td>
-              <td>@forecast.Nombre</td>
-              <td>@forecast.Paginas</td>
-              <td>@forecast.Descripcion</td>
-              <td>@forecast.Edicion</td>
-              <td>@forecast.Editorial</td>
-              <td>
-                <button type="button" class="btn btn-info btn-sm">Editar</button>
-              </td>
-              <td>
-                <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
-              </td>
-            </tr>
-            }else{}
+                <th>@forecast.id</th>
+                <td>@forecast.Categoria</td>
+                <td>@forecast.Publicacion</td>
+                <td>@forecast.Autor</td>
+                <td>@forecast.Nombre</td>
+                <td>@forecast.Paginas</td>
+                <td>@forecast.Descripcion</td>
+                <td>@forecast.Edicion</td>
+                <td>@forecast.Editorial</td>
+                <td>
+                  <button type="button" class="btn btn-info btn-sm">Editar</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
+                </td>
+              </tr>
+            }else{
+              
+            }
             
           }
         </tbody>
@@ -200,6 +207,24 @@
           {
             if(forecast.Editorial == ID_BUSCAR){
               <tr>
+                <th style="background-color: red;">@forecast.id</th>
+                <td>@forecast.Editorial</td>
+                <td>@forecast.Categoria</td>
+                <td>@forecast.Publicacion</td>
+                <td>@forecast.Autor</td>
+                <td>@forecast.Nombre</td>
+                <td>@forecast.Paginas</td>
+                <td>@forecast.Descripcion</td>
+                <td>@forecast.Edicion</td>
+                <td>
+                  <button type="button" class="btn btn-info btn-sm">Editar</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
+                </td>
+              </tr>
+            }else{
+              <tr>
                 <th>@forecast.id</th>
                 <td>@forecast.Editorial</td>
                 <td>@forecast.Categoria</td>
@@ -216,52 +241,53 @@
                   <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
                 </td>
               </tr>
-            }else{}
+            }
             
           }
         </tbody>
       </table>; break;
-        default : 
+      default: 
         <table class="table">
           <thead class="thead" style="background-color: transparent;">
             <tr>
               <th>ID</th>
               <th>Nombre</th>
-              <th>Autor</th>
               <th>Paginas</th>
-              <th>Descripcion</th>
-              <th>Editorial</th>
-              <th>Categoria</th>
+              <th>Descripcionn</th>
+              <th>Edicion</th>
               <th>Publicacion</th>
+              <th>Categoria</th>
+              <th>Autor</th>
+              <th>Editorial</th>
               <th></th>
               <th></th>
               </tr>
           </thead>
-        <tbody>
+        <tbody >
          @foreach (var forecast in Lb)
           {
             <tr>
-              <th>@forecast.id</th>
-              <td>@forecast.Nombre</td>
-              <td>@forecast.Autor</td>
-              <td>@forecast.Paginas</td>
-              <td>@forecast.Descripcion</td>
-              <td>@forecast.Editorial</td>
-              <td>@forecast.Categoria</td>
-              <td>@forecast.Publicacion</td>
-              <td>@forecast.Edicion</td>
-              <td>
-                <button type="button" class="btn btn-info btn-sm">Editar</button>
-              </td>
-              <td>
-                <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
-              </td>
-            </tr>
-          }
+                <th>@forecast.id</th>
+                <td>@forecast.Nombre</td>
+                <td>@forecast.Paginas</td>
+                <td>@forecast.Descripcion</td>
+                <td>@forecast.Edicion</td>
+                <td>@forecast.Publicacion</td>
+                <td>@forecast.Categoria</td>
+                <td>@forecast.Autor</td>
+                <td>@forecast.Editorial</td>
+                <td>
+                  <button type="button" class="btn btn-info btn-sm">Editar</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
+                </td>
+              </tr>
+            }
         </tbody>
       </table>; break;
       }
-      
+
     </div>
   </div>
 }
