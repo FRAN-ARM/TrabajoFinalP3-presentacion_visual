@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using Aplicación.Logica.Libro;
 using static Aplicación.Logica.Libro.Consulta;
+using static Aplicación.Logica.Libro.ConsultaId;
 
 namespace SGBL.Controllers
 {
@@ -22,6 +23,13 @@ namespace SGBL.Controllers
         {
             return await Mediator.Send(new Consulta.ListaLibros());
         }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<LibroDtoId>> ObtenerLibroPorId(Guid id)
+        {
+            return await Mediator.Send(new ConsultaId.LibroPorId { Id = id });
+        }
+
 
         [HttpDelete("{id}")]
         public async Task<ActionResult<Unit>> Eliminar(Guid id)
