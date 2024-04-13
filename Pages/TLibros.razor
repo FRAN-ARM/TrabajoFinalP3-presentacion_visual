@@ -344,6 +344,12 @@
         
     }
 
+  protected override async Task OnInitializedAsync()
+  {
+    Lb = await Http.GetFromJsonAsync<LiBro[]>("https://localhost:7268/api/Libro");
+  }
+
+
 
   public class LiBro
   {
