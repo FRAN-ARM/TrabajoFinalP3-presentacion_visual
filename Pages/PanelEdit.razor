@@ -1,5 +1,9 @@
 @page "/PanelEditarLibro"
 @inject HttpClient Http
+@using Blazored.SessionStorage;
+@inject ISessionStorageService sessionStorage
+
+
 
 <h3>Editar Libro</h3>
 
@@ -46,9 +50,15 @@
 </div>
 
 
-@code {
 
-    private string Id = "95353f7c-67dc-4f0f-90ae-1f4102087ea7";
+@code {
+    
+    
+ 
+    public string Id { get; set; }
+    
+   
+    //private string Id = "95353f7c-67dc-4f0f-90ae-1f4102087ea7";
     private string nombre;
     private int paginas;
     private string descripcion;
@@ -57,6 +67,38 @@
     private string categoria;
     private string autor;
     private string editorial;
+
+   
+
+    
+    
+    protected override async Task OnInitializedAsync()
+    {
+
+        Id = await sessionStorage.GetItemAsync<string>("LibroId");
+       Console.WriteLine($"Id obtenido: {Id}");
+        try
+        {
+            // Obtener los detalles del libro con el ID proporcionado
+            var libro = await Http.GetFromJsonAsync<Libro>("https://localhost:7268/api/Libro/" + Id);
+            Console.WriteLine($"Id: {Id}");
+
+            // Asignar los valores a las variables
+            nombre = libro.nombre;
+            paginas = libro.paginas;
+            descripcion = libro.descripcion;
+            edicion = libro.edicion;
+            publicacion = libro.fecha_publicacion;
+            categoria = libro.categoria_id;
+            autor = libro.autor_id;
+            editorial = libro.editorial_id;
+        }
+        catch (Exception ex)
+        {
+            // Manejar el error
+        }
+    }
+
 
 
     private async Task ActualizarLibro()
@@ -101,7 +143,6 @@
         public DateTime fecha_publicacion { get; set; }
         public string autor_id { get; set; }
         public string categoria_id { get; set; }
-        public string editorial_id { get; set; 
-    }
+        public string editorial_id { get; set;}
     }
 }

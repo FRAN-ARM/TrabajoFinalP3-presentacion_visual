@@ -1,3 +1,4 @@
+using Blazored.SessionStorage;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using TrabajoFinalP3_presentacion_visual;
@@ -13,6 +14,7 @@ builder.Services.AddScoped<Editorial>();
 builder.Services.AddScoped<Libros>();
 builder.Services.AddScoped<Usuario>();
 builder.Services.AddScoped<Reportes>();
+builder.Services.AddBlazoredSessionStorage();
 
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 

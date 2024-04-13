@@ -1,4 +1,6 @@
 @inject HttpClient Http
+
+
 @if (Lb == null)
 {
   <p><em>Loading...</em></p>
@@ -40,7 +42,9 @@
                 <td>@forecast.Autor</td>
                 <td>@forecast.Editorial</td>
                 <td>
-                  <button type="button" class="btn btn-info btn-sm">Editar</button>
+                  
+
+
                 </td>
                 <td>
                   <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
@@ -277,7 +281,10 @@
                 <td>@forecast.Autor</td>
                 <td>@forecast.Editorial</td>
                 <td>
-                  <button type="button" class="btn btn-info btn-sm">Editar</button>
+                    <!--Aqui es donde se debe cambiar el boton-->
+                  <button type="button" class="btn btn-info btn-sm" @onclick="() => EditarLibro(forecast.id)">Editar</button>
+                          
+
                 </td>
                 <td>
                   <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
@@ -295,33 +302,48 @@
 <h1>@EstiloObtenido</h1>
 <h2>@ID_BUSCAR</h2>
 
+    @using Blazored.SessionStorage;
+    @inject NavigationManager NavigationManager
+    @inject ISessionStorageService sessionStorage
+
 @code {
-  [Parameter]
-  public string EstiloObtenido {get; set;} 
-  [Parameter]
-  public string ID_BUSCAR { get; set; }
-  private LiBro[]? Lb;
+    [Parameter]
+    public string EstiloObtenido {get; set;} 
+    [Parameter]
+    public string ID_BUSCAR { get; set; }
 
-  public async Task EliminarEditorial(string id)
-  {
-      try
-      {
-          HttpResponseMessage response = await Http.DeleteAsync($"https://localhost:7268/api/Libro/{id}");
-          response.EnsureSuccessStatusCode();
 
-          // Eliminación exitosa, recargar la lista de editoriales
-          Lb = await Http.GetFromJsonAsync<LiBro[]>("https://localhost:7268/api/Libro");
-      }
-      catch (Exception e)
-      {
-          Console.WriteLine($"Error al eliminar el editorial: {e.Message}");
-      }
-  }
+    private LiBro[]? Lb;
 
-  protected override async Task OnInitializedAsync()
-  {
-    Lb = await Http.GetFromJsonAsync<LiBro[]>("https://localhost:7268/api/Libro");
-  }
+    public async Task EliminarEditorial(string id)
+    {
+        try
+        {
+            HttpResponseMessage response = await Http.DeleteAsync($"https://localhost:7268/api/Libro/{id}");
+            response.EnsureSuccessStatusCode();
+
+            // Eliminación exitosa, recargar la lista de editoriales
+            Lb = await Http.GetFromJsonAsync<LiBro[]>("https://localhost:7268/api/Libro");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine($"Error al eliminar el editorial: {e.Message}");
+        }
+    }
+
+   
+
+ 
+    private async Task EditarLibro(string libroId)
+    {
+       
+        await sessionStorage.SetItemAsync("LibroId", libroId);
+      
+        
+        NavigationManager.NavigateTo($"/PanelEditarLibro");
+        
+    }
+
 
   public class LiBro
   {
