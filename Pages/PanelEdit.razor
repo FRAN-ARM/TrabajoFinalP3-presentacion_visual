@@ -35,15 +35,33 @@
     </div>
     <div class="form-group">
       <label for="categoria">Categoria:</label>
-      <input type="text" class="form-control" id="categoria" @bind="categoria">
+       <select class="form-control" @bind="categoria">
+        <option value="">Seleccione una categoría</option>
+        @foreach (var categoria in categorias)
+        {
+            <option value="@categoria.id">@categoria.nombre</option>
+        }
+       </select>
     </div>
     <div class="form-group">
       <label for="autor">Autor:</label>
-      <input type="text" class="form-control" id="autor" @bind="autor">
+       <select class="form-control" @bind="autor">
+        <option value="">Seleccione un autor</option>
+        @foreach (var autor in autores)
+        {
+            <option value="@autor.id">@($"{autor.nombre} {autor.apellido}")</option>
+        }
+       </select>
     </div>
     <div class="form-group">
       <label for="editorial">Editorial:</label>
-      <input type="text" class="form-control" id="editorial" @bind="editorial">
+       <select class="form-control" @bind="editorial">
+        <option value="">Seleccione una editorial</option>
+        @foreach (var editora in editoriales)
+        {
+            <option value="@editora.id">@editora.nombre</option>
+        }
+       </select>
     </div>
     <button type="button" class="btn btn-primary" @onclick="ActualizarLibro">Actualizar Libro</button>
   </form>
@@ -53,7 +71,7 @@
 
 @code {
     
-    
+    //Datos del libro
  
     public string Id { get; set; }
     
@@ -68,18 +86,25 @@
     private string autor;
     private string editorial;
 
-   
+     //Listas de elementos
+    private List<Categoria> categorias = new List<Categoria>();
+    private List<Editorial> editoriales = new List<Editorial>();
+    private List<Autores> autores = new List<Autores>();
 
-    
+   
     
     protected override async Task OnInitializedAsync()
     {
-
+        //Obtencion de datos
         Id = await sessionStorage.GetItemAsync<string>("LibroId");
-       Console.WriteLine($"Id obtenido: {Id}");
+        categorias = await Http.GetFromJsonAsync<List<Categoria>>("https://localhost:7268/api/Categoria");
+        editoriales = await Http.GetFromJsonAsync<List<Editorial>>("https://localhost:7268/api/Editorial");
+        autores = await Http.GetFromJsonAsync<List<Autores>>("https://localhost:7268/api/Autores");
+
+       
         try
         {
-            // Obtener los detalles del libro con el ID proporcionado
+            // Obtener los detalles del libro con el ID 
             var libro = await Http.GetFromJsonAsync<Libro>("https://localhost:7268/api/Libro/" + Id);
             Console.WriteLine($"Id: {Id}");
 
@@ -95,7 +120,7 @@
         }
         catch (Exception ex)
         {
-            // Manejar el error
+           
         }
     }
 
@@ -134,6 +159,8 @@
         }
     }
 
+    //Clases
+
     public class Libro
     {
         public string nombre { get; set; }
@@ -145,4 +172,25 @@
         public string categoria_id { get; set; }
         public string editorial_id { get; set;}
     }
+
+    public class Categoria
+    {
+        public string id { get; set; }
+        public string nombre { get; set; }
+    }
+
+    public class Editorial
+    {
+        public string id { get; set; }
+        public string nombre { get; set; }
+    }
+
+    public class Autores
+    {
+        public string id { get; set; }
+        public string nombre { get; set; }
+        public string apellido { get; set; }
+    }
+
+
 }

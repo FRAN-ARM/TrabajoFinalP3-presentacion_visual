@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+SbgcLhsQGmziJy9yc8Dp8c6ongxlWchg48kkxHHj+/RUrygFXv2U8PE2WEHCfW1ubCccY/vjgpUcwLWzRbc4w==",
+  "dgSpecHash": "XOSIOtoRHwGtNWynmyl/VQG4saz+iHwJ3OQHt60R1UKaqDLICkVJMGwNmWHL82xvCJyqMWN98W3eKVud2yHRJg==",
   "success": true,
-  "projectFilePath": "C:\\Proyecto final\\TrabajoFinalP3-presentacion_visual\\TrabajoFinalP3-presentacion_visual.csproj",
+  "projectFilePath": "C:\\Proyecto Final\\TrabajoFinalP3-presentacion_visual\\TrabajoFinalP3-presentacion_visual.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\blazored.sessionstorage\\2.4.0\\blazored.sessionstorage.2.4.0.nupkg.sha512",
     "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.12\\microsoft.aspnetcore.authorization.6.0.12.nupkg.sha512",
