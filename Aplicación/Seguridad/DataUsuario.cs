@@ -13,6 +13,6 @@ namespace Aplicación.Seguridad
         public string Token { get; set; }
         public string Email { get; set; }
         public string Username { get; set; }
-        public string Imagen { get; set; }
+        public string foto_perfil { get; set; }
     }
 }

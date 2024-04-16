@@ -11,5 +11,6 @@ namespace Accesodatos.Tablas
     {
         public string nombre { get; set; }
         public string apellido { get; set; }
+        public string? foto_perfil { get; set; }
     }
 }

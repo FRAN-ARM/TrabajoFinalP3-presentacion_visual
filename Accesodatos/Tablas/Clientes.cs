@@ -14,6 +14,7 @@ namespace Accesodatos.Tablas
         public string correo { get; set; }
         public int matricula { get; set; }
         public string? foto_perfil { get; set; }
+        public DateTime? fecha_nacimiento { get; set; }
 
     }
 }

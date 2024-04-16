@@ -7973,11 +7973,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proyecto Final\\TestProject\\TestProject.csproj",
+      "projectUniqueName": "C:\\Proyecto final\\TestProject\\TestProject.csproj",
       "projectName": "TestProject",
-      "projectPath": "C:\\Proyecto Final\\TestProject\\TestProject.csproj",
+      "projectPath": "C:\\Proyecto final\\TestProject\\TestProject.csproj",
       "packagesPath": "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\",
-      "outputPath": "C:\\Proyecto final\\TestProject\\obj\\",
+      "outputPath": "C:\\Proyecto Final\\TestProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7998,11 +7998,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Proyecto Final\\Accesodatos\\Accesodatos.csproj": {
-              "projectPath": "C:\\Proyecto Final\\Accesodatos\\Accesodatos.csproj"
+            "C:\\Proyecto final\\Accesodatos\\Accesodatos.csproj": {
+              "projectPath": "C:\\Proyecto final\\Accesodatos\\Accesodatos.csproj"
             },
-            "C:\\Proyecto Final\\Aplicación\\Aplicación.csproj": {
-              "projectPath": "C:\\Proyecto Final\\Aplicación\\Aplicación.csproj"
+            "C:\\Proyecto final\\Aplicación\\Aplicación.csproj": {
+              "projectPath": "C:\\Proyecto final\\Aplicación\\Aplicación.csproj"
             }
           }
         }

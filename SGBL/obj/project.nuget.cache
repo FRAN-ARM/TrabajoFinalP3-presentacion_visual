@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "N/nqRZrAJl3fU5Zo30FXb58AAxHYytVNmF+xzNV2o4eOwBrLduQI8ph//ouaIuacez7RSfGETJK51E2TxePdEA==",
+  "dgSpecHash": "F6GxnmSYQgJQu6F8F1L35dFshAJ7Svp7NN/ZZQfrLYOgraDPQ8zpWq6mmzqGhECFBcBaHbEHIDIb+9NHkGjhQA==",
   "success": true,
-  "projectFilePath": "C:\\Proyecto Final\\SGBL\\SGBL.csproj",
+  "projectFilePath": "C:\\Proyecto final\\SGBL\\SGBL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\fluentvalidation\\11.2.0\\fluentvalidation.11.2.0.nupkg.sha512",
     "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.0\\fluentvalidation.aspnetcore.11.2.0.nupkg.sha512",

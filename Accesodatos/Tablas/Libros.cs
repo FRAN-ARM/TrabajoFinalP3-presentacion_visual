@@ -17,6 +17,8 @@ namespace Accesodatos.Tablas
         public string descripcion { get; set; }
         public int edicion { get; set; }
         public DateTime fecha_publicacion { get; set; }
+        public int stock { get; set; }
+        public string? imagen { get; set; }
 
         [ForeignKey("autor_id")]
         public Autores Autor { get; set; }

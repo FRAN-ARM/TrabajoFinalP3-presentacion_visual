@@ -22,7 +22,195 @@ namespace Accesodatos.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Accesodatos.Tablas.Administrador", b =>
+            modelBuilder.Entity("Accesodatos.Tablas.Autores", b =>
+                {
+                    b.Property<Guid>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("apellido")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("descripcion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("pais")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Autores");
+                });
+
+            modelBuilder.Entity("Accesodatos.Tablas.Categorias", b =>
+                {
+                    b.Property<Guid>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Categorias");
+                });
+
+            modelBuilder.Entity("Accesodatos.Tablas.Clientes", b =>
+                {
+                    b.Property<Guid>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("apellido")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("correo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("fecha_nacimiento")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("foto_perfil")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("matricula")
+                        .HasColumnType("int");
+
+                    b.Property<string>("nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Clientes");
+                });
+
+            modelBuilder.Entity("Accesodatos.Tablas.Editorial", b =>
+                {
+                    b.Property<Guid>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Editorial");
+                });
+
+            modelBuilder.Entity("Accesodatos.Tablas.Libros", b =>
+                {
+                    b.Property<Guid>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("autor_id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("categoria_id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("descripcion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("edicion")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("editorial_id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("fecha_publicacion")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("imagen")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("paginas")
+                        .HasColumnType("int");
+
+                    b.Property<int>("stock")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("autor_id");
+
+                    b.HasIndex("categoria_id");
+
+                    b.HasIndex("editorial_id");
+
+                    b.ToTable("Libros");
+                });
+
+            modelBuilder.Entity("Accesodatos.Tablas.Prestamos", b =>
+                {
+                    b.Property<Guid>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("cliente_id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("estado")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("fecha_entrega")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("fecha_prestamo")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("libro_id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("cliente_id");
+
+                    b.HasIndex("libro_id");
+
+                    b.ToTable("Prestamos");
+                });
+
+            modelBuilder.Entity("Accesodatos.Tablas.Reportes", b =>
+                {
+                    b.Property<Guid>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("cliente_id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("fecha_prestamo")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("cliente_id");
+
+                    b.ToTable("Reportes");
+                });
+
+            modelBuilder.Entity("Accesodatos.Tablas.Usuario", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -78,6 +266,9 @@ namespace Accesodatos.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("foto_perfil")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("nombre")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -93,185 +284,6 @@ namespace Accesodatos.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
-                });
-
-            modelBuilder.Entity("Accesodatos.Tablas.Autores", b =>
-                {
-                    b.Property<Guid>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("apellido")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("descripcion")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("nombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("pais")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("id");
-
-                    b.ToTable("Autores", (string)null);
-                });
-
-            modelBuilder.Entity("Accesodatos.Tablas.Categorias", b =>
-                {
-                    b.Property<Guid>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("nombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("id");
-
-                    b.ToTable("Categorias", (string)null);
-                });
-
-            modelBuilder.Entity("Accesodatos.Tablas.Clientes", b =>
-                {
-                    b.Property<Guid>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("apellido")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("correo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("foto_perfil")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("matricula")
-                        .HasColumnType("int");
-
-                    b.Property<string>("nombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("id");
-
-                    b.ToTable("Clientes", (string)null);
-                });
-
-            modelBuilder.Entity("Accesodatos.Tablas.Editorial", b =>
-                {
-                    b.Property<Guid>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("nombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("id");
-
-                    b.ToTable("Editorial", (string)null);
-                });
-
-            modelBuilder.Entity("Accesodatos.Tablas.Libros", b =>
-                {
-                    b.Property<Guid>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("autor_id")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("categoria_id")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("descripcion")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("edicion")
-                        .HasColumnType("int");
-
-                    b.Property<Guid>("editorial_id")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("fecha_publicacion")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("nombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("paginas")
-                        .HasColumnType("int");
-
-                    b.HasKey("id");
-
-                    b.HasIndex("autor_id");
-
-                    b.HasIndex("categoria_id");
-
-                    b.HasIndex("editorial_id");
-
-                    b.ToTable("Libros", (string)null);
-                });
-
-            modelBuilder.Entity("Accesodatos.Tablas.Prestamos", b =>
-                {
-                    b.Property<Guid>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("cliente_id")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("estado")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("fecha_entrega")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("fecha_prestamo")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid>("libro_id")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("id");
-
-                    b.HasIndex("cliente_id");
-
-                    b.HasIndex("libro_id");
-
-                    b.ToTable("Prestamos", (string)null);
-                });
-
-            modelBuilder.Entity("Accesodatos.Tablas.Reportes", b =>
-                {
-                    b.Property<Guid>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("cliente_id")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("fecha_prestamo")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("id");
-
-                    b.HasIndex("cliente_id");
-
-                    b.ToTable("Reportes", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -475,7 +487,7 @@ namespace Accesodatos.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("Accesodatos.Tablas.Administrador", null)
+                    b.HasOne("Accesodatos.Tablas.Usuario", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -484,7 +496,7 @@ namespace Accesodatos.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("Accesodatos.Tablas.Administrador", null)
+                    b.HasOne("Accesodatos.Tablas.Usuario", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -499,7 +511,7 @@ namespace Accesodatos.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Accesodatos.Tablas.Administrador", null)
+                    b.HasOne("Accesodatos.Tablas.Usuario", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -508,7 +520,7 @@ namespace Accesodatos.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("Accesodatos.Tablas.Administrador", null)
+                    b.HasOne("Accesodatos.Tablas.Usuario", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
