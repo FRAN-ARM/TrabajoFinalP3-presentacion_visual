@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Proyecto final\\Accesodatos\\Accesodatos.csproj": {}
+    "C:\\Proyecto Final\\Accesodatos\\Accesodatos.csproj": {}
   },
   "projects": {
-    "C:\\Proyecto final\\Accesodatos\\Accesodatos.csproj": {
+    "C:\\Proyecto Final\\Accesodatos\\Accesodatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyecto final\\Accesodatos\\Accesodatos.csproj",
+        "projectUniqueName": "C:\\Proyecto Final\\Accesodatos\\Accesodatos.csproj",
         "projectName": "Accesodatos",
-        "projectPath": "C:\\Proyecto final\\Accesodatos\\Accesodatos.csproj",
+        "projectPath": "C:\\Proyecto Final\\Accesodatos\\Accesodatos.csproj",
         "packagesPath": "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\",
         "outputPath": "C:\\Proyecto Final\\Accesodatos\\obj\\",
         "projectStyle": "PackageReference",
