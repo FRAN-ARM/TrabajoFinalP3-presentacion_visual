@@ -5,6 +5,7 @@ using MediatR;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using Aplicación.Logica.Autor;
+using static Aplicación.Logica.Autor.ConsultaId;
 
 namespace SGBL.Controllers
 {
@@ -21,6 +22,14 @@ namespace SGBL.Controllers
         {
             return await Mediator.Send(new Consulta.ListaAutores());
         }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<AutorDtoId>> ObtenerAutorId(Guid id)
+        {
+            return await Mediator.Send(new ConsultaId.AutorporId { Id = id });
+        }
+
+
 
         [HttpDelete("{id}")]
         public async Task<ActionResult<Unit>> Eliminar(Guid id)

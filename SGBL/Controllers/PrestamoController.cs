@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using Aplicación.Logica.Prestamo;
 using static Aplicación.Logica.Prestamo.Consulta;
-
+using static Aplicación.Logica.Prestamo.ConsultaId;
 
 namespace SGBL.Controllers
 {
@@ -22,6 +22,12 @@ namespace SGBL.Controllers
         public async Task<ActionResult<List<PrestamoDto>>> Lista()
         {
             return await Mediator.Send(new Consulta.ListaPrestamos());
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<PrestamoDtoId>> ObtenerPrestamoId(Guid id)
+        {
+            return await Mediator.Send(new ConsultaId.PrestamoId { Id = id });
         }
 
         [HttpDelete("{id}")]
