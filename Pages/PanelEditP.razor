@@ -15,7 +15,7 @@
                 <option value="">Seleccione un cliente</option>
                 @foreach (var cliente in clientes)
                 {
-                    <option value="@cliente.id">@cliente.nombre</option>
+                    <option value="@cliente.id">@($"{cliente.nombre} {cliente.apellido}")</option>
                 }
             </select>
         </div>
@@ -30,22 +30,20 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="libro">Estado:</label>
+            <label for="estado">Estado:</label>
             <select class="form-control" @bind="estado">
                 <option value="">Seleccione un Estado</option>
-                @foreach (var prestamo in prestamos)
-                {
-                    <option value="@prestamo.id">@prestamo.estado</option>
-                }
+                <option value="activo">Activo</option>
+                <option value="inactivo">Inactivo</option>
             </select>
         </div>
         <div class="form-group">
             <label for="fechaInicio">Fecha de Inicio:</label>
-            <input type="date" class="form-control" id="fechaInicio" @bind="fechaInicio">
+            <input type="date" class="form-control" @bind="fechaInicio">
         </div>
         <div class="form-group">
             <label for="fechaFin">Fecha de Fin:</label>
-            <input type="date" class="form-control" id="fechaFin" @bind="fechaFin">
+            <input type="date" class="form-control" @bind="fechaFin">
         </div>
         <button type="button" class="btn btn-primary" @onclick="ActualizarPrestamo">Actualizar Préstamo</button>
     </form>
@@ -53,7 +51,7 @@
 
 @code {
 
-    //Datos del préstamo
+    // Datos del préstamo
     public string Id { get; set; }
     private string cliente;
     private string libro;
@@ -61,33 +59,32 @@
     private DateTime fechaFin;
     private string estado;
 
-    //Listas de elementos
+    // Listas de elementos
     private List<Cliente> clientes = new List<Cliente>();
     private List<Libro> libros = new List<Libro>();
-    private List<Prestamos> prestamos = new List<Prestamos>();
 
     protected override async Task OnInitializedAsync()
     {
-        //Obtención de datos
+        // Obtención de datos
         Id = await sessionStorage.GetItemAsync<string>("PrestamoId");
         clientes = await Http.GetFromJsonAsync<List<Cliente>>("https://localhost:7268/api/Cliente");
         libros = await Http.GetFromJsonAsync<List<Libro>>("https://localhost:7268/api/Libro");
-        prestamos = await Http.GetFromJsonAsync<List<Prestamos>>("https://localhost:7268/api/Libro");
+        
         try
         {
             // Obtener los detalles del préstamo con el ID
-            var prestamo = await Http.GetFromJsonAsync<Prestamos>("https://localhost:7268/api/Prestamo/" + Id);
+            var prestamo = await Http.GetFromJsonAsync<Prestamo>("https://localhost:7268/api/Prestamo/" + Id);
 
             // Asignar los valores a las variables
-            cliente = prestamo.cliente;
-            libro = prestamo.libro;
+            cliente = prestamo.cliente_id;
+            libro = prestamo.libro_id;
             estado = prestamo.estado;
             fechaInicio = prestamo.fecha_prestamo;
             fechaFin = prestamo.fecha_entrega;
         }
         catch (Exception ex)
         {
-
+            // Manejar excepción
         }
     }
 
@@ -95,15 +92,16 @@
     {
         try
         {
-            var prestamo = new Prestamos
-                {
-                    cliente = cliente,
-                    libro = libro,
-                    fecha_prestamo = fechaInicio,
-                    fecha_entrega = fechaFin
-                };
+            var prestamo = new Prestamo
+            {
+                cliente_id = cliente,
+                libro_id = libro,
+                estado = estado,
+                fecha_prestamo = fechaInicio,
+                fecha_entrega = fechaFin
+            };
 
-            var response = await Http.PutAsJsonAsync<Prestamos>("https://localhost:7268/api/Prestamo/" + Id+"", prestamo);
+            var response = await Http.PutAsJsonAsync<Prestamo>("https://localhost:7268/api/Prestamo/" + Id, prestamo);
 
             if (response.IsSuccessStatusCode)
             {
@@ -112,31 +110,31 @@
             }
             else
             {
-
+                // Manejar error en la respuesta
             }
         }
         catch (Exception ex)
         {
-
+            // Manejar excepción
         }
     }
 
-    //Clases
+    // Clases
 
-    public class Prestamos
+    public class Prestamo
     {
-        public string id { get; set; }
-        public string estado { get; set; }
-        public string cliente { get; set; }
-        public string libro { get; set; }
+        public string cliente_id { get; set; }
+        public string libro_id { get; set; }
         public DateTime fecha_prestamo { get; set; }
         public DateTime fecha_entrega { get; set; }
+        public string estado { get; set; }
     }
 
     public class Cliente
     {
         public string id { get; set; }
         public string nombre { get; set; }
+        public string apellido {get; set;}
     }
 
     public class Libro
