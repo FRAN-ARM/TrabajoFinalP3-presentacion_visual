@@ -1,11 +1,17 @@
 @inject HttpClient Http
-@if (FsLb == null)
+@using Blazored.SessionStorage;
+@inject NavigationManager NavigationManager
+@inject ISessionStorageService sessionStorage
+@using Pages
+
+@if (Ct == null)
 {
   <p><em>Loading...</em></p>
 }else{
   <div class="container m-0 p-3 mt-5" style="background-color: #825550; border-radius: 0.5rem;">
     <h3 class="text-center text-light">
-      <strong></strong></h3>
+         <strong>@Filtros.Titulo</strong>
+      </h3>
     <div style="border-radius: 0.3rem; height: 500px; overflow-y: scroll;" class="container bg-light m-0 p-0">
       <table class="table">
         <thead class="thead" style="background-color: transparent;">
@@ -15,16 +21,21 @@
             </tr>
         </thead>
         <tbody>
-         @foreach (var forecast in FsLb)
-          {
-            <tr>
+         @foreach (var forecast in Ct)
+         {
+            if (forecast.id == Filtros.Busqueda || forecast.nombre == Filtros.Busqueda)
+            {
+                fondo = "background-color: darkgray;";
+            }
+            else { fondo = ""; }
+            <tr style="@fondo">
               <td>@forecast.id</td>
               <td>@forecast.nombre</td>
               <td>
-                <button type="button" class="btn btn-info btn-sm">Editar</button>
+                <button type="button" class="btn btn-info btn-sm" @onclick="() => EditarCategoria(forecast.id)">Editar</button>
               </td>
               <td>
-                <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+                <button type="button" class="btn btn-danger btn-sm" @onclick="() => EliminarCategoria(forecast.id)">Eliminar</button>
               </td>
             </tr>
           }
@@ -35,16 +46,45 @@
 }
 
 @code {
-  private WeatherForecast[]? FsLb;
-  Gestionar GG = new Gestionar();
+  string fondo = "";
+  private Categoria[]? Ct;
   private string TituloL = "Nombre libro";
 
   protected override async Task OnInitializedAsync()
   {
-    FsLb = await Http.GetFromJsonAsync<WeatherForecast[]>("https://localhost:7268/api/Categoria");
+        Ct = await Http.GetFromJsonAsync<Categoria[]>("https://localhost:7268/api/Categoria");
   }
 
-  public class WeatherForecast
+    public async Task EliminarCategoria(string id)
+    {
+        try
+        {
+            HttpResponseMessage response = await Http.DeleteAsync($"https://localhost:7268/api/Categoria/{id}");
+            response.EnsureSuccessStatusCode();
+
+            // Eliminación exitosa, recargar la lista de editoriales
+            Ct = await Http.GetFromJsonAsync<Categoria[]>("https://localhost:7268/api/Categoria");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine($"Error al eliminar el editorial: {e.Message}");
+        }
+    }
+
+
+
+
+    private async Task EditarCategoria(string CategoriaId)
+    {
+
+        await sessionStorage.SetItemAsync("CategoriaId", CategoriaId);
+
+
+        NavigationManager.NavigateTo($"/PanelEditarCategoria");
+
+    }
+
+  public class Categoria
   {
     public string? id { get; set; }
     public string? nombre { get; set; }

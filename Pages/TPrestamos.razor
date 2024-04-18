@@ -1,5 +1,9 @@
 @inject HttpClient Http
-@if (FsP == null)
+@using Blazored.SessionStorage;
+@inject NavigationManager NavigationManager
+@inject ISessionStorageService sessionStorage
+@using Pages
+@if (Pr == null)
 {
   <p><em>Cargando...</em></p>
 }
@@ -7,7 +11,7 @@ else
 {
   <div class="container m-0 p-3 mt-5" style="background-color: #689d6d; border-radius: 0.5rem;">
     <h3 class="text-center text-light">
-      <strong></strong>  
+      <strong>@Filtros.Titulo</strong>
     </h3>
     <div style="border-radius: 0.3rem; height: 500px; overflow-y: scroll;" class="container bg-light m-0 p-0">
       <table class="table">
@@ -24,9 +28,14 @@ else
           </tr>
         </thead>
         <tbody>
-          @foreach (var forecast in FsP)
+          @foreach (var forecast in Pr)
           {
-            <tr>
+                if (forecast.id == Filtros.Busqueda || forecast.libro == Filtros.Busqueda || forecast.estado == Filtros.Busqueda || forecast.cliente == Filtros.Busqueda)
+            {
+                fondo = "background-color: darkgray;";
+            }
+            else { fondo = ""; }
+            <tr style="@fondo" >
               <td>@forecast.id</td>
               <td>@forecast.fecha_prestamo</td>
               <td>@forecast.fecha_entrega</td>
@@ -34,10 +43,10 @@ else
               <td>@forecast.cliente</td>
               <td>@forecast.libro</td>
               <td>
-                <button type="button" class="btn btn-info btn-sm">Editar</button>
+                  <button type="button" class="btn btn-info btn-sm" @onclick="() => EditarPrestamo(forecast.id)">Editar</button>
               </td>
               <td>
-                <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+                <button type="button" class="btn btn-danger btn-sm" @onclick="() => EliminarPrestamo(forecast.id)">Eliminar</button>
               </td>
             </tr>
           }
@@ -49,14 +58,44 @@ else
 
 
 @code {
-  private WeatherForecast[]? FsP;
+  string fondo = "";
+    private Prestamo[]? Pr;
   private string Titulo = "Fecha Prestamos";
   protected override async Task OnInitializedAsync()
   {
-    FsP = await Http.GetFromJsonAsync<WeatherForecast[]>("https://localhost:7268/api/Prestamo");
+        Pr = await Http.GetFromJsonAsync<Prestamo[]>("https://localhost:7268/api/Prestamo");
   }
 
-  public class WeatherForecast
+    public async Task EliminarPrestamo(string id)
+    {
+        try
+        {
+            HttpResponseMessage response = await Http.DeleteAsync($"https://localhost:7268/api/Prestamo/{id}");
+            response.EnsureSuccessStatusCode();
+
+            // Eliminación exitosa, recargar la lista de editoriales
+            Pr = await Http.GetFromJsonAsync<Prestamo[]>("https://localhost:7268/api/Prestamo");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine($"Error al eliminar el editorial: {e.Message}");
+        }
+    }
+
+
+
+
+    private async Task EditarPrestamo(string PrestamoId)
+    {
+
+        await sessionStorage.SetItemAsync("PrestamoId", PrestamoId);
+
+
+        NavigationManager.NavigateTo($"/PanelEditarPrestamo");
+
+    }
+
+  public class Prestamo
   {
     public string? id { get; set; }
     public string? fecha_prestamo { get; set; }
@@ -65,25 +104,6 @@ else
     public string? cliente { get; set; }
     public string? libro { get; set; }
   
-  }
-
-  private void CambiarTitulo(int NumeroTitulo)
-  {
-    switch (NumeroTitulo)
-    {
-      case 1:
-        Titulo = "Nombre libro";
-        break;
-      case 2:
-        Titulo = "Nombre Cliente";
-        break;
-      case 3:
-        Titulo = "Nombre Autor";
-        break;
-      case 4:
-        Titulo = "Nombre fecha Prestamo";
-        break;
-    }
   }
 
 }

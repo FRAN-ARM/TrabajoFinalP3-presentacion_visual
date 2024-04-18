@@ -1,12 +1,14 @@
 @page "/PanelEditarLibro"
 @inject HttpClient Http
 @using Blazored.SessionStorage;
+@inject NavigationManager NavigationManager
 @inject ISessionStorageService sessionStorage
 
 
 
+ <a class="Btn_salir" style=" text-decoration: none; border-radius: 4px; background-color: red; color: black; padding: 13px 14px 13px 14px;" href="Gestionar">X</a>
+<hr />
 <h3>Editar Libro</h3>
-
 <div class="container">
   <form>
     <div class="row">
@@ -146,7 +148,8 @@
 
             if (response.IsSuccessStatusCode)
             {
-
+                Console.WriteLine("Se Actualizo el libro.");
+                NavigationManager.NavigateTo($"/Gestionar");
             }
             else
             {

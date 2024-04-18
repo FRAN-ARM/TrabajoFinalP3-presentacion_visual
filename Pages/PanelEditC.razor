@@ -1,0 +1,101 @@
+﻿@page "/PanelEditarCliente"
+@inject HttpClient Http
+@using Blazored.SessionStorage;
+@inject NavigationManager NavigationManager
+@inject ISessionStorageService sessionStorage
+
+<a class="Btn_salir" style=" text-decoration: none; border-radius: 4px; background-color: red; color: black; padding: 13px 14px 13px 14px;" href="Gestionar">X</a>
+<hr />
+<h3>Editar Cliente</h3>
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" @bind="nombre">
+        </div>
+        <div class="form-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" class="form-control" id="apellido" @bind="apellido">
+        </div>
+        <div class="form-group">
+            <label for="correo">Correo:</label>
+            <input type="email" class="form-control" id="correo" @bind="correo">
+        </div>
+        <div class="form-group">
+            <label for="fechaInicio">Fecha de Inicio:</label>
+            <input type="date" class="form-control" id="fechaInicio" @bind="fechanacimiento">
+        </div>
+        <button type="button" class="btn btn-primary" @onclick="ActualizarCliente">Actualizar Cliente</button>
+    </form>
+</div>
+
+@code {
+    // Datos del cliente
+    public string Id { get; set; }
+    private string nombre;
+    private string apellido;
+    private string correo;
+    private DateTime fechanacimiento;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Obtención de datos
+        Id = await sessionStorage.GetItemAsync<string>("ClienteId");
+        Console.WriteLine("este es el Id:"+Id);
+        try
+        {
+            // Obtener los detalles del cliente con el ID
+            var cliente = await Http.GetFromJsonAsync<Clientes>("https://localhost:7268/api/Cliente/" + Id);
+
+            // Asignar los valores a las variables
+            nombre = cliente.nombre;
+            apellido = cliente.apellido;
+            correo = cliente.correo;
+            fechanacimiento = cliente.fecha_nacimiento;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error:"+ex.Message);
+        }
+    }
+
+    private async Task ActualizarCliente()
+    {
+        try
+        {
+            var cliente = new Clientes
+            {
+                nombre = nombre,
+                apellido = apellido,
+                correo = correo,
+            };
+
+            var response = await Http.PutAsJsonAsync<Clientes>("https://localhost:7268/api/Cliente/" + Id + "", cliente);
+
+            if (response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("Se actualizó el cliente.");
+                NavigationManager.NavigateTo($"/Gestionar");
+            }
+            else
+            {
+                // Manejo de errores
+            }
+        }
+        catch (Exception ex)
+        {
+            // Manejo de errores
+        }
+    }
+
+    // Clase para representar un cliente
+    public class Clientes
+    {
+        public string? id { get; set; }
+        public string? nombre { get; set; }
+        public string? apellido { get; set; }
+        public string? correo { get; set; }
+        public int matricula { get; set; }
+        public DateTime fecha_nacimiento { get; set; }
+    }
+}

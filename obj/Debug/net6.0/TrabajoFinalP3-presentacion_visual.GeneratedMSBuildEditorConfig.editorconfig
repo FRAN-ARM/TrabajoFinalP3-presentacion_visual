@@ -1,4 +1,11 @@
 is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
+build_property.IncludeAllContentForSelfExtract = 
 build_property.TargetFramework = net6.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
@@ -6,150 +13,171 @@ build_property.ProjectTypeGuids =
 build_property.InvariantGlobalization = false
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = browser
-build_property.EnableSingleFileAnalyzer = 
-build_property.EnableTrimAnalyzer = true
-build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = TrabajoFinalP3-presentacion_visual
 build_property.RootNamespace = TrabajoFinalP3-presentacion_visual
-build_property.ProjectDir = C:\Proyecto final\TrabajoFinalP3-presentacion_visual\
+build_property.ProjectDir = C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Proyecto final\TrabajoFinalP3-presentacion_visual
+build_property.MSBuildProjectDirectory = C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/App.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/Buscar.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/Buscar.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnVzY2FyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/Diseño.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/CrearRegistro.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXJSZWdpc3Ryby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/Diseño.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzZcOxby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/Gestionar.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/GaleriaDeLib.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FsZXJpYURlTGliLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/Gestionar.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VzdGlvbmFyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/Hijo1.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/Hijo1.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGlqbzEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/Hijo2.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/Hijo2.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGlqbzIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/Index.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/Libros.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/Libros.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlicm9zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/Padre1.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/Padre1.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFkcmUxLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/Padre2.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/Padre2.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFkcmUyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/PanelEdit.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFuZWxFZGl0LnJhem9y
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/PanelEditA.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFuZWxFZGl0QS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/PanelN.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFuZWxOLnJhem9y
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/PanelEditC.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFuZWxFZGl0Qy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/Prestamos.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/PanelEditCA.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFuZWxFZGl0Q0EucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/PanelEditE.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFuZWxFZGl0RS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/PanelEditL.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFuZWxFZGl0TC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/PanelEditP.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFuZWxFZGl0UC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/Prestamos.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc3RhbW9zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/Principal.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/Principal.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/Reportes.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/Reportes.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVwb3J0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/TAutores.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/TAutores.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVEF1dG9yZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/TCategorias.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/TCategorias.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVENhdGVnb3JpYXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/TClientes.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/TClientes.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVENsaWVudGVzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/TEditorial.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/TEditorial.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVEVkaXRvcmlhbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/TGestionar.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/TGestionar.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVEdlc3Rpb25hci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/TLibros.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/TLibros.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVExpYnJvcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/TPrestamos.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/TPrestamos.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVFByZXN0YW1vcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/TUsuarios.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/TUsuarios.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVFVzdWFyaW9zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Pages/Usuarios.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Pages/Usuarios.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb3MucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Shared/MainLogin.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Shared/MainLogin.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5Mb2dpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/MainLayout copy 2.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/MainLayout copy 2.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5PX1VTQURPU19FTElNSU5BUl9WRVJTSU9ORklOQUxcTWFpbkxheW91dCBjb3B5IDIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/MainLayoutx.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/MainLayoutx.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5PX1VTQURPU19FTElNSU5BUl9WRVJTSU9ORklOQUxcTWFpbkxheW91dHgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/SurveyPrompt.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5PX1VTQURPU19FTElNSU5BUl9WRVJTSU9ORklOQUxcU3VydmV5UHJvbXB0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/_Imports.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Shared/MainLayout.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-0dgxlc1mnb
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Shared/MainNavegacion.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Shared/MainNavegacion.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5OYXZlZ2FjaW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-ny753x4o0j
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/MainLayoutNO.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/MainLayoutNO.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5PX1VTQURPU19FTElNSU5BUl9WRVJTSU9ORklOQUxcTWFpbkxheW91dE5PLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-n7n0q1kv2z
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/NavMenu.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5PX1VTQURPU19FTElNSU5BUl9WRVJTSU9ORklOQUxcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-fmj3uve0oh
 
-[C:/Proyecto final/TrabajoFinalP3-presentacion_visual/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/Principal.razor]
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/FrontEnd/TrabajoFinalP3-presentacion_visual/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/Principal.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5PX1VTQURPU19FTElNSU5BUl9WRVJTSU9ORklOQUxcUHJpbmNpcGFsLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-p8emhfztwo

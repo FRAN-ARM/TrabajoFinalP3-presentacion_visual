@@ -8,6 +8,14 @@
     position: relative;
 }
 
+.Btn_salir {
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: red;
+    color: black;
+    padding: 13px 14px 13px 14px;
+}
+
 .form .fa-search{
 
     position: absolute;

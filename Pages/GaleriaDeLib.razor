@@ -1,0 +1,78 @@
+﻿@page "/galeria"
+@inject HttpClient Http
+@using Pages
+<h3>Libros</h3>
+
+<div class="row">
+    @foreach (var libro in Libros)
+    {
+        if(Filtros.Busqueda == libro.id){
+            <div class="col-md-4 mb-4" style="text-align: left;">
+                <div class="card" style="background-color: darkgray;">
+                    <img style="margin-top: 10px;" src="https://ellees.h-cdn.co/assets/15/37/1024x1024/1024x1024-io-libros-portadas-bonitas-cuestion-de-supervivencia-12776329-1-esl-es-cuestion-de-supervivencia-jpg.jpg" class="card-img-top" alt="Imagen...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre: @libro.nombre</h5>
+                        <p class="card-text">Paginas: @libro.paginas</p>
+                        <p class="card-text">Edicion: #@libro.edicion</p>
+                        <p class="card-text">Publicacion: @libro.fechapublicacion.ToString("yyyy-MM-dd")</p>
+                        <p class="card-text">Autor: @libro.autor</p>
+                        <p class="card-text">Categoria: @libro.categoria</p>
+                        <p class="card-text">Editorial: @libro.editorial</p>
+                        <p class="card-text">Descripcion: @libro.descripcion</p>
+                    </div>
+                </div>
+            </div>
+        }else{
+            <div class="col-md-4 mb-4" style="text-align: left;">
+                <div class="card">
+                    <img style="margin-top: 10px;" src="https://ellees.h-cdn.co/assets/15/37/1024x1024/1024x1024-io-libros-portadas-bonitas-cuestion-de-supervivencia-12776329-1-esl-es-cuestion-de-supervivencia-jpg.jpg" class="card-img-top" alt="Imagen...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre: @libro.nombre</h5>
+                        <p class="card-text">Paginas: @libro.paginas</p>
+                        <p class="card-text">Edicion: #@libro.edicion</p>
+                        <p class="card-text">Publicacion: @libro.fechapublicacion.ToString("yyyy-MM-dd")</p>
+                        <p class="card-text">Autor: @libro.autor</p>
+                        <p class="card-text">Categoria: @libro.categoria</p>
+                        <p class="card-text">Editorial: @libro.editorial</p>
+                        <p class="card-text">Descripcion: @libro.descripcion</p>
+                    </div>
+                </div>
+            </div>
+        }
+        
+    }
+</div>
+
+@code {
+    // Clase para representar un libro
+    public class Libro
+    {
+        public string? id { get; set; }
+        public string? nombre { get; set; }
+        public int paginas { get; set; }
+        public string? descripcion { get; set; }
+        public int edicion { get; set; }
+        public DateTime fechapublicacion { get; set; }
+        public string? autor { get; set; }
+        public string? categoria { get; set; }
+        public string? editorial { get; set; }
+    }
+
+    List<Libro> Libros = new List<Libro>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Hacer la llamada HTTP para obtener los libros desde el API
+        var response = await Http.GetFromJsonAsync<List<Libro>>("https://localhost:7268/api/Libro");
+
+        if (response != null)
+        {
+            Libros = response;
+        }
+        else
+        {
+            // Manejar el caso en que no se puedan obtener los datos
+            // Puedes mostrar un mensaje de error o tomar otras acciones según sea necesario
+        }
+    }
+}

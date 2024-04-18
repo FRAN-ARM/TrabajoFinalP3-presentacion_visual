@@ -1,13 +1,16 @@
-@using System.Text.Json
-@using System.Text
 @inject HttpClient Http
+@using Blazored.SessionStorage;
+@inject NavigationManager NavigationManager
+@inject ISessionStorageService sessionStorage
+@using Pages
 @if (FsLb == null)
 {
   <p><em>Loading...</em></p>
 }else{
   <div class="container m-0 p-3 mt-5" style="background-color: #825550; border-radius: 0.5rem;">
     <h3 class="text-center text-light">
-      <strong></strong></h3>
+      <strong>@Filtros.Titulo</strong>
+      </h3>
     <div style="border-radius: 0.3rem; height: 500px; overflow-y: scroll;" class="container bg-light m-0 p-0">
       <table class="table">
         <thead class="thead" style="background-color: transparent;">
@@ -19,11 +22,16 @@
         <tbody>
          @foreach (var forecast in FsLb)
           {
-            <tr>
+            if (forecast.id == Filtros.Busqueda || forecast.nombre == Filtros.Busqueda)
+            {
+                fondo = "background-color: darkgray;";
+            }
+            else { fondo = ""; }
+            <tr style="@fondo">
               <td>@forecast.id</td>
               <td>@forecast.nombre</td>
               <td>
-                <button type="button" class="btn btn-info btn-sm" >Editar</button>
+                                <button type="button" class="btn btn-info btn-sm" @onclick="() => EditarEditorial(forecast.id)">Editar</button>
               </td>
               <td>
                 <button type="button" class="btn btn-danger btn-sm" @onclick="@(() =>EliminarEditorial(forecast.id))">Eliminar</button>
@@ -37,11 +45,11 @@
 }
 
 @code {
-  private modelo[]? FsLb;
-
+    private Editorial[]? FsLb;
+    string fondo = "";
   protected override async Task OnInitializedAsync()
   {
-    FsLb = await Http.GetFromJsonAsync<modelo[]>("https://localhost:7268/api/Editorial");
+        FsLb = await Http.GetFromJsonAsync<Editorial[]>("https://localhost:7268/api/Editorial");
   }
   public async Task EliminarEditorial(string id)
   {
@@ -51,7 +59,7 @@
           response.EnsureSuccessStatusCode();
 
           // Eliminación exitosa, recargar la lista de editoriales
-          FsLb = await Http.GetFromJsonAsync<modelo[]>("https://localhost:7268/api/Editorial");
+            FsLb = await Http.GetFromJsonAsync<Editorial[]>("https://localhost:7268/api/Editorial");
       }
       catch (Exception e)
       {
@@ -59,7 +67,17 @@
       }
   }
 
-  public class modelo
+    private async Task EditarEditorial(string EditorialId)
+    {
+
+        await sessionStorage.SetItemAsync("EditorialId", EditorialId);
+
+
+        NavigationManager.NavigateTo($"/PanelEditarEditorial");
+
+    }
+
+  public class Editorial
   {
     public string? id { get; set; }
     public string? nombre { get; set; }

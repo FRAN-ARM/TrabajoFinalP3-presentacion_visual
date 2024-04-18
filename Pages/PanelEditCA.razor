@@ -1,0 +1,78 @@
+﻿@page "/PanelEditarCategoria"
+@inject HttpClient Http
+@using Blazored.SessionStorage;
+@inject NavigationManager NavigationManager
+@inject ISessionStorageService sessionStorage
+
+<a class="Btn_salir" style=" text-decoration: none; border-radius: 4px; background-color: red; color: black; padding: 13px 14px 13px 14px;" href="Gestionar">X</a>
+<hr />
+<h3>Editar Categoría</h3>
+
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" @bind="nombre">
+        </div>
+        <button type="button" class="btn btn-primary" @onclick="ActualizarCategoria">Actualizar Categoría</button>
+    </form>
+</div>
+
+@code {
+
+    //Datos de la categoría
+    public string Id { get; set; }
+    private string nombre;
+
+    protected override async Task OnInitializedAsync()
+    {
+        //Obtención del ID de la categoría
+        Id = await sessionStorage.GetItemAsync<string>("CategoriaId");
+
+        try
+        {
+            // Obtener los detalles de la categoría con el ID
+            var categoria = await Http.GetFromJsonAsync<Categoria>("https://localhost:7268/api/Categoria/" + Id);
+
+            // Asignar los valores a las variables
+            nombre = categoria.nombre;
+        }
+        catch (Exception ex)
+        {
+
+        }
+    }
+
+    private async Task ActualizarCategoria()
+    {
+        try
+        {
+            var categoria = new Categoria
+                {
+                    nombre = nombre
+                };
+
+            var response = await Http.PutAsJsonAsync<Categoria>("https://localhost:7268/api/Categoria/" + Id, categoria);
+
+            if (response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("Se actualizó la categoría.");
+                NavigationManager.NavigateTo("/Gestionar");
+            }
+            else
+            {
+
+            }
+        }
+        catch (Exception ex)
+        {
+
+        }
+    }
+
+    //Clase
+    public class Categoria
+    {
+        public string nombre { get; set; }
+    }
+}

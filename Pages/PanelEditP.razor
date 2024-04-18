@@ -1,0 +1,147 @@
+﻿@page "/PanelEditarPrestamo"
+@inject HttpClient Http
+@using Blazored.SessionStorage;
+@inject NavigationManager NavigationManager
+@inject ISessionStorageService sessionStorage
+
+<a class="Btn_salir" style=" text-decoration: none; border-radius: 4px; background-color: red; color: black; padding: 13px 14px 13px 14px;" href="Gestionar">X</a>
+<hr />
+<h3>Editar Préstamo</h3>
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="cliente">Cliente:</label>
+            <select class="form-control" @bind="cliente">
+                <option value="">Seleccione un cliente</option>
+                @foreach (var cliente in clientes)
+                {
+                    <option value="@cliente.id">@cliente.nombre</option>
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="libro">Libro:</label>
+            <select class="form-control" @bind="libro">
+                <option value="">Seleccione un libro</option>
+                @foreach (var libro in libros)
+                {
+                    <option value="@libro.id">@libro.nombre</option>
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="libro">Estado:</label>
+            <select class="form-control" @bind="estado">
+                <option value="">Seleccione un Estado</option>
+                @foreach (var prestamo in prestamos)
+                {
+                    <option value="@prestamo.id">@prestamo.estado</option>
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="fechaInicio">Fecha de Inicio:</label>
+            <input type="date" class="form-control" id="fechaInicio" @bind="fechaInicio">
+        </div>
+        <div class="form-group">
+            <label for="fechaFin">Fecha de Fin:</label>
+            <input type="date" class="form-control" id="fechaFin" @bind="fechaFin">
+        </div>
+        <button type="button" class="btn btn-primary" @onclick="ActualizarPrestamo">Actualizar Préstamo</button>
+    </form>
+</div>
+
+@code {
+
+    //Datos del préstamo
+    public string Id { get; set; }
+    private string cliente;
+    private string libro;
+    private DateTime fechaInicio;
+    private DateTime fechaFin;
+    private string estado;
+
+    //Listas de elementos
+    private List<Cliente> clientes = new List<Cliente>();
+    private List<Libro> libros = new List<Libro>();
+    private List<Prestamos> prestamos = new List<Prestamos>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        //Obtención de datos
+        Id = await sessionStorage.GetItemAsync<string>("PrestamoId");
+        clientes = await Http.GetFromJsonAsync<List<Cliente>>("https://localhost:7268/api/Cliente");
+        libros = await Http.GetFromJsonAsync<List<Libro>>("https://localhost:7268/api/Libro");
+        prestamos = await Http.GetFromJsonAsync<List<Prestamos>>("https://localhost:7268/api/Libro");
+        try
+        {
+            // Obtener los detalles del préstamo con el ID
+            var prestamo = await Http.GetFromJsonAsync<Prestamos>("https://localhost:7268/api/Prestamo/" + Id);
+
+            // Asignar los valores a las variables
+            cliente = prestamo.cliente;
+            libro = prestamo.libro;
+            estado = prestamo.estado;
+            fechaInicio = prestamo.fecha_prestamo;
+            fechaFin = prestamo.fecha_entrega;
+        }
+        catch (Exception ex)
+        {
+
+        }
+    }
+
+    private async Task ActualizarPrestamo()
+    {
+        try
+        {
+            var prestamo = new Prestamos
+                {
+                    cliente = cliente,
+                    libro = libro,
+                    fecha_prestamo = fechaInicio,
+                    fecha_entrega = fechaFin
+                };
+
+            var response = await Http.PutAsJsonAsync<Prestamos>("https://localhost:7268/api/Prestamo/" + Id+"", prestamo);
+
+            if (response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("Se actualizó el préstamo.");
+                NavigationManager.NavigateTo("/Gestionar");
+            }
+            else
+            {
+
+            }
+        }
+        catch (Exception ex)
+        {
+
+        }
+    }
+
+    //Clases
+
+    public class Prestamos
+    {
+        public string id { get; set; }
+        public string estado { get; set; }
+        public string cliente { get; set; }
+        public string libro { get; set; }
+        public DateTime fecha_prestamo { get; set; }
+        public DateTime fecha_entrega { get; set; }
+    }
+
+    public class Cliente
+    {
+        public string id { get; set; }
+        public string nombre { get; set; }
+    }
+
+    public class Libro
+    {
+        public string id { get; set; }
+        public string nombre { get; set; }
+    }
+}

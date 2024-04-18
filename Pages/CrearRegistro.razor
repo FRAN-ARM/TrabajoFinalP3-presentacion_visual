@@ -1,0 +1,477 @@
+@page "/PanelAgregarLibro"
+@inject HttpClient Http
+@using Pages
+
+<h3>Nuevo @Filtros.Titulo</h3>
+
+@switch (Filtros.Titulo)
+{
+    case "Libro":
+        <div class="container" style="text-align: left;">
+            <form>
+                <div class="row">
+                    <div class="col-form-label">
+                        <label for="nombre">Nombre:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="nombre" @bind="nombre">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="paginas">Paginas:</label>
+                    <input type="number" class="form-control" id="paginas" @bind="paginas">
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripcion:</label>
+                    <textarea class="form-control" id="descripcion" @bind="descripcion"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="edicion">Edicion:</label>
+                    <input type="number" class="form-control" id="edicion" @bind="edicion">
+                </div>
+                <div class="form-group">
+                    <label for="publicacion">Publicacion:</label>
+                    <input type="date" class="form-control" id="publicacion" @bind="publicacion" min="1500-01-01">
+                </div>
+                <div class="form-group">
+                    <label for="categoria">Categoria:</label>
+                    <select class="form-control" @bind="categoria">
+                        <option value="">Seleccione una categoria</option>
+                        @foreach (var categoria in categorias)
+                        {
+                            <option value="@categoria.id">@categoria.nombre</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="autor">Autor:</label>
+                    <select class="form-control" @bind="autor">
+                        <option value="">Seleccione un autor</option>
+                        @foreach (var autor in autores)
+                        {
+                            <option value="@autor.id">@($"{autor.nombre} {autor.apellido}")</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="editorial">Editorial:</label>
+                    <select class="form-control" @bind="editorial">
+                        <option value="">Seleccione una editorial</option>
+                        @foreach (var editora in editoriales)
+                        {
+                            <option value="@editora.id">@editora.nombre</option>
+                        }
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary" @onclick="AgregarLibro">Agregar @Filtros.Titulo</button>
+            </form>
+        </div>
+        break;
+    case "Cliente":
+        <div class="container" style="text-align: left;">
+            <form>
+                <div class="row">
+                    <div class="col-form-label">
+                        <label for="nombre">Nombre:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="nombre" @bind="nombre">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="edicion">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" @bind="apellido">
+                </div>
+                <div class="form-group">
+                    <label for="edicion">Correo:</label>
+                    <input type="email" class="form-control" id="correo" @bind="correo">
+                </div>
+                <div class="form-group">
+                    <label for="edicion">Matricula:</label>
+                    <input type="number" class="form-control" id="matricula" @bind="matricula">
+                </div>
+                <button type="button" class="btn btn-primary" @onclick="AgregarCliente">Agregar @Filtros.Titulo</button>
+            </form>
+        </div>
+
+        break;
+    case "Autor":
+        <div class="container" style="text-align: left;">
+            <form>
+                <div class="row">
+                    <div class="col-form-label">
+                        <label for="nombre">Nombre:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="nombre" @bind="nombre">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="edicion">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" @bind="apellido">
+                </div>
+                <div class="form-group">
+                    <label for="edicion">Pais:</label>
+                    <input type="email" class="form-control" id="pais" @bind="pais">
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripcion:</label>
+                    <textarea class="form-control" id="descripcion" @bind="descripcion"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary" @onclick="AgregarAutor">Agregar @Filtros.Titulo</button>
+            </form>
+        </div>
+
+        break;
+    case "Prestamo":
+        <div class="container" style="text-align: left;">
+            <form>
+                <div class="form-group">
+                    <label for="publicacion">Fecha Prestamo:</label>
+                    <input type="date" class="form-control" id="fechaprestamo" @bind="fechaprestamo" min="1500-01-01">
+                </div>
+                <div class="form-group">
+                    <label for="publicacion">Fecha Entrega:</label>
+                    <input type="date" class="form-control" id="fechaentrega" @bind="fechaentrega" min="1500-01-01">
+                </div>
+                <div class="form-group">
+                    <label for="edicion">Estado:</label>
+                    <input type="text" class="form-control" id="estado" @bind="estado">
+                </div>
+                <div class="form-group">
+                    <label for="edicion">Cliente:</label>
+                    <input type="text" class="form-control" id="cliente" @bind="cliente">
+                </div>
+                <div class="form-group">
+                    <label for="edicion">Libro:</label>
+                    <input type="text" class="form-control" id="libro" @bind="libro">
+                </div>
+                <button type="button" class="btn btn-primary" @onclick="AgregarPrestamo">Agregar @Filtros.Titulo</button>
+            </form>
+        </div>
+        break;
+    case "Categoria":
+        <div class="container" style="text-align: left;">
+            <form>
+                <div class="row">
+                    <div class="col-form-label">
+                        <label for="nombre">Nombre:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="nombre" @bind="nombre">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary" @onclick="AgregarCategoria">Agregar @Filtros.Titulo</button>
+            </form>
+        </div>
+        break;
+    case "Editorial":
+        <div class="container" style="text-align: left;">
+            <form>
+                <div class="row">
+                    <div class="col-form-label">
+                        <label for="nombre">Nombre:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="nombre" @bind="nombre">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary" @onclick="AgregarEditorial">Agregar @Filtros.Titulo</button>
+            </form>
+        </div>
+        break;
+    default:
+    @* Renderizar un componente predeterminado si no se cumple ninguna de las condiciones anteriores *@
+        <img src="/images/Cargando.gif">
+        break;
+}
+
+
+@code {
+    private string nombre;
+    private string apellido;
+    private string correo;
+    private string pais;
+    private int paginas;
+    private int matricula;
+    private string descripcion;
+    private int edicion;
+    private DateTime publicacion;
+    public DateTime fechaprestamo;
+    public DateTime fechaentrega;
+    public string estado;
+    private string categoria;
+    private string cliente;
+    private string autor;
+    private string editorial;
+    private string notificacion;
+    private string libro;
+
+    // Listas de elementos
+    private List<Categoria> categorias = new List<Categoria>();
+    private List<Editorial> editoriales = new List<Editorial>();
+    private List<Autores> autores = new List<Autores>();
+    private List<Clientes> clientes = new List<Clientes>();
+    private List<Libro> libros = new List<Libro>();
+
+    // Método de inicialización
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            notificacion = "Libro agregado.";
+            categorias = await Http.GetFromJsonAsync<List<Categoria>>("https://localhost:7268/api/Categoria");
+            editoriales = await Http.GetFromJsonAsync<List<Editorial>>("https://localhost:7268/api/Editorial");
+            autores = await Http.GetFromJsonAsync<List<Autores>>("https://localhost:7268/api/Autores");
+            clientes = await Http.GetFromJsonAsync<List<Clientes>>("https://localhost:7268/api/Clientes");
+            libros = await Http.GetFromJsonAsync<List<Libro>>("https://localhost:7268/api/Libros");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al obtener los datos: {ex.Message}");
+        }
+    }
+
+    // Método para agregar un libro
+    private async Task AgregarLibro()
+    {
+        try
+        {
+            var libro = new Libro
+                {
+                    nombre = nombre,
+                    paginas = paginas,
+                    descripcion = descripcion,
+                    edicion = edicion,
+                    fecha_publicacion = publicacion,
+                    autor_id = autor,
+                    categoria_id = categoria,
+                    editorial_id = editorial
+                };
+
+            var response = await Http.PostAsJsonAsync("https://localhost:7268/api/Libro", libro);
+
+            if (response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("Se agregó el libro correctamente.");
+                // Puedes realizar alguna acción adicional aquí si es necesario
+            }
+            else
+            {
+                Console.WriteLine("Error al agregar el libro.");
+                // Puedes manejar el error de alguna manera aquí si es necesario
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al agregar el libro: {ex.Message}");
+        }
+    }
+
+    // Clase Libro
+    public class Libro
+    {
+        public string? id { get; set; }
+        public string? nombre { get; set; }
+        public int paginas { get; set; }
+        public string? descripcion { get; set; }
+        public int edicion { get; set; }
+        public DateTime fecha_publicacion { get; set; }
+        public string? autor_id { get; set; }
+        public string? categoria_id { get; set; }
+        public string? editorial_id { get; set; }
+    }
+
+    private async Task AgregarCliente()
+    {
+        try
+        {
+            var cliente = new Clientes
+                {
+                    nombre = nombre,
+                    apellido = apellido,
+                    correo = correo,
+                    matricula = matricula
+                };
+
+            var response = await Http.PostAsJsonAsync("https://localhost:7268/api/Cliente", cliente);
+
+            if (response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("Se Agrego el Clinete.");
+
+            }
+            else
+            {
+
+            }
+        }
+        catch (Exception ex)
+        {
+
+        }
+    }
+    private async Task AgregarAutor()
+    {
+        try
+        {
+            var autor = new Autor
+                {
+                    nombre = nombre,
+                    apellido = apellido,
+                    pais = pais,
+                    descripcion = descripcion
+                };
+
+            var response = await Http.PostAsJsonAsync("https://localhost:7268/api/Autores", autor);
+
+            if (response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("Se Agrego el Autor.");
+
+            }
+            else
+            {
+
+            }
+        }
+        catch (Exception ex)
+        {
+
+        }
+    }
+    private async Task AgregarCategoria()
+    {
+        try
+        {
+            var categoria = new Categoria
+            {
+                nombre = nombre,
+            };
+
+            var response = await Http.PostAsJsonAsync("https://localhost:7268/api/Categoria",categoria);
+
+            if (response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("Se Agrego la categoria");
+
+            }
+            else
+            {
+
+            }
+        }
+        catch (Exception ex)
+        {
+
+        }
+    }
+    private async Task AgregarEditorial()
+    {
+        try
+        {
+            var editorial = new Editorial
+            {
+                nombre = nombre,
+            };
+
+            var response = await Http.PostAsJsonAsync("https://localhost:7268/api/Editorial", editorial);
+
+            if (response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("Se Agrego la Editorial");
+
+            }
+            else
+            {
+
+            }
+        }
+        catch (Exception ex)
+        {
+
+        }
+    }
+    private async Task AgregarPrestamo(){
+        
+        try
+        {
+            var prestamo = new Prestamo
+                {
+                    fecha_prestamo = fechaprestamo,
+                    fecha_entrega = fechaentrega,
+                    estado = estado,
+                    cliente_id = cliente,
+                    libro_id = libro,
+                };
+
+            var response = await Http.PostAsJsonAsync("https://localhost:7268/api/Prestamo", prestamo);
+
+            if (response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("Se agregó el libro correctamente.");
+                // Puedes realizar alguna acción adicional aquí si es necesario
+            }
+            else
+            {
+                Console.WriteLine("Error al agregar el libro.");
+                // Puedes manejar el error de alguna manera aquí si es necesario
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al agregar el libro: {ex.Message}");
+        }
+
+    }
+    //Clases
+
+    public class Prestamo
+    {
+        public string? id { get; set; }
+        public DateTime fecha_prestamo { get; set; }
+        public DateTime fecha_entrega { get; set; }
+        public string? estado { get; set; }
+        public string? cliente_id { get; set; }
+        public string? libro_id { get; set; }
+
+    }
+
+    public class Autor
+    {
+        public string? nombre { get; set; }
+        public string? apellido { get; set; }
+        public string? pais { get; set; }
+        public string? descripcion { get; set; }
+    }
+
+    public class Clientes
+    {
+        public string? id { get; set; }
+        public string? nombre { get; set; }
+        public string? apellido { get; set; }
+        public string? correo { get; set; }
+        public int matricula { get; set; }
+    }
+
+    public class Categoria
+    {
+        public string id { get; set; }
+        public string nombre { get; set; }
+    }
+
+    public class Editorial
+    {
+        public string id { get; set; }
+        public string nombre { get; set; }
+    }
+
+    public class Autores
+    {
+        public string id { get; set; }
+        public string nombre { get; set; }
+        public string apellido { get; set; }
+    }
+
+
+}

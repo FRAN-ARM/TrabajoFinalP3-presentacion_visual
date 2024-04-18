@@ -1,5 +1,8 @@
 @inject HttpClient Http
-
+@using Blazored.SessionStorage;
+@inject NavigationManager NavigationManager
+@inject ISessionStorageService sessionStorage
+@using Pages
 
 @if (Lb == null)
 {
@@ -7,315 +10,68 @@
 }else{
   <div class="container m-0 p-3 mt-5" style="background-color: #825550; border-radius: 0.5rem;">
     <h3 class="text-center text-light">
-      <strong></strong></h3>
+            <strong>@Filtros.Titulo</strong>
+    </h3>
     <div style="border-radius: 0.3rem; height: 500px; overflow-y: scroll;" class="container bg-light m-0 p-0">
-      @switch(EstiloObtenido){
-        case "Libro": 
-        <table class="table">
-          <thead class="thead" style="background-color: transparent;">
-            <tr>
-              <th>ID</th>
-              <th>Nombre</th>
-              <th>Paginas</th>
-              <th>Descripcion</th>
-              <th>Edicion</th>
-              <th>Publicacion</th>
-              <th>Categoria</th>
-              <th>Autor</th>
-              <th>Editorial</th>
-              <th></th>
-              <th></th>
-              </tr>
-          </thead>
-        <tbody >
-         @foreach (var forecast in Lb)
-          {
-           if(forecast.id == ID_BUSCAR){
-              <tr>
-                <th>@forecast.id</th>
-                <td>@forecast.Nombre</td>
-                <td>@forecast.Paginas</td>
-                <td>@forecast.Descripcion</td>
-                <td>@forecast.Edicion</td>
-                <td>@forecast.Publicacion</td>
-                <td>@forecast.Categoria</td>
-                <td>@forecast.Autor</td>
-                <td>@forecast.Editorial</td>
-                <td>
-                  
+            <table class="table">
+                <thead class="thead" style="background-color: transparent;">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Paginas</th>
+                        <th>Descripcionn</th>
+                        <th>Edicion</th>
+                        <th>Publicacion</th>
+                        <th>Categoria</th>
+                        <th>Autor</th>
+                        <th>Editorial</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var forecast in Lb)
+                    {
+                        if (forecast.id == Filtros.Busqueda || forecast.nombre == Filtros.Busqueda || forecast.descripcion == Filtros.Busqueda || forecast.categoria == Filtros.Busqueda || forecast.autor == Filtros.Busqueda || forecast.editorial == Filtros.Busqueda)
+                        {
+                            fondo = "background-color: darkgray;";
+                        }
+                        else { fondo = ""; }
+                        <tr style="@fondo" >
+                            <th>@forecast.id</th>
+                            <td>@forecast.nombre</td>
+                            <td>@forecast.paginas</td>
+                            <td>@forecast.descripcion</td>
+                            <td>@forecast.edicion</td>
+                            <td>@forecast.fechaPublicacion.ToString("yyyy-MM-dd")</td>
+                            <td>@forecast.categoria</td>
+                            <td>@forecast.autor</td>
+                            <td>@forecast.editorial</td>
+                            <td>
+                                <!--Aqui es donde se debe cambiar el boton-->
+                                <button type="button" class="btn btn-info btn-sm" @onclick="() => EditarLibro(forecast.id)">Editar</button>
 
 
-                </td>
-                <td>
-                  <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
-                </td>
-              </tr>
-            }else{
-              
-            }
-          }
-        </tbody>
-      </table>; break;
-        case "Autor": 
-        <table class="table">
-          <thead class="thead" style="background-color: transparent;">
-            <tr>
-              <th>ID</th>
-              <th>Autor</th>
-              <th>Nombre</th>
-              <th>Paginas</th>
-              <th>Descripcion</th>
-              <th>Edicion</th>
-              <th>Publicacion</th>
-              <th>Categoria</th>
-              <th>Editorial</th>
-              <th></th>
-              <th></th>
-              </tr>
-          </thead>
-        <tbody>
-         @foreach (var forecast in Lb)
-          {
-            if(forecast.Autor == ID_BUSCAR){
-              <tr>
-                <th>@forecast.id</th>
-                <td>@forecast.Autor</td>
-                <td>@forecast.Nombre</td>
-                <td>@forecast.Paginas</td>
-                <td>@forecast.Descripcion</td>
-                <td>@forecast.Edicion</td>
-                <td>@forecast.Publicacion</td>
-                <td>@forecast.Categoria</td>
-                <td>@forecast.Editorial</td>
-                <td>
-                  <button type="button" class="btn btn-info btn-sm">Editar</button>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
-                </td>
-              </tr>
-            }else{
-            }
-            
-          }
-        </tbody>
-      </table>; break;
-        case "Publicación": 
-        <table class="table">
-          <thead class="thead" style="background-color: transparent;">
-            <tr>
-              <th>ID</th>
-              <th>Publicacion</th>
-              <th>Autor</th>
-              <th>Nombre</th>
-              <th>Paginas</th>
-              <th>Descripcion</th>
-              <th>Edicion</th>
-              <th>Categoria</th>
-              <th>Editorial</th>
-              <th></th>
-              <th></th>
-              </tr>
-          </thead>
-        <tbody>
-         @foreach (var forecast in Lb)
-          {
-            if(forecast.id == ID_BUSCAR){
-              <tr>
-                <th>@forecast.id</th>
-                <td>@forecast.Publicacion</td>
-                <td>@forecast.Autor</td>
-                <td>@forecast.Nombre</td>
-                <td>@forecast.Paginas</td>
-                <td>@forecast.Descripcion</td>
-                <td>@forecast.Edicion</td>
-                <td>@forecast.Categoria</td>
-                <td>@forecast.Editorial</td>
-                <td>
-                  <button type="button" class="btn btn-info btn-sm">Editar</button>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
-                </td>
-              </tr>
-            }else{
-              
-            }
-            
-          }
-        </tbody>
-      </table>; break;
-        case "Categoria": 
-        <table class="table">
-          <thead class="thead" style="background-color: transparent;">
-            <tr>
-              <th>ID</th>
-              <th>Categoria</th>
-              <th>Publicacion</th>
-              <th>Autor</th>
-              <th>Nombre</th>
-              <th>Paginas</th>
-              <th>Descripcion</th>
-              <th>Edicion</th>
-              <th>Editorial</th>
-              <th></th>
-              <th></th>
-              </tr>
-          </thead>
-        <tbody>
-         @foreach (var forecast in Lb)
-          {
-            if(forecast.Categoria == ID_BUSCAR){
-              <tr>
-                <th>@forecast.id</th>
-                <td>@forecast.Categoria</td>
-                <td>@forecast.Publicacion</td>
-                <td>@forecast.Autor</td>
-                <td>@forecast.Nombre</td>
-                <td>@forecast.Paginas</td>
-                <td>@forecast.Descripcion</td>
-                <td>@forecast.Edicion</td>
-                <td>@forecast.Editorial</td>
-                <td>
-                  <button type="button" class="btn btn-info btn-sm">Editar</button>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
-                </td>
-              </tr>
-            }else{
-              
-            }
-            
-          }
-        </tbody>
-      </table>; break;
-        case "Editorial": 
-        <table class="table">
-          <thead class="thead" style="background-color: transparent;">
-            <tr>
-              <th>ID</th>
-              <th>Editorial</th>
-              <th>Categoria</th>
-              <th>Publicacion</th>
-              <th>Autor</th>
-              <th>Nombre</th>
-              <th>Paginas</th>
-              <th>Descripcion</th>
-              <th></th>
-              <th></th>
-              </tr>
-          </thead>
-        <tbody>
-         @foreach (var forecast in Lb)
-          {
-            if(forecast.Editorial == ID_BUSCAR){
-              <tr>
-                <th style="background-color: red;">@forecast.id</th>
-                <td>@forecast.Editorial</td>
-                <td>@forecast.Categoria</td>
-                <td>@forecast.Publicacion</td>
-                <td>@forecast.Autor</td>
-                <td>@forecast.Nombre</td>
-                <td>@forecast.Paginas</td>
-                <td>@forecast.Descripcion</td>
-                <td>@forecast.Edicion</td>
-                <td>
-                  <button type="button" class="btn btn-info btn-sm">Editar</button>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
-                </td>
-              </tr>
-            }else{
-              <tr>
-                <th>@forecast.id</th>
-                <td>@forecast.Editorial</td>
-                <td>@forecast.Categoria</td>
-                <td>@forecast.Publicacion</td>
-                <td>@forecast.Autor</td>
-                <td>@forecast.Nombre</td>
-                <td>@forecast.Paginas</td>
-                <td>@forecast.Descripcion</td>
-                <td>@forecast.Edicion</td>
-                <td>
-                  <button type="button" class="btn btn-info btn-sm">Editar</button>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
-                </td>
-              </tr>
-            }
-            
-          }
-        </tbody>
-      </table>; break;
-      default: 
-        <table class="table">
-          <thead class="thead" style="background-color: transparent;">
-            <tr>
-              <th>ID</th>
-              <th>Nombre</th>
-              <th>Paginas</th>
-              <th>Descripcionn</th>
-              <th>Edicion</th>
-              <th>Publicacion</th>
-              <th>Categoria</th>
-              <th>Autor</th>
-              <th>Editorial</th>
-              <th></th>
-              <th></th>
-              </tr>
-          </thead>
-        <tbody >
-         @foreach (var forecast in Lb)
-          {
-            <tr>
-                <th>@forecast.id</th>
-                <td>@forecast.Nombre</td>
-                <td>@forecast.Paginas</td>
-                <td>@forecast.Descripcion</td>
-                <td>@forecast.Edicion</td>
-                <td>@forecast.Publicacion</td>
-                <td>@forecast.Categoria</td>
-                <td>@forecast.Autor</td>
-                <td>@forecast.Editorial</td>
-                <td>
-                    <!--Aqui es donde se debe cambiar el boton-->
-                  <button type="button" class="btn btn-info btn-sm" @onclick="() => EditarLibro(forecast.id)">Editar</button>
-                          
-
-                </td>
-                <td>
-                  <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarEditorial(forecast.id))">Eliminar</button>
-                </td>
-              </tr>
-            }
-        </tbody>
-      </table>; break;
-      }
-
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-danger btn-sm" @onclick="@(() => EliminarLibro(forecast.id))">Eliminar</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
     </div>
   </div>
 }
 
-<h1>@EstiloObtenido</h1>
-<h2>@ID_BUSCAR</h2>
-
-    @using Blazored.SessionStorage;
-    @inject NavigationManager NavigationManager
-    @inject ISessionStorageService sessionStorage
+   
 
 @code {
-    [Parameter]
-    public string EstiloObtenido {get; set;} 
-    [Parameter]
-    public string ID_BUSCAR { get; set; }
 
+    private Libro[]? Lb;
+    string fondo = "";
 
-    private LiBro[]? Lb;
-
-    public async Task EliminarEditorial(string id)
+    public async Task EliminarLibro(string id)
     {
         try
         {
@@ -323,7 +79,7 @@
             response.EnsureSuccessStatusCode();
 
             // Eliminación exitosa, recargar la lista de editoriales
-            Lb = await Http.GetFromJsonAsync<LiBro[]>("https://localhost:7268/api/Libro");
+            Lb = await Http.GetFromJsonAsync<Libro[]>("https://localhost:7268/api/Libro");
         }
         catch (Exception e)
         {
@@ -344,25 +100,25 @@
         
     }
 
-  protected override async Task OnInitializedAsync()
-  {
-    Lb = await Http.GetFromJsonAsync<LiBro[]>("https://localhost:7268/api/Libro");
-  }
+    protected override async Task OnInitializedAsync()
+    {
+        Lb = await Http.GetFromJsonAsync<Libro[]>("https://localhost:7268/api/Libro");
+    }
 
 
 
-  public class LiBro
-  {
-    public string? id { get; set; }
-    public string? Nombre { get; set; }
-    public int Paginas { get; set; }
-    public string? Descripcion { get; set; }
-    public int Edicion { get; set; }
-    public DateOnly Publicacion { get; set; }
-    public string? Autor { get; set; }
-    public string? Categoria { get; set; }
-    public string? Editorial { get; set; }
-  }
+    public class Libro
+    {
+        public string id { get; set; }
+        public string nombre { get; set; }
+        public int paginas { get; set; }
+        public string? descripcion { get; set; }
+        public int edicion { get; set; }
+        public DateTime fechaPublicacion { get; set; }
+        public string? autor { get; set; }
+        public string? categoria { get; set; }
+        public string? editorial { get; set; }
+    }
 
 
 }

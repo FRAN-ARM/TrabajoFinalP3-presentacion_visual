@@ -3,52 +3,31 @@
 <link rel="stylesheet" href="css/style_buscador_a.css">
 <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group me-2" role="group" aria-label="First group">
-    <button type="button" class="btn btn-primary" @onclick="@(() =>Nombre(0))">Libro</button>
-    <button type="button" class="btn btn-primary" @onclick="@(() =>Nombre(1))">Autor</button>
-    <button type="button" class="btn btn-primary" @onclick="@(() =>Nombre(2))">Publicación</button>
-    <button type="button" class="btn btn-primary" @onclick="@(() =>Nombre(3))">Categoría</button>
-    <button type="button" class="btn btn-primary" @onclick="@(() =>Nombre(4))">Editorial</button>
+    <button type="button" class="btn btn-primary" @onclick="@(() =>Nombre(0))">Texto</button>
+    <button type="button" class="btn btn-primary" @onclick="@(() =>Nombre(1))">Paginas</button>
+    <button type="button" class="btn btn-primary" @onclick="@(() =>Nombre(2))">Edicion</button>
+    <button type="button" class="btn btn-primary" @onclick="@(() =>Nombre(3))">Fecha</button>
   </div>
 </div>
 <div class="input-group mb-3 mt-3 input-group-lg ">
-  <span class="input-group-text" id="basic-addon1">
-    <img @onclick="busca" src="/images/icon_Search.svg" class="image-fluid" alt="">
+    <span @onclick="Buscar" class="input-group-text" id="basic-addon1">
+        <img  src="/images/icon_Search.svg" class="image-fluid" alt="">
   </span>
-  <input type="text" class="form-control" placeholder="@Username" aria-label="Username" aria-describedby="basic-addon1"@bind="Busqueda" >
+    <input type="text" class="form-control" placeholder="Buscar..." aria-label="Username" aria-describedby="basic-addon1" @bind="texto">
 </div>
 <div class="container text-center">
   <div class="row">
   <div class="col col-10 align-self-end" style="width: 1150px;">
-    @if(EstadoBusqueda == true){
-    if(_Lb == null){
-      <p><em>Loading...</em></p>
-    }else{
-      foreach(var forecast in _Lb){
-        if(forecast.Nombre == Busqueda){
-          id_Buscar = forecast.id;
-          Console.WriteLine("Se puede buscar Nombre.");
-          <TLibros EstiloObtenido="@Estilo" ID_BUSCAR="@id_Buscar"></TLibros>
-        }
-        if(forecast.Autor == Busqueda){
-          id_Buscar = forecast.Autor;
-          Console.WriteLine("Se puede buscar Autor.");
-          <TLibros EstiloObtenido="@Estilo" ID_BUSCAR="@id_Buscar"></TLibros>
-        }
-        if(forecast.Categoria == Busqueda){
-          id_Buscar = forecast.Categoria;
-          Console.WriteLine("Se puede buscar. Categoria");
-          <TLibros EstiloObtenido="@Estilo" ID_BUSCAR="@id_Buscar"></TLibros>
-        }
-        if(forecast.Editorial == Busqueda){
-          id_Buscar = forecast.Editorial;
-          Console.WriteLine("Se puede buscar. editorial");
-          <TLibros EstiloObtenido="@Estilo" ID_BUSCAR="@id_Buscar"></TLibros>
-        }
-      }
+    <!--Hola-->
+    @if(Visi){
+        texto = "";
+        <TLibros></TLibros>
+        Visi = false;
     }
-  }else{
-    <TLibros EstiloObtenido="@Estilo" ID_BUSCAR="@id_Buscar"></TLibros>
-  }
+    @if(galeria == true){
+        <GaleriaDeLib></GaleriaDeLib>
+    }
+    
   </div>
   <div class=" col col align-self-start">
       <div class="row">
@@ -57,9 +36,8 @@
           </button>
       </div>
       <div class="row">
-          <a href="PanelEditarLibro">CLic</a>
-          <button style="color: white; font-size: 15px; background-color: rgb(23, 218, 17); height:80px; width:80px; border-style: none; border-radius: 2px;">
-            Reload
+          <button @onclick="VerComoGaleria" style="color: white; font-size: 30px; background-color: darkcyan; height:80px; width:80px; border-style: none; border-radius: 2px;">
+            Galeria
           </button>
       </div>
     </div>
@@ -69,32 +47,59 @@
 </div>
 
 @code{
-  public string Username="", Busqueda = "";
-  public string Estilo {get; set;}
-  public string id_Buscar { get; set; }
-  public bool EstadoBusqueda = false;
-  private LiBro[]? _Lb;
+    public string texto = "";
+    public bool Visi = true;
+    private bool galeria = false;
+    private LiBro[]? _Lb;
 
-  string[] Nombres = {"Libro", "Autor", "Publicación", "Categoria", "Editorial"};
+    string[] Nombres = {"Libro", "Autor", "Publicacion", "Categoria", "Editorial"};
 
-  void Nombre(int N){
-    if(Busqueda != null && Busqueda != ""){
-      Username = Nombres[N];
-      Estilo = Nombres[N];
+    void VerComoGaleria(){
+        if (galeria == true)
+        {
+            galeria = false;
+            Visi = true;
+        }
+        else
+        {
+            galeria = true;
+            Visi = false;
+        }
+
     }
-  }
+
+    void Nombre(int N)
+    {
+        Visi = true;
+        Filtros.Titulo = Nombres[N];
+    }
+
+    void CambiarVisi()
+    {
+        if (Visi == true)
+        {
+            Visi = false;
+        }
+        else
+        {
+            if (Visi == false)
+            {
+                Visi = true;
+            }
+        }
+    }
+
+    void Buscar()
+    {
+        Console.WriteLine("Buscando: " + texto);
+        Filtros.Busqueda = texto;
+        texto = "";
+        CambiarVisi();
+    }
 
   protected override async Task OnInitializedAsync()
   {
     _Lb = await Http.GetFromJsonAsync<LiBro[]>("https://localhost:7268/api/Libro");
-  }
-
-  public void busca(){
-    if(Busqueda != "" && Busqueda != null && Estilo != "" && Estilo != null){
-      EstadoBusqueda = true;
-    }else{
-      @* Console.WriteLine("Pon algo en el formulario."); *@
-    }
   }
 
   public class LiBro
