@@ -12,3 +12,18 @@ C:\Proyecto Final\Accesodatos\obj\Debug\net6.0\refint\Accesodatos.dll
 C:\Proyecto Final\Accesodatos\obj\Debug\net6.0\Accesodatos.pdb
 C:\Proyecto Final\Accesodatos\obj\Debug\net6.0\Accesodatos.genruntimeconfig.cache
 C:\Proyecto Final\Accesodatos\obj\Debug\net6.0\ref\Accesodatos.dll
+C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\BackEnd\TrabajoFinalP3-presentacion_visual\Accesodatos\bin\Debug\net6.0\Accesodatos.deps.json
+C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\BackEnd\TrabajoFinalP3-presentacion_visual\Accesodatos\bin\Debug\net6.0\Accesodatos.runtimeconfig.json
+C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\BackEnd\TrabajoFinalP3-presentacion_visual\Accesodatos\bin\Debug\net6.0\Accesodatos.dll
+C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\BackEnd\TrabajoFinalP3-presentacion_visual\Accesodatos\bin\Debug\net6.0\Accesodatos.pdb
+C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\BackEnd\TrabajoFinalP3-presentacion_visual\Accesodatos\obj\Debug\net6.0\Accesodatos.csproj.AssemblyReference.cache
+C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\BackEnd\TrabajoFinalP3-presentacion_visual\Accesodatos\obj\Debug\net6.0\Accesodatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\BackEnd\TrabajoFinalP3-presentacion_visual\Accesodatos\obj\Debug\net6.0\Accesodatos.AssemblyInfoInputs.cache
+C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\BackEnd\TrabajoFinalP3-presentacion_visual\Accesodatos\obj\Debug\net6.0\Accesodatos.AssemblyInfo.cs
+C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\BackEnd\TrabajoFinalP3-presentacion_visual\Accesodatos\obj\Debug\net6.0\Accesodatos.csproj.CoreCompileInputs.cache
+C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\BackEnd\TrabajoFinalP3-presentacion_visual\Accesodatos\obj\Debug\net6.0\Accesodatos.sourcelink.json
+C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\BackEnd\TrabajoFinalP3-presentacion_visual\Accesodatos\obj\Debug\net6.0\Accesodatos.dll
+C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\BackEnd\TrabajoFinalP3-presentacion_visual\Accesodatos\obj\Debug\net6.0\refint\Accesodatos.dll
+C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\BackEnd\TrabajoFinalP3-presentacion_visual\Accesodatos\obj\Debug\net6.0\Accesodatos.pdb
+C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\BackEnd\TrabajoFinalP3-presentacion_visual\Accesodatos\obj\Debug\net6.0\Accesodatos.genruntimeconfig.cache
+C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\BackEnd\TrabajoFinalP3-presentacion_visual\Accesodatos\obj\Debug\net6.0\ref\Accesodatos.dll

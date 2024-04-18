@@ -1,0 +1,95 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = TrabajoFinalP3-presentacion_visual
+build_property.RootNamespace = TrabajoFinalP3-presentacion_visual
+build_property.ProjectDir = C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\BackEnd\TrabajoFinalP3-presentacion_visual\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\BackEnd\TrabajoFinalP3-presentacion_visual
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/BackEnd/TrabajoFinalP3-presentacion_visual/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/BackEnd/TrabajoFinalP3-presentacion_visual/Pages/ClassSeparator.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xhc3NTZXBhcmF0b3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/BackEnd/TrabajoFinalP3-presentacion_visual/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/BackEnd/TrabajoFinalP3-presentacion_visual/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/BackEnd/TrabajoFinalP3-presentacion_visual/Pages/Gestionar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VzdGlvbmFyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/BackEnd/TrabajoFinalP3-presentacion_visual/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/BackEnd/TrabajoFinalP3-presentacion_visual/Pages/Prestamos.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc3RhbW9zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/BackEnd/TrabajoFinalP3-presentacion_visual/Pages/Prestamosr.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc3RhbW9zci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/BackEnd/TrabajoFinalP3-presentacion_visual/Pages/Usuarios.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/BackEnd/TrabajoFinalP3-presentacion_visual/Shared/MainLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5Mb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/BackEnd/TrabajoFinalP3-presentacion_visual/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/MainLayout copy 2.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5PX1VTQURPU19FTElNSU5BUl9WRVJTSU9ORklOQUxcTWFpbkxheW91dCBjb3B5IDIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/BackEnd/TrabajoFinalP3-presentacion_visual/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/MainLayoutx.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5PX1VTQURPU19FTElNSU5BUl9WRVJTSU9ORklOQUxcTWFpbkxheW91dHgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/BackEnd/TrabajoFinalP3-presentacion_visual/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5PX1VTQURPU19FTElNSU5BUl9WRVJTSU9ORklOQUxcU3VydmV5UHJvbXB0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/BackEnd/TrabajoFinalP3-presentacion_visual/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/BackEnd/TrabajoFinalP3-presentacion_visual/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-0dgxlc1mnb
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/BackEnd/TrabajoFinalP3-presentacion_visual/Shared/MainNavegacion.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5OYXZlZ2FjaW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-ny753x4o0j
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/BackEnd/TrabajoFinalP3-presentacion_visual/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/MainLayoutNO.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5PX1VTQURPU19FTElNSU5BUl9WRVJTSU9ORklOQUxcTWFpbkxheW91dE5PLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-n7n0q1kv2z
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/BackEnd/TrabajoFinalP3-presentacion_visual/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5PX1VTQURPU19FTElNSU5BUl9WRVJTSU9ORklOQUxcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-fmj3uve0oh
+
+[C:/Users/Enmanuel/Documents/I(ITLA)I/cuatrimestre/Programacion 3/Projecto/Proyecto Final/BackEnd/TrabajoFinalP3-presentacion_visual/Shared/NO_USADOS_ELIMINAR_VERSIONFINAL/Principal.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5PX1VTQURPU19FTElNSU5BUl9WRVJTSU9ORklOQUxcUHJpbmNpcGFsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-p8emhfztwo

@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Proyecto Final\\SGBL\\SGBL.csproj": {}
+    "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\Proyecto Final\\BackEnd\\TrabajoFinalP3-presentacion_visual\\SGBL\\SGBL.csproj": {}
   },
   "projects": {
-    "C:\\Proyecto Final\\Accesodatos\\Accesodatos.csproj": {
+    "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\Proyecto Final\\BackEnd\\TrabajoFinalP3-presentacion_visual\\Accesodatos\\Accesodatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyecto Final\\Accesodatos\\Accesodatos.csproj",
+        "projectUniqueName": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\Proyecto Final\\BackEnd\\TrabajoFinalP3-presentacion_visual\\Accesodatos\\Accesodatos.csproj",
         "projectName": "Accesodatos",
-        "projectPath": "C:\\Proyecto Final\\Accesodatos\\Accesodatos.csproj",
-        "packagesPath": "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyecto Final\\Accesodatos\\obj\\",
+        "projectPath": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\Proyecto Final\\BackEnd\\TrabajoFinalP3-presentacion_visual\\Accesodatos\\Accesodatos.csproj",
+        "packagesPath": "C:\\Users\\Enmanuel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\Proyecto Final\\BackEnd\\TrabajoFinalP3-presentacion_visual\\Accesodatos\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\LENOVO GOLD\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Enmanuel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -69,34 +70,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Proyecto Final\\Aplicación\\Aplicación.csproj": {
+    "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\Proyecto Final\\BackEnd\\TrabajoFinalP3-presentacion_visual\\Aplicación\\Aplicación.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyecto Final\\Aplicación\\Aplicación.csproj",
+        "projectUniqueName": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\Proyecto Final\\BackEnd\\TrabajoFinalP3-presentacion_visual\\Aplicación\\Aplicación.csproj",
         "projectName": "Aplicación",
-        "projectPath": "C:\\Proyecto Final\\Aplicación\\Aplicación.csproj",
-        "packagesPath": "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyecto Final\\Aplicación\\obj\\",
+        "projectPath": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\Proyecto Final\\BackEnd\\TrabajoFinalP3-presentacion_visual\\Aplicación\\Aplicación.csproj",
+        "packagesPath": "C:\\Users\\Enmanuel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\Proyecto Final\\BackEnd\\TrabajoFinalP3-presentacion_visual\\Aplicación\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\LENOVO GOLD\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Enmanuel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -110,8 +122,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Proyecto Final\\Accesodatos\\Accesodatos.csproj": {
-                "projectPath": "C:\\Proyecto Final\\Accesodatos\\Accesodatos.csproj"
+              "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\Proyecto Final\\BackEnd\\TrabajoFinalP3-presentacion_visual\\Accesodatos\\Accesodatos.csproj": {
+                "projectPath": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\Proyecto Final\\BackEnd\\TrabajoFinalP3-presentacion_visual\\Accesodatos\\Accesodatos.csproj"
               }
             }
           }
@@ -120,6 +132,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -157,34 +174,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Proyecto Final\\SGBL\\SGBL.csproj": {
+    "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\Proyecto Final\\BackEnd\\TrabajoFinalP3-presentacion_visual\\SGBL\\SGBL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyecto Final\\SGBL\\SGBL.csproj",
+        "projectUniqueName": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\Proyecto Final\\BackEnd\\TrabajoFinalP3-presentacion_visual\\SGBL\\SGBL.csproj",
         "projectName": "SGBL",
-        "projectPath": "C:\\Proyecto Final\\SGBL\\SGBL.csproj",
-        "packagesPath": "C:\\Users\\LENOVO GOLD\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyecto Final\\SGBL\\obj\\",
+        "projectPath": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\Proyecto Final\\BackEnd\\TrabajoFinalP3-presentacion_visual\\SGBL\\SGBL.csproj",
+        "packagesPath": "C:\\Users\\Enmanuel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\Proyecto Final\\BackEnd\\TrabajoFinalP3-presentacion_visual\\SGBL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\LENOVO GOLD\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Enmanuel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -198,11 +226,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Proyecto Final\\Accesodatos\\Accesodatos.csproj": {
-                "projectPath": "C:\\Proyecto Final\\Accesodatos\\Accesodatos.csproj"
+              "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\Proyecto Final\\BackEnd\\TrabajoFinalP3-presentacion_visual\\Accesodatos\\Accesodatos.csproj": {
+                "projectPath": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\Proyecto Final\\BackEnd\\TrabajoFinalP3-presentacion_visual\\Accesodatos\\Accesodatos.csproj"
               },
-              "C:\\Proyecto Final\\Aplicación\\Aplicación.csproj": {
-                "projectPath": "C:\\Proyecto Final\\Aplicación\\Aplicación.csproj"
+              "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\Proyecto Final\\BackEnd\\TrabajoFinalP3-presentacion_visual\\Aplicación\\Aplicación.csproj": {
+                "projectPath": "C:\\Users\\Enmanuel\\Documents\\I(ITLA)I\\cuatrimestre\\Programacion 3\\Projecto\\Proyecto Final\\BackEnd\\TrabajoFinalP3-presentacion_visual\\Aplicación\\Aplicación.csproj"
               }
             }
           }
@@ -211,6 +239,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -242,10 +275,29 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -254,7 +306,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
