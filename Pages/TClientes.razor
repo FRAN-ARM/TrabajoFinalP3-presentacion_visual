@@ -15,7 +15,6 @@
       <table class="table">
         <thead class="thead" style="background-color: transparent;">
           <tr>
-            <th>ID</th>
             <th>Nombre</th>
             <th>Apellido</th>
             <th>Correo</th>
@@ -31,7 +30,6 @@
             }
             else { fondo = ""; }
             <tr style="@fondo">
-              <td>@forecast.id</td>
               <td>@forecast.nombre</td>
               <td>@forecast.apellido</td>
               <td>@forecast.correo</td>
@@ -53,8 +51,7 @@
 @code {
 
   string fondo = "";
-    private Clientes[]? Cl;
-  Gestionar GG = new Gestionar();
+  private Clientes[]? Cl;
   private string TituloL = "Nombre libro";
 
   protected override async Task OnInitializedAsync()

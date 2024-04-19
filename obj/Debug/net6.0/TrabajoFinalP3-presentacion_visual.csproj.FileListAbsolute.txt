@@ -2271,12 +2271,7 @@ C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyec
 C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\staticwebassets.pack.json
 C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\exv5yfbdlw.gz
 C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\ky49y15r7j.gz
-C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\qrzelc0mqj.gz
-C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\5otrpg5ucw.gz
-C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\jli52iu004.gz
-C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\e91m9rtbcf.gz
 C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\pn6gio1rnu.gz
-C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\xng5r0c5ja.gz
 C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\ux7m7p9ksn.gz
 C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\qqweezqdah.gz
 C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\fbjoh8por1.gz
@@ -2288,10 +2283,8 @@ C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyec
 C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\p0l4jq8lz2.gz
 C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\iz2zlfyitd.gz
 C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\igi15bahtw.gz
-C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\4kg90x6y3x.gz
 C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\8uyx0fgtaf.gz
 C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\inifvyjj1q.gz
-C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\r7gc7yygep.gz
 C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\nkic1mbi5r.gz
 C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\g6ibkrdc7t.gz
 C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\uuqvj4g6ih.gz
@@ -2470,3 +2463,10 @@ C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyec
 C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\lmyhi1p776.gz
 C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\uji5zuu4c3.gz
 C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\TrabajoF.300529B7.Up2Date
+C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\qrzelc0mqj.gz
+C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\5otrpg5ucw.gz
+C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\jli52iu004.gz
+C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\e91m9rtbcf.gz
+C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\xng5r0c5ja.gz
+C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\4kg90x6y3x.gz
+C:\Users\Enmanuel\Documents\I(ITLA)I\cuatrimestre\Programacion 3\Projecto\Proyecto Final\FrontEnd\TrabajoFinalP3-presentacion_visual\obj\Debug\net6.0\compressed\r7gc7yygep.gz

@@ -3,23 +3,85 @@
 <link rel="stylesheet" href="css/style_buscador_a.css">
 <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group me-2" role="group" aria-label="First group">
-    <button type="button" class="btn btn-primary">Libro</button>
-    <button type="button" class="btn btn-primary">Cliente</button>
-    <button type="button" class="btn btn-primary">Autor</button>
-    <button type="button" class="btn btn-primary">Fecha</button>
   </div>
 </div>
 <div class="input-group mb-3 mt-3 input-group-lg ">
-  <span class="input-group-text" id="basic-addon1">
+  <span @onclic="Buscar" class="input-group-text" id="basic-addon1">
     <img src="/images/icon_Search.svg" class="image-fluid" alt="">
   </span>
-  <input type="text" class="form-control" placeholder="@Username" aria-label="Username" aria-describedby="basic-addon1">
+    <input type="text" class="form-control" placeholder="@Username" aria-label="Username" aria-describedby="basic-addon1" @bind="texto">
 </div>
-<TPrestamos></TPrestamos>
+<div class="row">
+    
+    <div class="col col-9">
+        
+        @if (Crear == true)
+        {
+            <CrearRegistro />
+        }
+        else
+        {
+            <TPrestamos></TPrestamos>
+        }
+    </div>
+
+    <div class="col col-1">
+        <div class=" col align-self-start">
+            <div class="row">
+                <button @onclick="CrearDato" style="color: white; font-size: 30px; background-color: rgb(212, 170, 17); height:80px; width:80px; border-style: none; border-radius: 2px;">
+                    +
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
 @code {
-  string nombre="Libor", Username="";
+    string nombre="Libor", Username="";
+    private string Tabla = "", texto = "";
+
+    public bool Crear = false, Visi = false;
 
     void Nombre(){
-      Username = nombre;
+        Username = nombre;
+        Tabla = "Prestamo";
     }
+
+    void CrearDato()
+    {
+        if (Crear == true)
+        {
+            Crear = false;
+            Visi = true;
+        }
+        else
+        {
+            Crear = true;
+            Visi = false;
+        }
+    }
+
+    void Buscar()
+    {
+        Console.WriteLine("Buscando: " + texto);
+        Filtros.Busqueda = texto;
+        CambiarVisi();
+    }
+
+    void CambiarVisi()
+    {
+        if (Visi == true)
+        {
+            Visi = false;
+        }
+        else
+        {
+            if (Visi == false)
+            {
+                Visi = true;
+            }
+        }
+    }
+
 }

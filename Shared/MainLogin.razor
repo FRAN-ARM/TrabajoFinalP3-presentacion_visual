@@ -1,52 +1,203 @@
 @inherits MainLayout
 @inject NavigationManager ___navigation
+@inject HttpClient Http
+@using System
 
 <PageTitle>SBGL - Login</PageTitle>
 
 <link rel="stylesheet" href="/css/style_login.css">
 
 <body>
-    <div class="form-container">
+    <div class="form-container justify-content-cente">
         <div class="form-container-user-icon">
             <img class="icon_user" src="/images/LoginForm_UsuarioCirculo.svg" alt="IconoUsuarioCirculo">
             <img class="icon_user" src="/images/Login_UsuarioIcono.svg" alt="IconoUsuario">
         </div>
-        <h1 style="margin-top: 1.5rem;">Ingreso</h1>
-        <div class="input-container">
-            <div class="icon">
-                <img src="/images/LoginForm_UsuarioIcono.svg" alt="IconoUsuarioMatricula">
-            </div>
-            <input type="text" placeholder="Matricula...">
-        </div>
-        <div class="input-container">
-            <div class="icon">
-                <img src="/images/LoginForm_ClaveIcono.svg" alt="IconoUsuarioContraseña">
-            </div>
-            <input type="password" placeholder="Contraseña...">
-        </div>
-        @{
-            // AÑADIR CONDICIONAL
-            if (Error == true /*@Model.ErrorMessage != null*/)
-            {
-                //@Model.ErrorMessage
-                <div class="alert alert-danger mt-3">
-                        placeholder de mensaje de error. Ejemplo (contraseña incorrecta).
+        <section class="row">
+            <div class="col" style="display:@Panelogin">
+              <h1 style="margin-top: 1.5rem;">Ingreso</h1>
+                <div class="input-container">
+                    <div class="icon">
+                        <img src="/images/LoginForm_UsuarioIcono.svg" alt="IconoUsuarioMatricula">
+                    </div>
+                    <input type="em" placeholder="Correo..." @bind="Email">
                 </div>
-            }
-        }
-        <button class="btn_ingresar" type="button" @onclick="mthIngresar">Ingresar</button>
+                <div class="input-container">
+                    <div class="icon">
+                        <img src="/images/LoginForm_ClaveIcono.svg" alt="IconoUsuarioContraseña">
+                    </div>
+                    <input type="password" placeholder="Contraseña..." @bind="Password">
+                </div>
+                @{
+                    // AÑADIR CONDICIONAL
+                    if (Error == true /*@Model.ErrorMessage != null*/)
+                    {
+                        //@Model.ErrorMessage
+                        <div class="alert alert-danger mt-3">
+                                placeholder de mensaje de error. Ejemplo (contraseña incorrecta).
+                        </div>
+                    }
+                }
+                <button class="btn_ingresar" type="button" @onclick="mthIngresar">Ingresar</button>       
+            </div>
+            <div class="">
+                <section id="formularioRegistro" class="col" style="display:@PanelRegistrar">
+                    <h1>Registro</h1>
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputNombre" class="form-label">Nombre</label>
+                            <input type="text"
+                                   class="form-control"
+                                   id="exampleInputNombre"
+                                   aria-describedby="emailHelp" @bind="Nombre" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputApellido" class="form-label">Apellido</label>
+                            <input type="text"
+                                   class="form-control"
+                                   id="exampleInputApellido"
+                                   aria-describedby="emailHelp" @bind="Apellido" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="text"
+                                   class="form-control"
+                                   id="exampleInputEmail1"
+                                   aria-describedby="emailHelp" @bind="NUsuario" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1C" class="form-label">Carreo</label>
+                            <input type="email"
+                                   class="form-control"
+                                   id="Usuario"
+                                   aria-describedby="emailHelp" @bind="Email" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                            <input type="password"
+                                   class="form-control"
+                                   id="exampleInputPassword1" @bind="Password"/>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                            <label class="form-check-label" for="exampleCheck1">Asepta los terminos y condiciones.</label>
+                        </div>
+                    </form>
+                </section>
+            </div>
+            
+        </section>
+        <section @onclick="Registrar" id="BotonResgistrar">
+            <button class="btn_registro" @onclick="alternarFormulario" style=" color: white; background-color: rgb(156, 44, 44); border-radius: 4px;">Registrarse</button>
+        </section>
     </div>
+
+
 </body>
 
 @code {
     private bool Error = false;
+    public string Email { get; set; }
+    public string Password { get; set; }
+    public string Nombre { get; set; }
+    public string Apellido { get; set; }
+    public string NUsuario { get; set; }
+    private bool login { get; set; } = false;
+    public string PanelRegistrar { get; set; } = "none;";
+    public string Panelogin { get; set; } = "block;";
+
+
+    public void alternarFormulario(){
+        if (PanelRegistrar == "none;")
+        {
+            PanelRegistrar = "block;";
+            Panelogin = "none;";
+        }else
+        {
+            Panelogin = "block;";
+            PanelRegistrar = "none;";
+        }
+    }
+
+    public async Task Login(){
+        try{
+            Console.WriteLine("Correo: "+Email+" CLave: "+Password);
+            var usuario = new Usuario
+                {
+                  email = Email,
+                  password = Password
+                };
+            Console.WriteLine("Correo mas pa bajo: " + usuario.email + " CLave mas pabajo: " + usuario.password);
+            var response = await Http.PostAsJsonAsync("https://localhost:7268/api/Usuario/login",usuario);
+
+            if (response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("Bienvenido.");
+                login = true;
+
+            }
+            else
+            {
+                Console.WriteLine("Error al agregar Logearte.");
+                // Puedes manejar el error de alguna manera aquí si es necesario
+            }
+
+        }catch(Exception e){
+            Console.WriteLine("Errro en el Login: "+e.Message);
+        }
+    }
+
+    public async Task Registrar(){
+        try
+        {
+            var usuario = new Usuario
+                {
+                    nombre = Nombre,
+                    apellido = Apellido,
+                    email = Email,
+                    password = Password,
+                    username = NUsuario
+                };
+            Console.WriteLine("Correo mas pa bajo: " + usuario.email + " CLave mas pabajo: " + usuario.password);
+            var response = await Http.PostAsJsonAsync("https://localhost:7268/api/Usuario/registrar", usuario);
+
+            if (response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("Bienvenido.");
+                alternarFormulario();
+
+            }
+            else
+            {
+                Console.WriteLine("Error al agregar Logearte.");
+                // Puedes manejar el error de alguna manera aquí si es necesario
+            }
+
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine("Errro en el Login: " + e.Message);
+        }
+    }
+
+    public class Usuario {
+        public string nombre { get; set; }
+        public string apellido { get; set; }
+        public string username { get; set; }
+        public string email { get; set; }
+        public string password { get; set; }
+    }
 
     // Metodo de prueba. Remplazar por lo que corresponde.
-    private void mthIngresar()
+    public void mthIngresar()
     {
-        ___navigation.NavigateTo("Principal", false);
-        MainLayout.mainArea = "Nav";
-        MainLayout.sidebarSelectedArea = "Principal";
+        Login();
+        if(login){
+            ___navigation.NavigateTo("Principal", false);
+            MainLayout.mainArea = "Nav";
+            MainLayout.sidebarSelectedArea = "Principal";
+        }
+        
     }
     
 }

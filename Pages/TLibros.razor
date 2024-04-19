@@ -16,7 +16,7 @@
             <table class="table">
                 <thead class="thead" style="background-color: transparent;">
                     <tr>
-                        <th>ID</th>
+                        <th style="@Filtros.Visivilidad">ID</th>
                         <th>Nombre</th>
                         <th>Paginas</th>
                         <th>Descripcionn</th>
@@ -38,7 +38,7 @@
                         }
                         else { fondo = ""; }
                         <tr style="@fondo" >
-                            <th>@forecast.id</th>
+                            <th style="@Filtros.Visivilidad">@forecast.id</th>
                             <td>@forecast.nombre</td>
                             <td>@forecast.paginas</td>
                             <td>@forecast.descripcion</td>

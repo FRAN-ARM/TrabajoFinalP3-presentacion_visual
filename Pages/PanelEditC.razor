@@ -21,10 +21,6 @@
             <label for="correo">Correo:</label>
             <input type="email" class="form-control" id="correo" @bind="correo">
         </div>
-        <div class="form-group">
-            <label for="fechaInicio">Fecha de Inicio:</label>
-            <input type="date" class="form-control" id="fechaInicio" @bind="fechanacimiento">
-        </div>
         <button type="button" class="btn btn-primary" @onclick="ActualizarCliente">Actualizar Cliente</button>
     </form>
 </div>
@@ -35,7 +31,6 @@
     private string nombre;
     private string apellido;
     private string correo;
-    private DateTime fechanacimiento;
 
     protected override async Task OnInitializedAsync()
     {
@@ -45,13 +40,12 @@
         try
         {
             // Obtener los detalles del cliente con el ID
-            var cliente = await Http.GetFromJsonAsync<Clientes>("https://localhost:7268/api/Cliente/" + Id);
+            var clientes = await Http.GetFromJsonAsync<Clientes>("https://localhost:7268/api/Cliente/"+Id);
 
             // Asignar los valores a las variables
-            nombre = cliente.nombre;
-            apellido = cliente.apellido;
-            correo = cliente.correo;
-            fechanacimiento = cliente.fecha_nacimiento;
+            nombre = clientes.nombre;
+            apellido = clientes.apellido;
+            correo = clientes.correo;
         }
         catch (Exception ex)
         {
@@ -67,10 +61,10 @@
             {
                 nombre = nombre,
                 apellido = apellido,
-                correo = correo,
+                correo = correo
             };
-
-            var response = await Http.PutAsJsonAsync<Clientes>("https://localhost:7268/api/Cliente/" + Id + "", cliente);
+            Console.WriteLine("Id de clinete: "+Id);
+            var response = await Http.PutAsJsonAsync<Clientes>("https://localhost:7268/api/Cliente/"+Id+"", cliente);
 
             if (response.IsSuccessStatusCode)
             {
@@ -84,18 +78,15 @@
         }
         catch (Exception ex)
         {
-            // Manejo de errores
+            Console.WriteLine(ex.Message);
         }
     }
 
     // Clase para representar un cliente
     public class Clientes
     {
-        public string? id { get; set; }
         public string? nombre { get; set; }
         public string? apellido { get; set; }
         public string? correo { get; set; }
-        public int matricula { get; set; }
-        public DateTime fecha_nacimiento { get; set; }
     }
 }
